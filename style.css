@@ -73,6 +73,7 @@ li {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-size: 18px;
 }
 .button:active, .button:disabled {
   opacity: 0.8;
@@ -89,7 +90,6 @@ li {
   width: 100%;
 }
 .button--voice-output {
-  font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
