@@ -2,7 +2,9 @@ const INITIAL_DATA_PATH = 'data.json',
   container = document.querySelector('[data-main-container]'),
   buttonNext = document.querySelector('[data-next-button]'),
   buttonPrev = document.querySelector('[data-prev-button]'),
-  cardCounter = document.querySelector('[data-card-counter]')
+  cardCounter = document.querySelector('[data-card-counter]'),
+  buttonMenuOpen = document.querySelector('[data-menu-open]'),
+  buttonMenuClose = document.querySelector('[data-menu-close]')
 
 const getData = async() => {
   return await fetch(INITIAL_DATA_PATH)
@@ -43,7 +45,7 @@ const initCardCounter = (counter, total) => {
   cardCounter.innerHTML = `${counter} / ${total}`
 }
 
-const initButtonEventListener = (cards) => {
+const initCardButtonEvents = (cards) => {
   let counter = 1;
   const width = cards[0].clientWidth;
 
@@ -62,6 +64,14 @@ const initButtonEventListener = (cards) => {
     initCardCounter(counter, cards.length);
     setTimeout(() => buttonPrev.disabled = false, 400); // todo: redo to MutationObserver
   });
+};
+
+const openMenu = () => !document.body.classList.contains('menu--open') && document.body.classList.add('menu--open');
+const closeMenu = () => document.body.classList.contains('menu--open') && document.body.classList.remove('menu--open');
+
+const initMenu = () => { 
+  buttonMenuOpen.addEventListener('click', openMenu);
+  buttonMenuClose.addEventListener('click', closeMenu);
 };
 
 const generateWordCards = async () => {
@@ -93,12 +103,13 @@ const generateWordCards = async () => {
   if (!cards.length) return;
 
   initCardEvents(cards);
-  initButtonEventListener(cards);
+  initCardButtonEvents(cards);
   initCardCounter(1, cards.length)
 };
 
 const init = () => {
   generateWordCards();
+  initMenu();
 };
 
 document.addEventListener("DOMContentLoaded", init);

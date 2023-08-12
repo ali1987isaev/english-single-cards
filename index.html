@@ -7,8 +7,15 @@
   <script defer src="./script.js"></script>
   <title>English words</title>
 </head>
-<body>
-  <header class="header"><h2>Mastering English opens a world of possibilities!</h2></header>
+<body class="menu--open">
+  <header class="header">
+    <h2>Mastering English opens a world of possibilities!</h2>
+    <button class="button button--icon" type="button" data-menu-open>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+      </svg>
+    </button>
+  </header>
   <main class="main">
     <ul class="main__container" data-main-container></ul>
     <div class="card-counter" data-card-counter></div>
@@ -17,5 +24,21 @@
     <button class="button button--primary button--full" data-prev-button type="button">prev</button>
     <button class="button button--primary button--full" data-next-button type="button">next</button>
   </footer>
+  <div class="menu">
+    <div class="menu__content">
+      <button type="button" class="button button--icon" data-menu-close>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <form action="">
+        <div class="">
+          <label for="add-word">add word</label>
+          <input type="text" id="add-word">
+        </div>
+        <button type="button" class="button button--primary">add</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

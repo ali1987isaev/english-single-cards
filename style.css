@@ -12,8 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Rubik", sans-serif;
+  background-image: linear-gradient(#F4D160, #FBEEAC);
   color: #1D5D9B;
-  background-color: #FBEEAC;
   min-height: 100vh;
   min-height: -webkit-fill-available;
 }
@@ -26,14 +26,21 @@ html {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 30px;
   padding: 10px 20px 0;
-  text-align: center;
+}
+.header h2 {
+  font-size: 18px;
+  letter-spacing: 0;
+}
+.header .button--icon {
+  min-width: 40px;
+  min-height: 40px;
 }
 
 .main {
   flex: 1;
-  background-color: #FBEEAC;
   display: flex;
   flex-direction: column;
 }
@@ -73,6 +80,7 @@ li {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 0;
   font-size: 18px;
 }
 .button:active, .button:disabled {
@@ -94,17 +102,21 @@ li {
   font-weight: bold;
   letter-spacing: 2px;
   background-color: #F4D160;
-  border: 5px solid #1D5D9B;
+  border: 2px solid #1D5D9B;
   width: 80px;
   height: 80px;
   border-radius: 50%;
+}
+.button--icon {
+  color: #1D5D9B;
+  height: auto;
 }
 
 .card {
   background-color: transparent;
   min-width: 100vw;
   max-width: 100vw;
-  height: 60vh;
+  height: 53vh;
   perspective: 1000px;
   display: flex;
   align-items: center;
@@ -112,7 +124,7 @@ li {
 }
 .card__inner {
   position: relative;
-  width: 90%;
+  width: 80%;
   height: 100%;
   text-align: center;
   transition: transform 0.6s;
@@ -135,7 +147,7 @@ li {
   text-align: center;
   padding: 20px;
   font-size: 30px;
-  border: 2px solid #1D5D9B;
+  border: 1px solid #1D5D9B;
 }
 .card__front {
   background-color: #75C2F6;
@@ -151,4 +163,35 @@ li {
   background-color: #F4D160;
   color: #1D5D9B;
   transform: rotateY(180deg);
+}
+
+.menu {
+  transform: translateX(-100%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  transition: transform 0.4s ease-in;
+}
+.menu__content {
+  background-image: linear-gradient(#F4D160, #FBEEAC);
+  border-right: 1px solid #1d1b1b;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 60px 20px 50px;
+}
+.menu__content .button--icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  min-width: 30px;
+  min-height: 30px;
+  z-index: 10;
+}
+
+.menu--open .menu {
+  transform: translateX(0%);
 }/*# sourceMappingURL=style.css.map */
