@@ -1,2 +1,2 @@
 # english-single-cards
-app for learning english words
+app for learning english words / test project
