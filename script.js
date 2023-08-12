@@ -22,13 +22,8 @@ const generateVoiceOutput = (message) => {
   synth.speak(utterThis);
 }
 
-const initVoiceOutput = (cards) => {
-
-};
-
 const initFlipCardsHandler = (el, card) => {
   if (el.type === 'button' || el.nodeName === 'path' || el.nodeName === 'svg') return;
-  console.log('el', el.nodeName)
   card.classList.toggle('card__flipped');
 };
 
@@ -79,8 +74,6 @@ const initMenu = () => {
 const initDeleteItems = () => {
   const deleteItemButtons = document.querySelectorAll('[data-delete-card]');
   deleteItemButtons.forEach(button => button.addEventListener('click', ()=> {
-    console.log('button.dataset.deleteCard', button.dataset.deleteCard)
-    console.log('first', JSON.parse(localStorage.getItem('words')))
     const newArr = JSON.parse(localStorage.getItem('words')).filter(el => el.english !== button.dataset.deleteCard);
     localStorage.setItem('words', JSON.stringify(newArr));
     generateWordCards();
@@ -147,7 +140,10 @@ const initFormAddWord = () => {
       ...JSON.parse(localStorage.getItem('words'))
     ]));
 
+    e.target.elements["add-word"].value = "";
+    e.target.elements["add-translation"].value = "";
     generateWordCards();
+    closeMenu();
   })
 }
 
