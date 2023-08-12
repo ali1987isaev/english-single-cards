@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, ul, ol, p, h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  color: #1D5D9B;
+  background-color: #FBEEAC;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1.25rem 0rem;
+  text-align: center;
+}
+
+.main {
+  flex: 1;
+  background-color: #FBEEAC;
+  display: flex;
+}
+.main__container {
+  flex: 1;
+  overflow-y: scroll;
+  touch-action: none;
+  scroll-behavior: smooth;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+}
+
+li {
+  list-style: none;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.25rem;
+  padding: 1.875rem 1.875rem;
+  cursor: pointer;
+}
+.button:active, .button:disabled {
+  opacity: 0.8;
+}
+.button--primary {
+  background-color: #1D5D9B;
+  color: #F4D160;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1875rem;
+}
+.button--full {
+  width: 100%;
+}
+
+.card {
+  background-color: transparent;
+  min-width: 100vw;
+  max-width: 100vw;
+  height: 60vh;
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__inner {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.9375rem;
+}
+.card.card__flipped .card__inner {
+  transform: rotateY(180deg);
+}
+.card__front, .card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.25rem;
+  font-size: 1.875rem;
+}
+.card__front {
+  background-color: #75C2F6;
+  color: #1d1b1b;
+}
+.card__back {
+  background-color: #F4D160;
+  color: #1d1b1b;
+  transform: rotateY(180deg);
+}/*# sourceMappingURL=style.css.map */
