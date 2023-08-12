@@ -11,7 +11,7 @@ const getData = async() => {
   .catch(err => console.error(err));
 };
 
-const cardRotateHandler = (cards) => {
+const initFlipCardsHandler = (cards) => {
   if (!cards.length) return;
 
   cards.forEach(card =>
@@ -22,7 +22,7 @@ const initCardCounter = (counter, total) => {
   cardCounter.innerHTML = `${counter} / ${total}`
 }
 
-const buttonClickHandler = (cards) => {
+const initButtonEventListener = (cards) => {
   if (!cards.length) return;
 
   let counter = 1;
@@ -45,7 +45,7 @@ const buttonClickHandler = (cards) => {
   });
 };
 
-const renderCards = async () => {
+const generateWordCardViews = async () => {
   const data = await getData();
   let html = '';
 
@@ -69,13 +69,13 @@ const renderCards = async () => {
   container.innerHTML = html;
 
   const cards = document.querySelectorAll('[data-single-card]');
-  cardRotateHandler(cards);
-  buttonClickHandler(cards);
+  initFlipCardsHandler(cards);
+  initButtonEventListener(cards);
   initCardCounter(1, cards.length)
 };
 
 const init = () => {
-  renderCards();
+  generateWordCardViews();
 };
 
 document.addEventListener("DOMContentLoaded", init);
