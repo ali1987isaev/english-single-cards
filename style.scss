@@ -27,10 +27,6 @@ $desktop-width: 1024px;
   box-sizing: border-box;
 }
 
-html {
-  height: -webkit-fill-available;
-}
-
 body, ul, ol, p, h1, h2 {
   padding: 0;
   margin: 0;
@@ -80,6 +76,7 @@ li {
 }
 
 .button {
+  display: block;
   border: none;
   background-color: transparent;
   font-size: rem(20);
