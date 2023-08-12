@@ -44,6 +44,7 @@ const initCardCounter = (counter, total) => {
 }
 
 const initCardButtonEvents = (cards) => {
+  console.log('initCardButtonEvents')
   let counter = 1;
   const width = cards[0].clientWidth;
 
@@ -119,7 +120,7 @@ async function generateWordCards() {
   if (!cards.length) return;
 
   initCardEvents(cards);
-  initCardButtonEvents(cards);
+  setTimeout(() => initCardButtonEvents(cards), 500);
   initCardCounter(1, cards.length);
   initDeleteItems();
 };
@@ -127,16 +128,16 @@ async function generateWordCards() {
 const initFormAddWord = () => {
   formAddWord.addEventListener('submit', (e) => {
     e.preventDefault();
-    const newWord = e.target.elements["add-word"].value;
-    const translation = e.target.elements["add-translation"].value;
+    const newWord = e.target.elements["add-word"].value || "";
+    const translation = e.target.elements["add-translation"].value || "";
 
-    if (!newWord || !translation) return;
+    if (newWord.trim() === "" || translation.trim() === "") return;
 
     localStorage.setItem('words', JSON.stringify([
       {
-        "id": `${newWord}`,
-        "english": `${newWord}`,
-        "russian": `${translation}`
+        "id": `${newWord.trim()}`,
+        "english": `${newWord.trim()}`,
+        "russian": `${translation.trim()}`
       },
       ...JSON.parse(localStorage.getItem('words'))
     ]));
