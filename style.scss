@@ -36,6 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   font-family: 'Rubik', sans-serif;
   color: $color-primary;
   background-color: $bg-main;
