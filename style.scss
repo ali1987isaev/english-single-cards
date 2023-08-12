@@ -255,6 +255,9 @@ li {
     }
   }
 }
+.menu--hidden {
+  display: none !important;
+}
 .menu--open .menu {
   transform: translateX(0%);
 }

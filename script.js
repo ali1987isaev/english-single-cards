@@ -5,7 +5,8 @@ const INITIAL_DATA_PATH = 'data.json',
   cardCounter = document.querySelector('[data-card-counter]'),
   buttonMenuOpen = document.querySelector('[data-menu-open]'),
   buttonMenuClose = document.querySelector('[data-menu-close]'),
-  formAddWord = document.querySelector('[data-add-new-word]');
+  formAddWord = document.querySelector('[data-add-new-word]'),
+  menu = document.querySelector('[data-menu]');
 
 const getData = async() => {
   return await fetch(INITIAL_DATA_PATH)
@@ -147,7 +148,14 @@ const initFormAddWord = () => {
   })
 }
 
+const clearMenu = () => {
+  setTimeout(() => {
+    menu.classList.contains('menu--hidden') && menu.classList.remove('menu--hidden');
+  }, 500);
+};
+
 const init = () => {
+  clearMenu();
   generateWordCards();
   initMenu();
   initFormAddWord()

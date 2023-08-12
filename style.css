@@ -209,6 +209,10 @@ li {
   min-height: 30px;
 }
 
+.menu--hidden {
+  display: none !important;
+}
+
 .menu--open .menu {
   transform: translateX(0%);
 }
