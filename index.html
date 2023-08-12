@@ -7,7 +7,7 @@
   <script defer src="./script.js"></script>
   <title>English words</title>
 </head>
-<body class="menu--open">
+<body>
   <header class="header">
     <h2>Mastering English opens a world of possibilities!</h2>
     <button class="button button--icon" type="button" data-menu-open>
@@ -33,10 +33,14 @@
       </button>
       <form class="form-add-word" data-add-new-word>
         <div class="form-add-word__input">
-          <label for="add-word">Add a new word</label>
+          <label for="add-word">New word</label>
           <input type="text" id="add-word">
         </div>
-        <button type="button" class="button button--primary">add</button>
+        <div class="form-add-word__input">
+          <label for="add-translation">Translation</label>
+          <input type="text" id="add-translation">
+        </div>
+        <button type="submit" class="button button--primary">add</button>
       </form>
     </div>
   </div>

@@ -5,6 +5,7 @@ $color-secondary: #F4D160;
 $color-tertiary: #75C2F6;
 $color-white: #ffffff;
 $color-black: #1d1b1b;
+$color-red: #cd5521;
 $bg-main: #FBEEAC;
 $tablet-width: 768px;
 $desktop-width: 1024px;
@@ -139,7 +140,6 @@ li {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-
   }
 
   &--icon {
@@ -199,6 +199,20 @@ li {
     justify-content: center;
     text-align: center;
     gap: 50px;
+
+    .button--icon {
+      min-width: 40px;
+      min-height: 40px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: $color-red;
+  
+      svg {
+        min-width: 40px;
+        min-height: 40px;
+      }
+    }
   }
 
   &__back {
@@ -226,14 +240,18 @@ li {
     position: relative;
     padding: 100px 20px;
 
-    .button--icon,
-    .button--icon svg {
+    .button--icon{
       position: absolute;
       top: 20px;
       right: 20px;
       min-width: 30px;
       min-height: 30px;
       z-index: 10;
+
+      svg {
+      min-width: 30px;
+      min-height: 30px;
+      }
     }
   }
 }
@@ -259,7 +277,7 @@ li {
       width: 100%;
       border-radius: 8px;
       border: 1px solid $color-tertiary;
-      font-size: 18px;
+      font-size: 20px;
       padding: 0 20px;
 
       &[type=text]:focus,
@@ -275,5 +293,6 @@ li {
   .button {
     height: 80px;
     border-radius: 8px;
+    margin-top: 30px;
   }
 }

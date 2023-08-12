@@ -160,6 +160,18 @@ li {
   text-align: center;
   gap: 50px;
 }
+.card__front .button--icon {
+  min-width: 40px;
+  min-height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #cd5521;
+}
+.card__front .button--icon svg {
+  min-width: 40px;
+  min-height: 40px;
+}
 .card__back {
   background-color: #F4D160;
   color: #1D5D9B;
@@ -184,14 +196,17 @@ li {
   position: relative;
   padding: 100px 20px;
 }
-.menu__content .button--icon,
-.menu__content .button--icon svg {
+.menu__content .button--icon {
   position: absolute;
   top: 20px;
   right: 20px;
   min-width: 30px;
   min-height: 30px;
   z-index: 10;
+}
+.menu__content .button--icon svg {
+  min-width: 30px;
+  min-height: 30px;
 }
 
 .menu--open .menu {
@@ -216,7 +231,7 @@ li {
   width: 100%;
   border-radius: 8px;
   border: 1px solid #75C2F6;
-  font-size: 18px;
+  font-size: 20px;
   padding: 0 20px;
 }
 .form-add-word__input input[type=text]:focus, .form-add-word__input input[type=text]:active, .form-add-word__input input[type=text]:focus-within, .form-add-word__input input[type=text]:focus-visible {
@@ -226,4 +241,5 @@ li {
 .form-add-word .button {
   height: 80px;
   border-radius: 8px;
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */
