@@ -1,7 +1,8 @@
 const INITIAL_DATA_PATH = 'data.json',
   container = document.querySelector('[data-main-container]'),
   buttonNext = document.querySelector('[data-next-button]'),
-  buttonPrev = document.querySelector('[data-prev-button]');
+  buttonPrev = document.querySelector('[data-prev-button]'),
+  cardCounter = document.querySelector('[data-card-counter]')
 
 const getData = async() => {
   return await fetch(INITIAL_DATA_PATH)
@@ -17,20 +18,29 @@ const cardRotateHandler = (cards) => {
     card.addEventListener('click', () => card.classList.toggle('card__flipped')));
 }
 
+const initCardCounter = (counter, total) => {
+  cardCounter.innerHTML = `${counter} / ${total}`
+}
+
 const buttonClickHandler = (cards) => {
   if (!cards.length) return;
 
+  let counter = 1;
   const width = cards[0].clientWidth;
 
   buttonNext.addEventListener('click', () => {
     container.scrollLeft += width;
     buttonNext.disabled = true;
+    counter < cards.length ? counter++ : counter = cards.length;
+    initCardCounter(counter, cards.length)
     setTimeout(() => buttonNext.disabled = false, 400); // todo: redo to MutationObserver
   });
 
   buttonPrev.addEventListener('click', () => {
     container.scrollLeft -= width;
     buttonPrev.disabled = true;
+    counter <= 1 ? counter = 1 : counter--;
+    initCardCounter(counter, cards.length);
     setTimeout(() => buttonPrev.disabled = false, 400); // todo: redo to MutationObserver
   });
 };
@@ -61,6 +71,7 @@ const renderCards = async () => {
   const cards = document.querySelectorAll('[data-single-card]');
   cardRotateHandler(cards);
   buttonClickHandler(cards);
+  initCardCounter(1, cards.length)
 };
 
 const init = () => {

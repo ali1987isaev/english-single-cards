@@ -59,6 +59,7 @@ html {
   flex: 1;
   background-color: $bg-main;
   display: flex;
+  flex-direction: column;
 
   &__container {
     flex: 1;
@@ -67,6 +68,16 @@ html {
     scroll-behavior: smooth;
     display: flex;
     align-items: center;
+  }
+
+  .card-counter {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
   }
 }
 
@@ -138,7 +149,7 @@ li {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: rem(15,0);
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
