@@ -80,7 +80,7 @@ const initDeleteItems = () => {
   }));
 }
 
-const generateWordCards = async () => {
+async function generateWordCards() {
   const storedWords = JSON.parse(localStorage.getItem('words')) || [];
 
   const data = !storedWords.length ? await getData() : storedWords;
