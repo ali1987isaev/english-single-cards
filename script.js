@@ -4,7 +4,8 @@ const INITIAL_DATA_PATH = 'data.json',
   buttonPrev = document.querySelector('[data-prev-button]'),
   cardCounter = document.querySelector('[data-card-counter]'),
   buttonMenuOpen = document.querySelector('[data-menu-open]'),
-  buttonMenuClose = document.querySelector('[data-menu-close]')
+  buttonMenuClose = document.querySelector('[data-menu-close]'),
+  formAddWord = document.querySelector('[data-add-new-word]')
 
 const getData = async() => {
   return await fetch(INITIAL_DATA_PATH)
