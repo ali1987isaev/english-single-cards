@@ -11,10 +11,15 @@ body, ul, ol, p, h1, h2 {
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   font-family: "Rubik", sans-serif;
   color: #1D5D9B;
   background-color: #FBEEAC;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
 }
 
 .header {

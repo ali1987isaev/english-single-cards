@@ -35,10 +35,15 @@ body, ul, ol, p, h1, h2 {
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   font-family: 'Rubik', sans-serif;
   color: $color-primary;
   background-color: $bg-main;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
 }
 
 .header {
