@@ -11,11 +11,32 @@ const getData = async() => {
   .catch(err => console.error(err));
 };
 
-const initFlipCardsHandler = (cards) => {
-  if (!cards.length) return;
+const generateVoiceOutput = (message) => {
+  const synth = window.speechSynthesis;
+  const utterThis = new SpeechSynthesisUtterance(`${message}`);
+  utterThis.lang = "en-US";
+  utterThis.rate = 0.8;
+  synth.speak(utterThis);
+}
 
-  cards.forEach(card =>
-    card.addEventListener('click', () => card.classList.toggle('card__flipped')));
+const initVoiceOutput = (cards) => {
+
+};
+
+const initFlipCardsHandler = (el, card) => {
+  if (el.type === 'button') return;
+  card.classList.toggle('card__flipped');
+};
+
+const initCardEvents = (cards) => {
+  cards.forEach(card => {
+    // init flip cards event
+    card.addEventListener('click', (e) => initFlipCardsHandler(e.target, card));
+    // generate voice output for english words
+    card.querySelector('[data-generate-en-voice-output]').addEventListener('click', (e) => {
+      generateVoiceOutput(e.target.dataset.generateEnVoiceOutput)
+    })
+  });
 }
 
 const initCardCounter = (counter, total) => {
@@ -23,8 +44,6 @@ const initCardCounter = (counter, total) => {
 }
 
 const initButtonEventListener = (cards) => {
-  if (!cards.length) return;
-
   let counter = 1;
   const width = cards[0].clientWidth;
 
@@ -45,7 +64,7 @@ const initButtonEventListener = (cards) => {
   });
 };
 
-const generateWordCardViews = async () => {
+const generateWordCards = async () => {
   const data = await getData();
   let html = '';
 
@@ -55,6 +74,7 @@ const generateWordCardViews = async () => {
       <div class="card__inner">
         <div class="card__front">
           <h4>${card.english}</h4>
+          <button class="button button--voice-output" type="button" data-generate-en-voice-output=${card.english}>say</button>
         </div>
         <div class="card__back">
           <h4>${card.russian}</h4>
@@ -69,13 +89,16 @@ const generateWordCardViews = async () => {
   container.innerHTML = html;
 
   const cards = document.querySelectorAll('[data-single-card]');
-  initFlipCardsHandler(cards);
+   
+  if (!cards.length) return;
+
+  initCardEvents(cards);
   initButtonEventListener(cards);
   initCardCounter(1, cards.length)
 };
 
 const init = () => {
-  generateWordCardViews();
+  generateWordCards();
 };
 
 document.addEventListener("DOMContentLoaded", init);

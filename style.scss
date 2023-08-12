@@ -93,7 +93,9 @@ li {
 }
 
 .button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -114,6 +116,19 @@ li {
   &--full {
     height: 100%;
     width: 100%;
+  }
+
+  &--voice-output {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: $color-secondary;
+    border: 5px solid $color-primary;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
   }
 }
 
@@ -156,16 +171,23 @@ li {
     text-align: center;
     padding: 20px;
     font-size: 30px;
+    border: 2px solid $color-primary;
   }
 
   &__front {
     background-color: $color-tertiary;
     color: $color-black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
   }
 
   &__back {
     background-color: $color-secondary;
-    color: $color-black;
+    color: $color-primary;
     transform: rotateY(180deg);
   }
 }
