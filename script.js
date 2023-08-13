@@ -88,6 +88,7 @@ async function generateWordCards() {
   const data = !storedWords.length ? await getData() : storedWords;
   !storedWords.length && localStorage.setItem('words', JSON.stringify(data));
 
+  container.scrollLeft = 0;
   let html = '';
 
   data.forEach(card => {
