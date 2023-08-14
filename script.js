@@ -39,8 +39,10 @@ const initCardEvents = (cards) => {
     card.addEventListener('click', (e) => initFlipCardsHandler(e.target, card));
     // generate voice output for english words
     card.querySelector('[data-generate-en-voice-output]').addEventListener('click', (e) => {
-      generateVoiceOutput(e.target.dataset.generateEnVoiceOutput)
-    })
+      !card.disabled && generateVoiceOutput(e.target.dataset.generateEnVoiceOutput)
+      card.disabled = true;
+      setTimeout(() => card.disabled = false, 1000);
+    });
   });
 }
 
