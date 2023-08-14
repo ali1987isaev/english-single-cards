@@ -172,6 +172,7 @@ li {
 
   .button {
     white-space: nowrap;
+    padding: 5px 10px;
   }
 }
 
@@ -187,13 +188,17 @@ li {
 
   &__inner {
     position: relative;
-    width: 80%;
-    height: 100%;
+    width: 70%;
+    height: 90%;
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
+
+    h4 {
+      overflow-wrap: anywhere;
+    }
 
     .card.card__flipped & {
       transform: rotateY(180deg);
