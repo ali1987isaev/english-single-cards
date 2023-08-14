@@ -125,6 +125,9 @@ li {
   color: #1D5D9B;
   height: auto;
 }
+.button--active {
+  background-color: #F4D160;
+}
 
 .tag-list {
   padding: 20px 0;

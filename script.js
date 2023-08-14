@@ -51,7 +51,6 @@ const initCardCounter = (counter, total) => {
 }
 
 const initCardButtonEvents = (cards) => {
-  console.log('initCardButtonEvents')
   let counter = 1;
   const width = cards[0].clientWidth;
 
@@ -90,21 +89,12 @@ const initDeleteItems = () => {
 }
 
 async function generateWordCards(type = 'data') {
-  let storedWords;
-  let data;
-  STORAGE_KEY = type;
+  STORAGE_KEY = type; 
 
-  if (type) {
-    INITIAL_DATA_PATH = `${type}.json`,
-    storedWords = JSON.parse(localStorage.getItem(type)) || [];
-    data = !storedWords.length ? await getData() : storedWords;
-    !storedWords.length && localStorage.setItem(type, JSON.stringify(data));
-  } else {
-    storedWords = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
-
-    data = !storedWords.length ? await getData() : storedWords;
-    !storedWords.length && localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-  }
+  INITIAL_DATA_PATH = `${type}.json`;
+  const storedWords = JSON.parse(localStorage.getItem(type)) || [];
+  const data = !storedWords.length ? await getData() : storedWords;
+  !storedWords.length && localStorage.setItem(type, JSON.stringify(data));
 
   container.scrollLeft = 0;
   let html = '';
@@ -183,11 +173,21 @@ const clearMenu = () => {
 
 const initTagList = () => {
   const tags = tagList.querySelectorAll('button');
+  const addActive = () => {
+    tags.forEach(tag => {
+      tag.classList.contains('button--active') && tag.classList.remove('button--active');
+      tag.dataset.type === STORAGE_KEY && tag.classList.add('button--active');
+    });
+  };
+
+  addActive();
+
   tags.forEach(tag => tag.addEventListener('click', () => {
     const type = tag.dataset.type;
     if(!type) return;
 
     generateWordCards(type);
+    addActive();
   }))
 }
 

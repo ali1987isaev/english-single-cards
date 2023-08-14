@@ -161,6 +161,10 @@ li {
     color: $color-primary;
     height: auto;
   }
+
+  &--active {
+    background-color: $color-secondary;
+  }
 }
 
 .tag-list {
