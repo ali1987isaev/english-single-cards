@@ -218,7 +218,7 @@ li {
   height: 100vh;
   z-index: 1000;
   transition: transform 0.4s ease-in;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 .menu__content {
   background-image: linear-gradient(#F4D160, #FBEEAC);
@@ -242,6 +242,9 @@ li {
 .menu__content .button--icon svg {
   min-width: 30px;
   min-height: 30px;
+}
+.menu__content .doto-list {
+  padding: 80px 0;
 }
 .menu__content .todo-item {
   color: #1d1b1b;

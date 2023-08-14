@@ -267,7 +267,7 @@ li {
   height: 100vh;
   z-index: 1000;
   transition: transform .4s ease-in;
-  overflow-y: auto;
+  overflow-y: scroll;
 
   &__content {
     background-image: linear-gradient($color-secondary, $bg-main);
@@ -292,6 +292,10 @@ li {
       min-width: 30px;
       min-height: 30px;
       }
+    }
+
+    .doto-list {
+      padding: 80px 0;
     }
 
     .todo-item {
