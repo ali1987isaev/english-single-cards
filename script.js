@@ -1,4 +1,4 @@
-const INITIAL_DATA_PATH = 'data.json',
+let INITIAL_DATA_PATH = 'data.json',
   container = document.querySelector('[data-main-container]'),
   buttonNext = document.querySelector('[data-next-button]'),
   buttonPrev = document.querySelector('[data-prev-button]'),
@@ -6,9 +6,12 @@ const INITIAL_DATA_PATH = 'data.json',
   buttonMenuOpen = document.querySelector('[data-menu-open]'),
   buttonMenuClose = document.querySelector('[data-menu-close]'),
   formAddWord = document.querySelector('[data-add-new-word]'),
-  menu = document.querySelector('[data-menu]');
+  menu = document.querySelector('[data-menu]'),
+  tagList = document.querySelector('[data-teg-list]');
 
 const getData = async() => {
+  if(!INITIAL_DATA_PATH) return;
+  
   return await fetch(INITIAL_DATA_PATH)
   .then(res => res.json())
   .then(data => data)
@@ -82,11 +85,21 @@ const initDeleteItems = () => {
   }));
 }
 
-async function generateWordCards() {
-  const storedWords = JSON.parse(localStorage.getItem('words')) || [];
+async function generateWordCards(type) {
+  let storedWords;
+  let data;
 
-  const data = !storedWords.length ? await getData() : storedWords;
-  !storedWords.length && localStorage.setItem('words', JSON.stringify(data));
+  if (type && type !== 'initial') {
+    INITIAL_DATA_PATH = `${type}.json`,
+    storedWords = JSON.parse(localStorage.getItem(type)) || [];
+    data = !storedWords.length ? await getData() : storedWords;
+    !storedWords.length && localStorage.setItem(type, JSON.stringify(data));
+  } else {
+    storedWords = JSON.parse(localStorage.getItem('words')) || [];
+
+    data = !storedWords.length ? await getData() : storedWords;
+    !storedWords.length && localStorage.setItem('words', JSON.stringify(data));
+  }
 
   container.scrollLeft = 0;
   let html = '';
@@ -156,11 +169,22 @@ const clearMenu = () => {
   }, 500);
 };
 
+const initTagList = () => {
+  const tags = tagList.querySelectorAll('button');
+  tags.forEach(tag => tag.addEventListener('click', () => {
+    const type = tag.dataset.type;
+    if(!type) return;
+
+    generateWordCards(type);
+  }))
+}
+
 const init = () => {
   clearMenu();
   generateWordCards();
   initMenu();
-  initFormAddWord()
+  initFormAddWord();
+  initTagList();
 };
 
 document.addEventListener("DOMContentLoaded", init);

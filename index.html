@@ -9,12 +9,25 @@
 </head>
 <body>
   <header class="header">
-    <h2>Mastering English opens a world of possibilities!</h2>
-    <button class="button button--icon" type="button" data-menu-open>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-      </svg>
-    </button>
+    <div class="header-top">
+      <h2>Mastering English opens a world of possibilities!</h2>
+      <button class="button button--icon" type="button" data-menu-open>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+        </svg>
+      </button>
+    </div>
+    <div class="tag-list" data-teg-list>
+      <button class="button button--secondary" type="button" data-type="initial">My words</button>
+      <button class="button button--secondary" type="button" data-type="family">family</button>
+      <button class="button button--secondary" type="button" data-type="work">work</button>
+      <button class="button button--secondary" type="button" data-type="test">test</button>
+      <button class="button button--secondary" type="button" data-type="test">test</button>
+      <button class="button button--secondary" type="button" data-type="test">test</button>
+      <button class="button button--secondary" type="button" data-type="test">test</button>
+      <button class="button button--secondary" type="button" data-type="test">test</button>
+      <button class="button button--secondary" type="button" data-type="test">test</button>
+    </div>
   </header>
   <main class="main">
     <ul class="main__container" data-main-container></ul>
@@ -32,6 +45,7 @@
         </svg>
       </button>
       <form class="form-add-word" data-add-new-word>
+        <h2>My words</h2>
         <div class="form-add-word__input">
           <label for="add-word">New word</label>
           <input type="text" id="add-word">
@@ -42,6 +56,14 @@
         </div>
         <button type="submit" class="button button--primary">add</button>
       </form>
+      <div class="doto-list">
+        <ul>
+          <li class="todo-item">
+            <span>TODO:</span>
+            <span>Add the language selector. When people can select for example Arabic and see the correct voice engine</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>

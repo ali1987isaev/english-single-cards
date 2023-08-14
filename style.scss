@@ -49,11 +49,15 @@ html {
 
 .header {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
   padding: 10px 20px 0;
+
+  &-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
 
   h2 {
     font-size: 18px;
@@ -126,6 +130,17 @@ li {
     letter-spacing: 3px;
   }
 
+  &--secondary {
+    background-color: $color-tertiary;
+    color: $color-black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 10px;
+    border-radius: 4px;
+    border: 1px solid $color-black;
+  }
+
   &--full {
     height: 100%;
     width: 100%;
@@ -145,6 +160,18 @@ li {
   &--icon {
     color: $color-primary;
     height: auto;
+  }
+}
+
+.tag-list {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow-x: scroll;
+
+  .button {
+    white-space: nowrap;
   }
 }
 
@@ -231,6 +258,7 @@ li {
   height: 100vh;
   z-index: 1000;
   transition: transform .4s ease-in;
+  overflow-y: auto;
 
   &__content {
     background-image: linear-gradient($color-secondary, $bg-main);
@@ -239,6 +267,9 @@ li {
     min-height: 100vh;
     position: relative;
     padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .button--icon{
       position: absolute;
@@ -252,6 +283,11 @@ li {
       min-width: 30px;
       min-height: 30px;
       }
+    }
+
+    .todo-item {
+      color: $color-black;
+      font-weight: 300;
     }
   }
 }
@@ -269,6 +305,11 @@ li {
   gap: 10px;
   font-size: 18px;
   font-weight: bold;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
   &__input {
     display: flex;

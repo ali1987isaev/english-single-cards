@@ -24,11 +24,14 @@ html {
 
 .header {
   width: 100%;
+  padding: 10px 20px 0;
+}
+.header-top {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  padding: 10px 20px 0;
 }
 .header h2 {
   font-size: 18px;
@@ -94,6 +97,16 @@ li {
   font-weight: bold;
   letter-spacing: 3px;
 }
+.button--secondary {
+  background-color: #75C2F6;
+  color: #1d1b1b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 10px;
+  border-radius: 4px;
+  border: 1px solid #1d1b1b;
+}
 .button--full {
   height: 100%;
   width: 100%;
@@ -111,6 +124,17 @@ li {
 .button--icon {
   color: #1D5D9B;
   height: auto;
+}
+
+.tag-list {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow-x: scroll;
+}
+.tag-list .button {
+  white-space: nowrap;
 }
 
 .card {
@@ -187,6 +211,7 @@ li {
   height: 100vh;
   z-index: 1000;
   transition: transform 0.4s ease-in;
+  overflow-y: auto;
 }
 .menu__content {
   background-image: linear-gradient(#F4D160, #FBEEAC);
@@ -195,6 +220,9 @@ li {
   min-height: 100vh;
   position: relative;
   padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .menu__content .button--icon {
   position: absolute;
@@ -207,6 +235,10 @@ li {
 .menu__content .button--icon svg {
   min-width: 30px;
   min-height: 30px;
+}
+.menu__content .todo-item {
+  color: #1d1b1b;
+  font-weight: 300;
 }
 
 .menu--hidden {
@@ -224,6 +256,10 @@ li {
   gap: 10px;
   font-size: 18px;
   font-weight: bold;
+}
+.form-add-word h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 .form-add-word__input {
   display: flex;
