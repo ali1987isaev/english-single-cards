@@ -1,0 +1,791 @@
+[
+  {
+    "audio_path": "/1.mp3",
+    "topic": "Common English Verbs",
+    "list": [
+      {
+        "icon": "🙂",
+        "word": "be",
+        "expression": "Be happy.",
+        "word_translation": "быть",
+        "expression_translation": "Будь счастлив."
+      },
+      {
+        "icon": "🖐️",
+        "word": "have",
+        "expression": "Have a good day.",
+        "word_translation": "иметь",
+        "expression_translation": "Хорошего дня."
+      },
+      {
+        "icon": "💪",
+        "word": "do",
+        "expression": "Do the work.",
+        "word_translation": "делать",
+        "expression_translation": "Делай работу."
+      },
+      {
+        "icon": "🗨️",
+        "word": "say",
+        "expression": "Say, “Hello.”",
+        "word_translation": "говорить",
+        "expression_translation": "Скажи, 'Привет'."
+      },
+      {
+        "icon": "🛠️",
+        "word": "get",
+        "expression": "Get to work.",
+        "word_translation": "получать",
+        "expression_translation": "Приступай к работе."
+      },
+      {
+        "icon": "👩‍🍳",
+        "word": "make",
+        "expression": "Make some food.",
+        "word_translation": "делать",
+        "expression_translation": "Приготовь немного еды."
+      },
+      {
+        "icon": "🛵",
+        "word": "go",
+        "expression": "Go for a drive.",
+        "word_translation": "идти",
+        "expression_translation": "Поехать покататься."
+      },
+      {
+        "icon": "🎓",
+        "word": "know",
+        "expression": "I know a lot.",
+        "word_translation": "знать",
+        "expression_translation": "Я знаю много."
+      },
+      {
+        "icon": "🎫",
+        "word": "take",
+        "expression": "Take a number.",
+        "word_translation": "брать",
+        "expression_translation": "Возьми номер."
+      },
+      {
+        "icon": "👓",
+        "word": "see",
+        "expression": "I can see.",
+        "word_translation": "видеть",
+        "expression_translation": "Я вижу."
+      },
+      {
+        "icon": "🧲",
+        "word": "come",
+        "expression": "Come to me.",
+        "word_translation": "приходить",
+        "expression_translation": "Подойди ко мне."
+      },
+      {
+        "icon": "🤔",
+        "word": "think",
+        "expression": "I think so.",
+        "word_translation": "думать",
+        "expression_translation": "Думаю так."
+      },
+      {
+        "icon": "👀",
+        "word": "look",
+        "expression": "Look at that.",
+        "word_translation": "смотреть",
+        "expression_translation": "Посмотри на это."
+      },
+      {
+        "icon": "😋",
+        "word": "want",
+        "expression": "I want to eat.",
+        "word_translation": "хотеть",
+        "expression_translation": "Я хочу есть."
+      },
+      {
+        "icon": "🎁",
+        "word": "give",
+        "expression": "Give me a gift.",
+        "word_translation": "давать",
+        "expression_translation": "Дай мне подарок."
+      },
+      {
+        "icon": "🍴",
+        "word": "use",
+        "expression": "Use a fork.",
+        "word_translation": "использовать",
+        "expression_translation": "Используй вилку."
+      },
+      {
+        "icon": "🔍",
+        "word": "find",
+        "expression": "Find the answer.",
+        "word_translation": "находить",
+        "expression_translation": "Найди ответ."
+      },
+      {
+        "icon": "🎤",
+        "word": "tell",
+        "expression": "Tell your story.",
+        "word_translation": "рассказывать",
+        "expression_translation": "Расскажи свою историю."
+      },
+      {
+        "icon": "🙋",
+        "word": "ask",
+        "expression": "Ask a question.",
+        "word_translation": "спрашивать",
+        "expression_translation": "Задай вопрос."
+      },
+      {
+        "icon": "🔨",
+        "word": "work",
+        "expression": "I work hard.",
+        "word_translation": "работать",
+        "expression_translation": "Я работаю усердно."
+      },
+      {
+        "icon": "🤔",
+        "word": "seem",
+        "expression": "You seem lost.",
+        "word_translation": "казаться",
+        "expression_translation": "Ты кажешься потерянным."
+      },
+      {
+        "icon": "🤗",
+        "word": "feel",
+        "expression": "I feel happy.",
+        "word_translation": "чувствовать",
+        "expression_translation": "Я чувствую себя счастливым."
+      },
+      {
+        "icon": "😣",
+        "word": "try",
+        "expression": "Try again.",
+        "word_translation": "пытаться",
+        "expression_translation": "Попробуй еще раз."
+      },
+      {
+        "icon": "🚶‍♂️",
+        "word": "leave",
+        "expression": "I will leave.",
+        "word_translation": "уходить",
+        "expression_translation": "Я уйду."
+      },
+      {
+        "icon": "📱",
+        "word": "call",
+        "expression": "Call me.",
+        "word_translation": "звонить",
+        "expression_translation": "Позвони мне."
+      }
+    ]
+  },
+  {
+    "audio_path": "/2.mp3",
+    "topic": "Easy English Nouns",
+    "list": [
+      {
+        "icon": "😃",
+        "word": "person",
+        "expression": "This person is happy.",
+        "word_translation": "человек",
+        "expression_translation": "Этот человек счастлив."
+      },
+      {
+        "icon": "👨",
+        "word": "man",
+        "expression": "The man is nice.",
+        "word_translation": "мужчина",
+        "expression_translation": "Этот мужчина милый."
+      },
+      {
+        "icon": "👩",
+        "word": "woman",
+        "expression": "The woman is young.",
+        "word_translation": "женщина",
+        "expression_translation": "Эта женщина молодая."
+      },
+      {
+        "icon": "🧒",
+        "word": "child",
+        "expression": "The child is small.",
+        "word_translation": "ребенок",
+        "expression_translation": "Этот ребенок маленький."
+      },
+      {
+        "icon": "⏰",
+        "word": "time",
+        "expression": "The time is 7am.",
+        "word_translation": "время",
+        "expression_translation": "Время - 7 утра."
+      },
+      {
+        "icon": "🎉",
+        "word": "year",
+        "expression": "The year is 2019.",
+        "word_translation": "год",
+        "expression_translation": "Год - 2019."
+      },
+      {
+        "icon": "📅",
+        "word": "week",
+        "expression": "A week is 7 days.",
+        "word_translation": "неделя",
+        "expression_translation": "Неделя состоит из 7 дней."
+      },
+      {
+        "icon": "📆",
+        "word": "day",
+        "expression": "This is a good day.",
+        "word_translation": "день",
+        "expression_translation": "Это хороший день."
+      },
+      {
+        "icon": "🛣️",
+        "word": "way",
+        "expression": "Come this way.",
+        "word_translation": "путь",
+        "expression_translation": "Иди этим путем."
+      },
+      {
+        "icon": "❔",
+        "word": "thing",
+        "expression": "What is that thing?",
+        "word_translation": "вещь",
+        "expression_translation": "Что это за вещь?"
+      },
+      {
+        "icon": "🌎",
+        "word": "world",
+        "expression": "The world is big.",
+        "word_translation": "мир",
+        "expression_translation": "Мир большой."
+      },
+      {
+        "icon": "⚕️",
+        "word": "life",
+        "expression": "Life is good.",
+        "word_translation": "жизнь",
+        "expression_translation": "Жизнь хороша."
+      },
+      {
+        "icon": "✋",
+        "word": "hand",
+        "expression": "My hand is clean.",
+        "word_translation": "рука",
+        "expression_translation": "Моя рука чиста."
+      },
+      {
+        "icon": "🧩",
+        "word": "part",
+        "expression": "I like this part.",
+        "word_translation": "часть",
+        "expression_translation": "Мне нравится эта часть."
+      },
+      {
+        "icon": "👁️",
+        "word": "eye",
+        "expression": "My eye is open.",
+        "word_translation": "глаз",
+        "expression_translation": "Мой глаз открыт."
+      },
+      {
+        "icon": "🗺️",
+        "word": "place",
+        "expression": "This is the place.",
+        "word_translation": "место",
+        "expression_translation": "Это место."
+      },
+      {
+        "icon": "🔨",
+        "word": "work",
+        "expression": "My work is important.",
+        "word_translation": "работа",
+        "expression_translation": "Моя работа важна."
+      },
+      {
+        "icon": "📁",
+        "word": "case",
+        "expression": "USCIS case number.",
+        "word_translation": "случай",
+        "expression_translation": "Номер дела USCIS."
+      },
+      {
+        "icon": "📌",
+        "word": "point",
+        "expression": "I see your point.",
+        "word_translation": "точка",
+        "expression_translation": "Я понимаю твою точку зрения."
+      },
+      {
+        "icon": "🏛️",
+        "word": "government",
+        "expression": "I like the government.",
+        "word_translation": "правительство",
+        "expression_translation": "Мне нравится правительство."
+      },
+      {
+        "icon": "🏭",
+        "word": "company",
+        "expression": "Her company is new.",
+        "word_translation": "компания",
+        "expression_translation": "Её компания новая."
+      },
+      {
+        "icon": "🔢",
+        "word": "number",
+        "expression": "This is my number.",
+        "word_translation": "число",
+        "expression_translation": "Это мой номер."
+      },
+      {
+        "icon": "👨‍👩‍👦",
+        "word": "group",
+        "expression": "The group is big.",
+        "word_translation": "группа",
+        "expression_translation": "Группа большая."
+      },
+      {
+        "icon": "🤦",
+        "word": "problem",
+        "expression": "I have a problem.",
+        "word_translation": "проблема",
+        "expression_translation": "У меня есть проблема."
+      },
+      {
+        "icon": "📚",
+        "word": "fact",
+        "expression": "That is a fact.",
+        "word_translation": "факт",
+        "expression_translation": "Это факт."
+      }
+    ]
+  },
+  {
+    "audio_path": "/3.mp3",
+    "topic": "Basic English Adjectives Word",
+    "list": [
+      {
+        "icon": "👍",
+        "word": "good",
+        "expression": "Good work.",
+        "word_translation": "хороший",
+        "expression_translation": "Хорошая работа."
+      },
+      {
+        "icon": "🌅",
+        "word": "new",
+        "expression": "It is a new day.",
+        "word_translation": "новый",
+        "expression_translation": "Это новый день."
+      },
+      {
+        "icon": "🥇",
+        "word": "first",
+        "expression": "This is my first job.",
+        "word_translation": "первый",
+        "expression_translation": "Это моя первая работа."
+      },
+      {
+        "icon": "🤷",
+        "word": "last",
+        "expression": "That was last time.",
+        "word_translation": "последний",
+        "expression_translation": "Это было в последний раз."
+      },
+      {
+        "icon": "✈️",
+        "word": "long",
+        "expression": "It was a long way.",
+        "word_translation": "долгий",
+        "expression_translation": "Это был долгий путь."
+      },
+      {
+        "icon": "👷‍♀️",
+        "word": "great",
+        "expression": "She is a great boss.",
+        "word_translation": "великий",
+        "expression_translation": "Она - отличный начальник."
+      },
+      {
+        "icon": "🚗",
+        "word": "little",
+        "expression": "I have a little car.",
+        "word_translation": "маленький",
+        "expression_translation": "У меня есть маленькая машина."
+      },
+      {
+        "icon": "🏠",
+        "word": "own",
+        "expression": "I want my own home.",
+        "word_translation": "собственный",
+        "expression_translation": "Я хочу свой собственный дом."
+      },
+      {
+        "icon": "🏨",
+        "word": "other",
+        "expression": "I like the other place.",
+        "word_translation": "другой",
+        "expression_translation": "Мне нравится другое место."
+      },
+      {
+        "icon": "🏚️",
+        "word": "old",
+        "expression": "It is an old house.",
+        "word_translation": "старый",
+        "expression_translation": "Это старый дом."
+      },
+      {
+        "icon": "📲",
+        "word": "right",
+        "expression": "This is the right number.",
+        "word_translation": "правильный",
+        "expression_translation": "Это правильный номер."
+      },
+      {
+        "icon": "👪",
+        "word": "big",
+        "expression": "It was a big group.",
+        "word_translation": "большой",
+        "expression_translation": "Это была большая группа."
+      },
+      {
+        "icon": "🔢",
+        "word": "high",
+        "expression": "It is a high number.",
+        "word_translation": "высокий",
+        "expression_translation": "Это большое число."
+      },
+      {
+        "icon": "⌚",
+        "word": "different",
+        "expression": "I have a different time.",
+        "word_translation": "разный",
+        "expression_translation": "У меня другое время."
+      },
+      {
+        "icon": "🌎",
+        "word": "small",
+        "expression": "It is a small world.",
+        "word_translation": "маленький",
+        "expression_translation": "Это маленький мир."
+      },
+      {
+        "icon": "🏬",
+        "word": "large",
+        "expression": "That is a large place.",
+        "word_translation": "большой",
+        "expression_translation": "Это большое место."
+      },
+      {
+        "icon": "📅",
+        "word": "next",
+        "expression": "That is next week.",
+        "word_translation": "следующий",
+        "expression_translation": "Это следующая неделя."
+      },
+      {
+        "icon": "🤤",
+        "word": "early",
+        "expression": "I like early lunch.",
+        "word_translation": "ранний",
+        "expression_translation": "Мне нравится ранний обед."
+      },
+      {
+        "icon": "🧒",
+        "word": "young",
+        "expression": "He is a young child.",
+        "word_translation": "молодой",
+        "expression_translation": "Он - молодой ребенок."
+      },
+      {
+        "icon": "👩‍✈️",
+        "word": "important",
+        "expression": "She is an important person.",
+        "word_translation": "важный",
+        "expression_translation": "Она - важное лицо."
+      },
+      {
+        "icon": "🗓️",
+        "word": "few",
+        "expression": "Give me a few days.",
+        "word_translation": "несколько",
+        "expression_translation": "Дайте мне несколько дней."
+      },
+      {
+        "icon": "🏞️",
+        "word": "public",
+        "expression": "It is a public place.",
+        "word_translation": "общественный",
+        "expression_translation": "Это общественное место."
+      },
+      {
+        "icon": "😥",
+        "word": "bad",
+        "expression": "You have a bad problem.",
+        "word_translation": "плохой",
+        "expression_translation": "У вас плохая проблема."
+      },
+      {
+        "icon": "⏲️",
+        "word": "same",
+        "expression": "Come at the same time.",
+        "word_translation": "тот же",
+        "expression_translation": "Приходите в то же время."
+      },
+      {
+        "icon": "🧰",
+        "word": "able",
+        "expression": "I am able to work.",
+        "word_translation": "способный",
+        "expression_translation": "Я способен работать."
+      }
+    ]
+  },
+  {
+    "audio_path": "/4.mp3",
+    "topic": "Simple English Prepositions",
+    "list": [
+      {
+        "word": "to",
+        "expression": "Go to work",
+        "word_translation": "к",
+        "expression_translation": "Идти на работу"
+      },
+      {
+        "word": "of",
+        "expression": "a lot of people",
+        "word_translation": "из",
+        "expression_translation": "много людей"
+      },
+      {
+        "word": "in",
+        "expression": "Get in place",
+        "word_translation": "в",
+        "expression_translation": "Прийти на место"
+      },
+      {
+        "word": "for",
+        "expression": "Come for the day",
+        "word_translation": "на",
+        "expression_translation": "Приходить на день"
+      },
+      {
+        "word": "on",
+        "expression": "Be on time",
+        "word_translation": "в",
+        "expression_translation": "Быть вовремя"
+      },
+      {
+        "word": "with",
+        "expression": "Stay with my child",
+        "word_translation": "с",
+        "expression_translation": "Оставаться с моим ребенком"
+      },
+      {
+        "word": "at",
+        "expression": "Good at work",
+        "word_translation": "на",
+        "expression_translation": "Хорош в работе"
+      },
+      {
+        "word": "by",
+        "expression": "Wait by the car",
+        "word_translation": "у",
+        "expression_translation": "Ждать у машины"
+      },
+      {
+        "word": "from",
+        "expression": "I am from New York",
+        "word_translation": "из",
+        "expression_translation": "Я из Нью-Йорка"
+      },
+      {
+        "word": "up",
+        "expression": "Go up to the place",
+        "word_translation": "к",
+        "expression_translation": "Идти наверх к месту"
+      },
+      {
+        "word": "about",
+        "expression": "Tell me about life",
+        "word_translation": "о",
+        "expression_translation": "Расскажи мне о жизни"
+      },
+      {
+        "word": "into",
+        "expression": "Come into work soon",
+        "word_translation": "в",
+        "expression_translation": "Приходи на работу скоро"
+      },
+      {
+        "word": "over",
+        "expression": "Go over there next week",
+        "word_translation": "по",
+        "expression_translation": "Иди туда на следующей неделе"
+      },
+      {
+        "word": "after",
+        "expression": "Call me after work",
+        "word_translation": "после",
+        "expression_translation": "Позвони мне после работы"
+      }
+    ]
+  },
+  {
+    "audio_path": "/5.mp3",
+    "topic": "Common English Vocabulary",
+    "list": [
+      {
+        "word": "the",
+        "expression": "the child",
+        "word_translation": "определенный артикль",
+        "expression_translation": "ребенок"
+      },
+      {
+        "word": "and",
+        "expression": "man and woman",
+        "word_translation": "и",
+        "expression_translation": "мужчина и женщина"
+      },
+      {
+        "word": "a",
+        "expression": "a day",
+        "word_translation": "неопределенный артикль",
+        "expression_translation": "день"
+      },
+      {
+        "word": "that",
+        "expression": "that place",
+        "word_translation": "этот/та/то",
+        "expression_translation": "это место"
+      },
+      {
+        "word": "I",
+        "expression": "I like you",
+        "word_translation": "я",
+        "expression_translation": "Мне нравишься ты"
+      },
+      {
+        "word": "it",
+        "expression": "It is nice.",
+        "word_translation": "оно/это",
+        "expression_translation": "Это хорошо."
+      },
+      {
+        "word": "not",
+        "expression": "Not my place",
+        "word_translation": "не",
+        "expression_translation": "Не мое место"
+      },
+      {
+        "word": "he",
+        "expression": "He is nice.",
+        "word_translation": "он",
+        "expression_translation": "Он хорош."
+      },
+      {
+        "word": "as",
+        "expression": "as a child",
+        "word_translation": "как",
+        "expression_translation": "как ребенок"
+      },
+      {
+        "word": "you",
+        "expression": "You are nice",
+        "word_translation": "ты/вы",
+        "expression_translation": "Ты милый/милая"
+      },
+      {
+        "word": "this",
+        "expression": "This is the place",
+        "word_translation": "этот/та/то",
+        "expression_translation": "Это место"
+      },
+      {
+        "word": "but",
+        "expression": "But not today",
+        "word_translation": "но",
+        "expression_translation": "Но не сегодня"
+      },
+      {
+        "word": "his",
+        "expression": "His car",
+        "word_translation": "его",
+        "expression_translation": "Его машина"
+      },
+      {
+        "word": "they",
+        "expression": "They are here",
+        "word_translation": "они",
+        "expression_translation": "Они здесь"
+      },
+      {
+        "word": "her",
+        "expression": "Her mother",
+        "word_translation": "ее",
+        "expression_translation": "Ее мама"
+      },
+      {
+        "word": "she",
+        "expression": "She is nice",
+        "word_translation": "она",
+        "expression_translation": "Она милая"
+      },
+      {
+        "word": "or",
+        "expression": "Yes or no",
+        "word_translation": "или",
+        "expression_translation": "Да или нет"
+      },
+      {
+        "word": "an",
+        "expression": "an eye for an eye",
+        "word_translation": "неопределенный артикль",
+        "expression_translation": "за глаза за глаз"
+      },
+      {
+        "word": "will",
+        "expression": "I will call you",
+        "word_translation": "будущее время",
+        "expression_translation": "Я позвоню тебе"
+      },
+      {
+        "word": "my",
+        "expression": "My first job.",
+        "word_translation": "мой",
+        "expression_translation": "Моя первая работа"
+      },
+      {
+        "word": "one",
+        "expression": "One at a time",
+        "word_translation": "один",
+        "expression_translation": "По одному"
+      },
+      {
+        "word": "all",
+        "expression": "All the same",
+        "word_translation": "все",
+        "expression_translation": "Все одинаково"
+      },
+      {
+        "word": "would",
+        "expression": "I would like that",
+        "word_translation": "бы",
+        "expression_translation": "Мне бы хотелось это"
+      },
+      {
+        "word": "there",
+        "expression": "There is a place to stay",
+        "word_translation": "там",
+        "expression_translation": "Там есть место для проживания"
+      },
+      {
+        "word": "their",
+        "expression": "Their home is nice",
+        "word_translation": "их",
+        "expression_translation": "Их дом хорош"
+      }
+    ]
+  }
+]

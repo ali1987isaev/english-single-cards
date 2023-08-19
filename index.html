@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
   <script defer src="./script.js"></script>
   <title>English words</title>
 </head>
-<body>
+
+<body class="menu-list--open">
   <header class="header">
     <div class="header-top">
-      <h2>Mastering English opens a world of possibilities!</h2>
-      <button class="button button--icon" type="button" data-menu-open>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-        </svg>
-      </button>
+      <h4>Mastering English opens a world of possibilities!</h4>
+      <div class="header-top__buttons">
+        <button class="button button--icon" type="button" data-menu-list-open>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+          </svg>
+        </button>
+        <button class="button button--icon" type="button" data-menu-open>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+          </svg>
+        </button>
+      </div>
     </div>
     <div class="tag-list" data-teg-list>
-      <button class="button button--secondary" type="button" data-type="data">My words</button>
-      <button class="button button--secondary" type="button" data-type="family">family</button>
-      <button class="button button--secondary" type="button" data-type="work">work</button>
-      <button class="button button--secondary" type="button" data-type="500">500 most common words</button>
+      <button class="button button--secondary" type="button" data-type="data">
+        My words
+      </button>
+      <button class="button button--secondary" type="button" data-type="200">
+        200 common words
+      </button>
+      <button class="button button--secondary" type="button" data-type="family">
+        family
+      </button>
+      <button class="button button--secondary" type="button" data-type="work">
+        work
+      </button>
+      <button class="button button--secondary" type="button" data-type="500">
+        500 most common words
+      </button>
     </div>
   </header>
+
   <main class="main">
     <ul class="main__container" data-main-container></ul>
     <div class="card-counter" data-card-counter></div>
   </main>
+
   <footer class="footer">
-    <button class="button button--primary button--full" data-prev-button type="button">prev</button>
-    <button class="button button--primary button--full" data-next-button type="button">next</button>
+    <button class="button button--primary button--full" data-prev-button type="button">
+      prev
+    </button>
+    <button class="button button--primary button--full" data-next-button type="button">
+      next
+    </button>
   </footer>
-  <div class="menu menu--hidden" data-menu>
+
+  <div class="menu hidden" data-menu>
     <div class="menu__content">
       <button type="button" class="button button--icon" data-menu-close>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
@@ -43,22 +75,50 @@
         <h2>My words</h2>
         <div class="form-add-word__input">
           <label for="add-word">New word</label>
-          <input type="text" id="add-word" placeholder="English word">
+          <input type="text" id="add-word" placeholder="English word" />
         </div>
         <div class="form-add-word__input">
           <label for="add-translation">Translation</label>
-          <input type="text" id="add-translation" placeholder="Перевод">
+          <input type="text" id="add-translation" placeholder="Перевод" />
         </div>
-        <button type="submit" class="button button--primary">add new card</button>
+        <button type="submit" class="button button--primary">
+          add new card
+        </button>
       </form>
 
       <div class="qr-code">
         <h3>Share the QR Code:</h3>
-        <img class="qr-code__img" src="./english-single-cards-qr-code.png" alt="english single cards - qr code" loading="lazy">
+        <img class="qr-code__img" src="./english-single-cards-qr-code.png" alt="english single cards - qr code"
+          loading="lazy" />
         <h3>English Cards</h3>
         <p>ali1987isaev.github.io</p>
       </div>
     </div>
   </div>
+
+  <div class="menu hidden" data-menu-list>
+    <div class="menu__content">
+      <button type="button" class="button button--icon" data-menu-list-close>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <ul class="items-list" data-menu-list-container></ul>
+
+    </div>
+  </div>
+
+  <!-- get the value of the:
+
+    and give me objects like:       {
+      "icon": "🙂",
+      "word": "be",
+      "expression": "Be happy",
+      "word_translation": "быть",
+      "expression_translation": "Будь счастлив"
+    } -->
 </body>
+
 </html>

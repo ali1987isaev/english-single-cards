@@ -7,8 +7,11 @@ const container = document.querySelector('[data-main-container]'),
   cardCounter = document.querySelector('[data-card-counter]'),
   buttonMenuOpen = document.querySelector('[data-menu-open]'),
   buttonMenuClose = document.querySelector('[data-menu-close]'),
+  buttonMenuListOpen = document.querySelector('[data-menu-list-open]'),
+  buttonMenuListClose = document.querySelector('[data-menu-list-close]'),
   formAddWord = document.querySelector('[data-add-new-word]'),
   menu = document.querySelector('[data-menu]'),
+  menuList = document.querySelector('[data-menu-list]'),
   tagList = document.querySelector('[data-teg-list]');
 
 const getData = async() => {
@@ -73,10 +76,80 @@ const initCardButtonEvents = (cards) => {
 
 const openMenu = () => !document.body.classList.contains('menu--open') && document.body.classList.add('menu--open');
 const closeMenu = () => document.body.classList.contains('menu--open') && document.body.classList.remove('menu--open');
+const openMenuList = () => !document.body.classList.contains('menu-list--open') && document.body.classList.add('menu-list--open');
+const closeMenuList = () => document.body.classList.contains('menu-list--open') && document.body.classList.remove('menu-list--open');
 
 const initMenu = () => { 
   buttonMenuOpen.addEventListener('click', openMenu);
   buttonMenuClose.addEventListener('click', closeMenu);
+};
+
+const initListItemEventHandler = (container) => {
+  container.addEventListener('click', (e) => {
+    console.log('e.target', e.target)
+    e.target.parentElement.classList.toggle('items-list__item--active')
+  })
+};
+
+const renderMenuList = (container, list) => {
+  let html = '';
+
+  const renderItemList = (list) => {
+    let html = '';
+
+    list.forEach(item => html += `
+      <li class="">
+        <span>
+          <span>${item.word}</span>
+          <span>${item.expression}</span>
+        </span>
+        <span>${item.icon ? item.icon : ""}</span>
+        <span>
+          <span>${item.word_translation}</span>
+          <span>${item.expression_translation}</span>
+        </span>
+      </li>
+    `)
+
+    return html;
+  }
+
+  list.forEach(item => {
+    html += `
+      <li class="items-list__item" data-list-item>
+       <p class="items-list__item-topic">${item.topic}</p>
+       <div class="items-list__item-content">
+        <audio controls>
+          <source src="${item.audio_path}" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+        <ul>
+          ${renderItemList(item.list)}
+        </ul>
+       </div>
+      </li>
+    `
+  })
+
+  container.innerHTML = html;
+
+  initListItemEventHandler(container);
+};
+
+const getMenuListData = async () => {
+  const container = document.querySelector('[data-menu-list-container]') || null;
+  if (!container) return;
+
+  await fetch("./source.json")
+  .then(res => res.json())
+  .then(data => renderMenuList(container, data))
+  .catch(err => console.error(err));
+};
+
+const initMenuList = () => {
+  buttonMenuListOpen.addEventListener('click', openMenuList);
+  buttonMenuListClose.addEventListener('click', closeMenuList);
+  getMenuListData();
 };
 
 const initDeleteItems = () => {
@@ -167,7 +240,8 @@ const initFormAddWord = () => {
 
 const clearMenu = () => {
   setTimeout(() => {
-    menu.classList.contains('menu--hidden') && menu.classList.remove('menu--hidden');
+    menu.classList.contains('hidden') && menu.classList.remove('hidden');
+    menuList.classList.contains('hidden') && menuList.classList.remove('hidden');
   }, 500);
 };
 
@@ -195,6 +269,7 @@ const init = () => {
   clearMenu();
   generateWordCards();
   initMenu();
+  initMenuList();
   initFormAddWord();
   initTagList();
 };
