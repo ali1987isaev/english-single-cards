@@ -167,7 +167,7 @@ async function generateWordCards(type = 'data') {
   INITIAL_DATA_PATH = `${type}.json`;
   const storedWords = JSON.parse(localStorage.getItem(type)) || [];
   const data = !storedWords.length ? await getData() : storedWords;
-  !storedWords.length && localStorage.setItem(type, JSON.stringify(data));
+  !storedWords.length && type === 'data' && localStorage.setItem(type, JSON.stringify(data));
 
   container.scrollLeft = 0;
   let html = '';
