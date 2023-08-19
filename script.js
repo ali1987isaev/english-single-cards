@@ -199,7 +199,7 @@ async function generateWordCards(type = 'data') {
         <div class="card__back">
           ${card?.russian ? `<h4>${card.russian}</h4>` : ''}
           ${card?.word_translation ? `<h4>${card.word_translation}</h4>` : ''}
-          ${card?.expression_translation ? `<h4>${card.expression_translation}</h4>` : ''}
+          ${card?.expression_translation ? `<h6>${card.expression_translation}</h6>` : ''}
         </div>
       </div>
     </li>
