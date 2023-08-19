@@ -1,6 +1,6 @@
 [
   {
-    "audio_path": "/1.mp3",
+    "audio_path": "./1.mp3",
     "topic": "Common English Verbs",
     "list": [
       {
@@ -181,7 +181,7 @@
     ]
   },
   {
-    "audio_path": "/2.mp3",
+    "audio_path": "./2.mp3",
     "topic": "Easy English Nouns",
     "list": [
       {
@@ -362,7 +362,7 @@
     ]
   },
   {
-    "audio_path": "/3.mp3",
+    "audio_path": "./3.mp3",
     "topic": "Basic English Adjectives Word",
     "list": [
       {
@@ -543,7 +543,7 @@
     ]
   },
   {
-    "audio_path": "/4.mp3",
+    "audio_path": "./4.mp3",
     "topic": "Simple English Prepositions",
     "list": [
       {
@@ -633,7 +633,7 @@
     ]
   },
   {
-    "audio_path": "/5.mp3",
+    "audio_path": "./5.mp3",
     "topic": "Common English Vocabulary",
     "list": [
       {
