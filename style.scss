@@ -161,10 +161,6 @@ li {
     color: $color-primary;
     height: auto;
   }
-
-  &--active {
-    background-color: $color-secondary;
-  }
 }
 
 .tag-list {
@@ -177,6 +173,15 @@ li {
   .button {
     white-space: nowrap;
     padding: 5px 10px;
+    border-color: transparent;
+    background-color: $color-primary;
+    color: $color-secondary;
+
+    &--active {
+      border-color: $color-primary;
+      background-color: $color-secondary;
+      color: $color-primary;
+    }
   }
 }
 
@@ -193,6 +198,7 @@ li {
   &__inner {
     position: relative;
     width: 70%;
+    max-width: 350px;
     height: 90%;
     text-align: center;
     transition: transform 0.6s;
@@ -294,13 +300,10 @@ li {
       }
     }
 
-    .doto-list {
-      padding: 80px 0;
-    }
-
-    .todo-item {
-      color: $color-black;
-      font-weight: 300;
+    .qr-code {
+      margin: 150px 0 50px;
+      border: 1px solid $color-primary;
+      border-radius: 8px;
     }
   }
 }

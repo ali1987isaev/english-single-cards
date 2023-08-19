@@ -125,9 +125,6 @@ li {
   color: #1D5D9B;
   height: auto;
 }
-.button--active {
-  background-color: #F4D160;
-}
 
 .tag-list {
   padding: 20px 0;
@@ -139,6 +136,14 @@ li {
 .tag-list .button {
   white-space: nowrap;
   padding: 5px 10px;
+  border-color: transparent;
+  background-color: #1D5D9B;
+  color: #F4D160;
+}
+.tag-list .button--active {
+  border-color: #1D5D9B;
+  background-color: #F4D160;
+  color: #1D5D9B;
 }
 
 .card {
@@ -154,6 +159,7 @@ li {
 .card__inner {
   position: relative;
   width: 70%;
+  max-width: 350px;
   height: 90%;
   text-align: center;
   transition: transform 0.6s;
@@ -243,12 +249,10 @@ li {
   min-width: 30px;
   min-height: 30px;
 }
-.menu__content .doto-list {
-  padding: 80px 0;
-}
-.menu__content .todo-item {
-  color: #1d1b1b;
-  font-weight: 300;
+.menu__content .qr-code {
+  margin: 150px 0 50px;
+  border: 1px solid #1D5D9B;
+  border-radius: 8px;
 }
 
 .menu--hidden {
