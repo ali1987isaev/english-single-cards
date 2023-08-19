@@ -34,17 +34,20 @@
       <button class="button button--secondary" type="button" data-type="data">
         My words
       </button>
-      <button class="button button--secondary" type="button" data-type="200">
-        200 common words
+      <button class="button button--secondary" type="button" data-type="100-1">
+        Common 100 words - 1
+      </button>
+      <button class="button button--secondary" type="button" data-type="100-2">
+        Common 100 words - 2
+      </button>
+      <button class="button button--secondary" type="button" data-type="100-3">
+        Common 100 words - 3
       </button>
       <button class="button button--secondary" type="button" data-type="family">
         family
       </button>
       <button class="button button--secondary" type="button" data-type="work">
         work
-      </button>
-      <button class="button button--secondary" type="button" data-type="500">
-        500 most common words
       </button>
     </div>
   </header>
@@ -110,15 +113,736 @@
     </div>
   </div>
 
-  <!-- get the value of the:
+<!-- 
+    
+get the value of the:
 
-    and give me objects like:       {
-      "icon": "🙂",
-      "word": "be",
-      "expression": "Be happy",
-      "word_translation": "быть",
-      "expression_translation": "Будь счастлив"
-    } -->
+
+and give me JSON array with objects like:       
+{
+  "id": "190",
+  "word": "only",
+  "expression": "You are my only friend here.",
+  "word_translation": "только",
+  "expression_translation": "Ты мой единственный друг здесь."
+} 
+  
+-->
+
+
+
+
+<!-- 
+
+
+
+
+
+
+
+<h4><strong>once&nbsp;</strong>– “I once had a puppy named Bark.”</h4>
+<h4><strong>white</strong> – “I love my white sneakers.”</h4>
+<h4><strong>least</strong> – “She’s the least productive among all the employees.”</h4>
+<h4><strong>president&nbsp;</strong> – “She was our class president back in high school.”</h4>
+<h4><strong>learn</strong> – “I’d love to learn more about the English language.”</h4>
+<h4><strong>real</strong> – “What is her real name?”</h4>
+<h4><strong>change</strong> – “What can we change so that things will get better?”</h4>
+<h4><strong>team</strong> – “They hired a team to do the design of their new office.”</h4>
+<h4><strong>minute</strong> – “She’s laughing every minute of every day.”</h4>
+<h4><strong>best</strong> – “This is the best potato salad I’ve ever tasted.”</h4>
+<h4><strong>several</strong> – “I have several old clothes I need to donate.”</h4>
+<h4><strong>idea</strong> – “It was your idea to go to the beach, remember?”</h4>
+<h4><strong>kid</strong> – “I loved that toy when I was a kid.”</h4>
+<h4><strong>body</strong> – “She worked out hard to achieve a toned body.”</h4>
+<h4><strong>information</strong> – “This is the information I need.”</h4>
+<h4><strong>nothing</strong> – “There’s nothing we can do now. “</h4>
+<h4><strong>ago</strong> – “Three years ago, I visited Japan for the first time.”</h4>
+<h4><strong>right</strong> – “You’re right, I want to go back there.”</h4>
+<h4><strong>lead</strong> – “Just lead the way and I’ll follow.”</h4>
+<h4><strong>social</strong> – “I feel awkward in these social gatherings.”</h4>
+<h4><strong>understand</strong> – “I understand how you feel.”</h4>
+<h4><strong>whether</strong> – “Whether in big groups or small groups, I always feel a little shy at first.”</h4>
+<h4><strong>back</strong> – “Looking back, I knew I was always an introvert.”</h4>
+<h4><strong>watch</strong> – “Let’s watch the sun set on the horizon.”</h4>
+<h4><strong>together</strong> – “They’re together now.”</h4>
+<h4><strong>follow</strong> – “I’ll follow you home.”</h4>
+<h4><strong>around</strong> – “You’ll always have me around.”</h4>
+<h4><strong>parent</strong> – “Every parent is trying hard and doing their best.”</h4>
+<h4><strong>only</strong> – “You are only allowed to go out today.”</h4>
+<h4><strong>stop</strong> – “Please stop that.”</h4>
+<h4><strong>face</strong> – “Why is your face so red?”</h4>
+<h4><strong>anything</strong> – “You can ask me for anything.”</h4>
+<h4><strong>create</strong> – “Did you create that presentation? It was so good.”</h4>
+<h4><strong>public</strong> – “This is public property.”</h4>
+<h4><strong>already</strong> – &nbsp;“I already asked him to resend his report.”</h4>
+<h4><strong>speak</strong> – “Could you speak a little louder?”</h4>
+<h4><strong>others</strong> – “The others haven’t arrived yet.”</h4>
+<h4><strong>read</strong> – “I read somewhere that this house is haunted.”</h4>
+<h4><strong>level</strong> – “What level are you in that game?”</h4>
+<h4><strong>allow</strong> – “Do you allow your kids to play outside the house?”</h4>
+<h4><strong>add</strong> – “Is it okay if we add a bit of sugar to the tea?”</h4>
+<h4><strong>office</strong> – “Welcome to my office.”</h4>
+<h4><strong>spend</strong> – “How much did you spend on your last shopping spree?”</h4>
+<h4><strong>door</strong> – “You left the door open.”</h4>
+<h4><strong>health</strong> – “You must take good care of your health.”</h4>
+<h4><strong>person</strong> – “You are a good person.”</h4>
+<h4><strong>art</strong> – “This is my work of art.”</h4>
+<h4><strong>sure</strong> – “Are you sure you want to do this alone?”</h4>
+<h4><strong>such</strong> – “You are such a brave little boy.”</h4>
+<h4><strong>war</strong> – “The war has finally ended.”</h4>
+<h4><strong>history</strong> – “She is my history professor.”</h4>
+<h4><strong>party</strong> – “Are you going to her party tonight?”</h4>
+<h4><strong>within</strong> – “We support everyone within our small community.”</h4>
+<h4><strong>grow</strong> – “We want everyone to grow and thrive in their careers.”</h4>
+<h4><strong>result</strong> – “The result of this outreach program is amazing.”</h4>
+<h4><strong>open</strong> – “Are you open to teaching on weekends?”</h4>
+<h4><strong>change</strong> – “Where can we change her diaper?”</h4>
+<h4><strong>morning</strong> – “It’s such a beautiful morning!”</h4>
+<h4><strong>walk</strong> – “Come take a walk with me.”</h4>
+<h4><strong>reason</strong> – “You are the reason I came home.”</h4>
+<h4><strong>low</strong> – “Her blood pressure has gotten really low.”</h4>
+<h4><strong>win</strong> – “We can win this match if we work together.”</h4>
+<h4><strong>research</strong> – “How is your research going?”</h4>
+<h4><strong>girl&nbsp;</strong>– “That girl is in my class.”</h4>
+<h4><strong>guy</strong> – “I’ve seen that guy in school before.”</h4>
+<h4><strong>early</strong> – “I come to work so early every day.”</h4>
+<h4><strong>food</strong> – “Let’s buy some food, I’m hungry!”</h4>
+<h4><strong>before</strong> – “Can I talk to you before you go home?”</h4>
+<h4><strong>moment</strong> – “The moment she walked in the room, her puppy started to jump and dance again.”</h4>
+<h4><strong>himself</strong> – “He cooked this Turkey himself.”</h4>
+<h4><strong>air</strong> – “I am loving the cold night air here.”</h4>
+<h4><strong>teacher</strong> – “You are the best teacher ever.”</h4>
+<h4><strong>force</strong> – “Don’t force him to play with other kids.”</h4>
+<h4><strong>offer</strong> – “Can I offer you a ride home?”</h4>
+<h4><strong>enough</strong> – “Boys, that’s enough playing for today.”</h4>
+<h4><strong>both</strong> – “You both need to change into your sleep clothes now.”</h4>
+<h4><strong>education</strong> – “I just want you to get the best education.”</h4>
+<h4><strong>across</strong> – “Your dog ran across the park.”</h4>
+<h4><strong>although</strong> – “Although she felt tired, she still couldn’t sleep.”</h4>
+<h4><strong>remember&nbsp;</strong>– “Do you think she will still remember me after ten years?”</h4>
+<h4><strong>foot</strong> – “Her foot got caught in one of the ropes.”</h4>
+<h4><strong>second</strong> – “This is the second time she got late this month.”</h4>
+<h4><strong>boy</strong> – “There’s a boy in her class who keeps pulling her hair.”</h4>
+<h4><strong>maybe</strong> – “Maybe we can have ice cream for dessert.”</h4>
+<h4><strong>toward</strong> – “He took a step toward her.”</h4>
+<h4><strong>able</strong> – “Will you be able to send me your report today?”</h4>
+<h4><strong>age</strong> – “What is the average marrying age these days?”</h4>
+<h4><strong>off –</strong> “The cat ran off with the dog.”</h4>
+<h4><strong>policy</strong> – “They have a generous return policy.”</h4>
+<h4><strong>everything</strong> – “Everything is on sale.”</h4>
+<h4><strong>love</strong> – “I love what you’re wearing!”</h4>
+<h4><strong>process</strong> – “Wait, give me time to process everything you’re telling me.”</h4>
+<h4><strong>music</strong> – “I love music.”</h4>
+<h4><strong>including</strong> – “Around 20 people attended, including Bob and Beth.”</h4>
+<h4><strong>consider</strong> – “I hope you consider my project proposal.”</h4>
+<h4><strong>appear</strong> – “How did that appear out of nowhere?”</h4>
+<h4><strong>actually</strong> – “I’m actually just heading out.”</h4>
+<h4><strong>buy</strong> – “I’m going to buy these shoes.”</h4>
+<h4><strong>probably</strong> – “He’s probably still asleep.”</h4>
+<h4><strong>human</strong> – “Give him a break, he is only human.”</h4>
+<h4><strong>wait</strong> – “Is it alright if you wait for a few minutes?”</h4>
+<h4><strong>serve</strong> – “This blow dryer has served me well for years.”</h4>
+<h4><b>market </b>– “Let’s visit the Sunday market.”</h4>
+<h4><b>die </b>– “I don’t want my cat to die, let’s take him to the vet please.”</h4>
+<h4><b>send</b> – “Please send the package to my address.”</h4>
+<h4><b>expect</b> – “You can’t expect much from their poor service.”</h4>
+<h4><b>home </b>– “I can’t wait to go home!”</h4>
+<h4><b>sense</b> – “I did sense that something was not okay.”</h4>
+<h4><b>build</b> – “He is going to build his dream house.”</h4>
+<h4><b>stay</b> – “You can stay with me for a few weeks.”</h4>
+<h4><b>fall</b> – “Be careful, you might fall.”</h4>
+<h4><b>oh</b> – “Oh no, I left my phone at home!”</h4>
+<h4><b>nation</b> – “We have to act as one nation.”</h4>
+<h4><strong>plan</strong> – “What’s your plan this time?”</h4>
+<h4><strong>cut</strong> – “Don’t cut your hair.”</h4>
+<h4><strong>college</strong> – “We met in college.”</h4>
+<h4><strong>interest</strong> – “Music is an interest of mine.”</h4>
+<h4><strong>death</strong> – “Death is such a heavy topic for me.”</h4>
+<h4><strong>course</strong> – “What course did you take up in college?”</h4>
+<h4><strong>someone</strong> – “Is there someone who can go with you?”</h4>
+<h4><strong>experience</strong> – “What an exciting experience!”</h4>
+<h4><strong>behind</strong> – “I’m scared to check what’s behind that door.”</h4>
+<h4><strong>reach</strong> – “I can’t reach him, he won’t answer his phone.”</h4>
+<h4><strong>local</strong> – “This is a local business.”</h4>
+<h4><strong>kill</strong> – “Smoking can kill you.”</h4>
+<h4><strong>six</strong> – “I have six books about Psychology.”</h4>
+<h4><strong>remain</strong> – “These remain on the top shelf.”</h4>
+<h4><strong>effect</strong> – “Wow, the effect of that mascara is great!”</h4>
+<h4><strong>use</strong> – “Can I use your phone?”</h4>
+<h4><strong>yeah</strong> – “Yeah, he did call me earlier.”</h4>
+<h4><strong>suggest</strong> – “He did suggest that to me.”</h4>
+<h4><strong>class</strong> – “We were in the same English class.”</h4>
+<h4><strong>control</strong> – “Where’s the remote control?”</h4>
+<h4><strong>raise</strong> – “It’s so challenging to discipline kids these days.”</h4>
+<h4><strong>care</strong> – “I don’t care about what you think.”</h4>
+<h4><strong>perhaps</strong> – “Perhaps we can arrive at a compromise.”</h4>
+<h4><strong>little</strong> – “There’s a little bird outside my window.”</h4>
+<h4><strong>late</strong> – “I am running late for my doctor’s appointment.”</h4>
+<h4><strong>hard</strong> – “That test was so hard.”</h4>
+<h4><strong>field</strong> – “He’s over there, by the soccer field.”</h4>
+<h4><strong>else</strong> – “Is anyone else coming?”</h4>
+<h4><strong>pass</strong> – “Can we pass by the grocery store?”</h4>
+<h4><strong>former</strong> – “She was my former housemate.”</h4>
+<h4><strong>sell</strong> – “We can sell your old couch online.”</h4>
+<h4><strong>major</strong> – “It’s a major issue for the project.”</h4>
+<h4><strong>sometimes</strong> – “Sometimes I forget to turn off the porch lights.”</h4>
+<h4><strong>require</strong> – “They’ll require you to show your I.D.”</h4>
+<h4><strong>along</strong> – “Can I tag along your road trip?”</h4>
+<h4><strong>development</strong> – “This news development is really interesting.”</h4>
+<h4><strong>themselves</strong> – “They can take care of themselves.”</h4>
+<h4><strong>report</strong> – “I read her report and it was great!”</h4>
+<h4><strong>role</strong> – “She’s going to play the role of Elsa.”</h4>
+<h4><strong>better</strong> – “Your singing has gotten so much better!”</h4>
+<h4><strong>economic</strong> – “Some countries are facing an economic crisis.”</h4>
+<h4><strong>effort</strong> – “The government must make an effort to solve this.”</h4>
+<h4><strong>up</strong> – “His grades have gone up.”</h4>
+<h4><strong>decide</strong> – “Please decide where to eat.”</h4>
+<h4><strong>rate</strong> – “How would you rate the hotel’s service?”</h4>
+<h4><strong>strong</strong> – “They have strong customer service here!”</h4>
+<h4><strong>possible</strong> – “Maybe it’s possible to change their bathroom amenities.”</h4>
+<h4><strong>heart</strong> – “My heart is so full.”</h4>
+<h4><strong>drug</strong> – “She got the patent for the drug she has created to cure cancer.”</h4>
+<h4><strong>show</strong> – “Can you show me how to solve this puzzle?”</h4>
+<h4><strong>leader</strong> – “You are a wonderful leader.”</h4>
+<h4><strong>light</strong> – “Watch her face light up when you mention his name.”</h4>
+<h4><strong>voice</strong> – “Hearing his mom’s voice is all he need right now.”</h4>
+<h4><strong>wife</strong> – “My wife is away for the weekend.”</h4>
+<h4><strong>whole</strong> – “I have the whole house to myself.”</h4>
+<h4><strong>police</strong> – “The police have questioned him about the incident.”</h4>
+<h4><strong>mind</strong> – “This relaxation technique really eases my mind.”</h4>
+<h4><strong>finally</strong> – “I can finally move out from my old apartment.”</h4>
+<h4><strong>pull</strong> – “My baby niece likes to pull my hair.”</h4>
+<h4><strong>return</strong> – “I give her tickles in return.”</h4>
+<h4><strong>free</strong> – “The best things in life are free.”</h4>
+<h4><strong>military</strong> – “His dad is in the military.”</h4>
+<h4><strong>price</strong> – “This is the price you pay for lying.”</h4>
+<h4><strong>report</strong> – “Did you report this to the police?”</h4>
+<h4><strong>less</strong> – “I am praying for less stress this coming new year.”</h4>
+<h4><strong>according</strong> – “According to the weather report, it’s going to rain today.”</h4>
+<h4><strong>decision</strong> – “This is a big decision for me.”</h4>
+<h4><strong>explain</strong> – “I’ll explain everything later, I promise.”</h4>
+<h4><strong>son</strong> – “His son is so cute!”</h4>
+<h4><strong>hope</strong> – “I hope I’ll have a son one day.”</h4>
+<h4><strong>even</strong> – “Even if they’ve broken up, they still remain friends.”</h4>
+<h4><strong>develop</strong> – “That rash could develop into something more serious.”</h4>
+<h4><strong>view</strong> – “This view is amazing!”</h4>
+<h4><strong>relationship</strong> – “They’ve taken their relationship to the next level.”</h4>
+<h4><strong>carry</strong> – “Can you carry my bag for me?”</h4>
+<h4><strong>town</strong> – “This town is extremely quiet.”</h4>
+<h4><strong>road</strong> – “There’s a road that leads to the edge of the woods.”</h4>
+<h4><strong>drive</strong> – “You can’t drive there, you need to walk.”</h4>
+<h4><strong>arm</strong> – “He broke his arm during practice.”</h4>
+<h4><strong>true</strong> – “It’s true, I’m leaving the company.”</h4>
+<h4><strong>federal</strong> – “Animal abuse is now a federal felony!”</h4>
+<h4><strong>break</strong> – “Don’t break the law.”</h4>
+<h4><strong>better</strong> – “You better learn how to follow rules.”</h4>
+<h4><strong>difference</strong> – “What’s the difference between happiness and contentment?”</h4>
+<h4><strong>thank</strong> – “I forgot to thank her for the pie she sent us.”</h4>
+<h4><strong>receive</strong> – “Did you receive the pie I sent you?”</h4>
+<h4><strong>value</strong> – “I value our friendship so much.”</h4>
+<h4><strong>international&nbsp;</strong> – “Their brand has gone international!”</h4>
+<h4><strong>building&nbsp;</strong>– “This building is so tall!”</h4>
+<h4><strong>action&nbsp;</strong>– “You next action is going to be critical.”</h4>
+<h4><strong>full&nbsp;</strong>– “My work load is so full now.”</h4>
+<h4><strong>model&nbsp;</strong>– “A great leader is a great model of how to do things.”</h4>
+<h4><strong>join&nbsp;</strong>– “He wants to join the soccer team.”</h4>
+<h4><strong>season&nbsp;</strong>– “Christmas is my favorite season!”</h4>
+<h4><strong>society&nbsp;</strong>– “Their society is holding a fund raiser.”</h4>
+<h4><strong>because</strong> – “I’m going home because my mom needs me.”</h4>
+<h4><strong>tax&nbsp;</strong>– “How much is the current income tax?”</h4>
+<h4><strong>director&nbsp;</strong>– “The director yelled ‘Cut!'”</h4>
+<h4><strong>early&nbsp;</strong>– “I’m too early for my appointment.”</h4>
+<h4><strong>position&nbsp;</strong> – “Please position your hand properly when drawing.”</h4>
+<h4><strong>player&nbsp;</strong>– “That basketball player is cute.”</h4>
+<h4><strong>agree&nbsp;</strong>– “I agree! He is cute!”</h4>
+<h4><strong>especially&nbsp;</strong>– “I especially like his blue eyes.”</h4>
+<h4><strong>record&nbsp;</strong> – “Can we record the minutes of this meeting, please?”</h4>
+<h4><strong>pick</strong> – “Did you pick a color theme already?”</h4>
+<h4><strong>wear&nbsp;</strong> – “Is that what you’re going to wear for the party?”</h4>
+<h4><strong>paper&nbsp;</strong>– “You can use a special paper for your invitations.”</h4>
+<h4><strong>special&nbsp;</strong>– “Some special paper are even scented!”</h4>
+<h4><strong>space</strong> – “Please leave some space to write down your phone number.”</h4>
+<h4><strong>ground&nbsp;</strong> – “The ground is shaking.”</h4>
+<h4><strong>form</strong> – “A new island was formed after that big earthquake.”</h4>
+<h4><strong>support&nbsp;</strong> – “I need your support for this project.”</h4>
+<h4><strong>event</strong> – “We’re holding a big event tonight.”</h4>
+<h4><strong>official</strong> – “Our official wedding photos are out!”</h4>
+<h4><strong>whose&nbsp;</strong> – “Whose umbrella is this?”</h4>
+<h4><strong>matter&nbsp;</strong>– “What does it matter anyway?”</h4>
+<h4><strong>everyone&nbsp;</strong> – “Everyone thinks I stole that file.”</h4>
+<h4><strong>center&nbsp;</strong>– “I hate being the center of attention.”</h4>
+<h4><strong>couple&nbsp;</strong>– “The couple is on their honeymoon now.”</h4>
+<h4><strong>site</strong> – “This site is so big!”</h4>
+<h4><strong>end</strong> – “It’s the end of an era.”</h4>
+<h4><strong>project&nbsp;</strong>– “This project file is due tomorrow.”</h4>
+<h4><strong>hit&nbsp;</strong> – “He hit the burglar with a bat.”</h4>
+<h4><strong>base</strong> – “All moms are their child’s home base.”</h4>
+<h4><strong>activity&nbsp;</strong>– “What musical activity can you suggest for my toddler?”</h4>
+<h4><strong>star</strong> – “My son can draw a star!”</h4>
+<h4><strong>table&nbsp;</strong> – “I saw him draw it while he was writing on the table.”</h4>
+<h4><strong>need&nbsp;</strong> – “I need to enroll him to a good preschool.”</h4>
+<h4><strong>court</strong> – “There’s a basketball court near our house.”</h4>
+<h4><strong>produce&nbsp;</strong> – “Fresh farm produce is the best.”</h4>
+<h4><strong>eat&nbsp;</strong>– “I could eat that all day.”</h4>
+<h4><strong>American&nbsp;</strong>– “My sister is dating an American.”</h4>
+<h4><strong>teach&nbsp;</strong>– “I love to teach English lessons.”</h4>
+<h4><strong>oil&nbsp;</strong> – “Could you buy me some cooking oil at the store?”</h4>
+<h4><strong>half&nbsp;</strong>– “Just half a liter please.”</h4>
+<h4><strong>situation</strong> – “The situation is getting out of hand.”</h4>
+<h4><strong>easy</strong> – “I thought you said this was going to be easy?”</h4>
+<h4><strong>cost&nbsp;</strong>– “The cost of fuel has increased!”</h4>
+<h4><strong>industry</strong> – “The fuel industry is hiking prices.”</h4>
+<h4><strong>figure</strong> – “Will our government figure out how to fix this problem?”</h4>
+<h4><strong>face&nbsp;</strong> – “I can’t bear to face this horrendous traffic again and again.”</h4>
+<h4><strong>street&nbsp;</strong> – “Let’s cross the street.”</h4>
+<h4><strong>image</strong> – “There’s an image of him stored inside my mind.”</h4>
+<h4><strong>itself&nbsp;</strong> – “The bike itself is pretty awesome.”</h4>
+<h4><strong>phone&nbsp;</strong> – “Plus, it has a phone holder.”</h4>
+<h4><strong>either</strong> – “I either walk or commute to work.”</h4>
+<h4><strong>data&nbsp;</strong>– “How can we simplify this data?”</h4>
+<h4><strong>cover&nbsp;</strong> – “Could you cover for me during emergencies?”</h4>
+<h4><strong>quite</strong> – “I’m quite satisfied with their work.”</h4>
+<h4><strong>picture&nbsp;</strong> – “Picture this: a lake, a cabin, and lots of peace and quiet.</h4>
+<h4><strong>clear</strong> – “That picture is so clear inside my head.”</h4>
+<h4><strong>practice</strong> – “Let’s practice our dance number.”</h4>
+<h4><strong>piece&nbsp;</strong>– “That’s a piece of cake!”</h4>
+<h4><strong>land</strong> – “Their plane is going to land soon.”</h4>
+<h4><strong>recent</strong> – “This is her most recent social media post.”</h4>
+<h4><strong>describe</strong> – “Describe yourself in one word.”</h4>
+<h4><strong>product</strong> – “This is my favorite product in their new line of cosmetics.”</h4>
+<h4><strong>doctor</strong> – “The doctor is in.”</h4>
+<h4><strong>wall</strong> – “Can you post this up on the wall?”</h4>
+<h4><strong>patient&nbsp;</strong> – “The patient is in so much pain now.”</h4>
+<h4><strong>worker</strong> – “She’s a factory worker.”</h4>
+<h4><strong>news&nbsp;</strong> – “I saw that on the news.”</h4>
+<h4><strong>test</strong> – “I have to pass this English test.”</h4>
+<h4><strong>movie</strong> – “Let’s watch a movie later.”</h4>
+<h4><strong>certain&nbsp;</strong> – “There’s a certain kind of magic in the air now.”</h4>
+<h4><strong>north</strong> – “Santa lives up north.”</h4>
+<h4><strong>love</strong> – ” l love Christmas!”</h4>
+<h4><strong>personal&nbsp;</strong> – “This letter is very personal.”</h4>
+<h4><strong>open</strong> – “Why did you open and read it?”</h4>
+<h4><strong>support</strong>&nbsp;– “Will you support him?”</h4>
+<h4><strong>simply</strong> – “I simply won’t tolerate bad behavior.”</h4>
+<h4><strong>third</strong> – “This is the third time you’ve lied to me.”</h4>
+<h4><strong>technology</strong> – “Write about the advantages of technology.”</h4>
+<h4><strong>catch</strong> – “Let’s catch up soon, please!”</h4>
+<h4><strong>step</strong> – “Watch your step.”</h4>
+<h4><strong>baby</strong> – “Her baby is so adorable.”</h4>
+<h4><strong>computer</strong> – “Can you turn on the computer, please?”</h4>
+<h4><strong>type&nbsp;</strong> – “You need to type in your password.”</h4>
+<h4><strong>attention</strong> – “Can I have your attention, please?”</h4>
+<h4><strong>draw</strong> – “Can you draw this for me?”</h4>
+<h4><strong>film</strong> – “That film is absolutely mind-blowing.”</h4>
+<h4><strong>Republican</strong> – “He is a Republican candidate.”</h4>
+<h4><strong>tree</strong> – “That tree has been there for generations.”</h4>
+<h4><strong>source</strong> – “You are my source of strength.”</h4>
+<h4><strong>red</strong> – “I’ll wear a red dress tonight.”</h4>
+<h4><strong>nearly</strong> – “He nearly died in that accident!”</h4>
+<h4><strong>organization</strong> – “Their organization is doing great things for street kids.”</h4>
+<h4><strong>choose</strong> – “Let me choose a color.”</h4>
+<h4><strong>cause</strong> – “We have to see the cause and effect of this experiment.”</h4>
+<h4><strong>hair&nbsp;</strong>– “I’ll cut my hair short for a change.”</h4>
+<h4><strong>look –&nbsp;</strong>“Can you look at the items I bought?”</h4>
+<h4><strong>point&nbsp;</strong> “What is the point of all this?</h4>
+<h4><strong>century&nbsp;</strong>– “We’re living in the 21st century, Mary.”</h4>
+<h4><strong>evidence </strong>– “The evidence clearly shows that he is guilty.”</h4>
+<h4><strong>window&nbsp;</strong> – “I’ll buy window curtains next week.”</h4>
+<h4><strong>difficult&nbsp;</strong> “Sometimes, life can be difficult.”</h4>
+<h4><strong>listen</strong> – “You have to listen to your teacher.”</h4>
+<h4><strong>soon&nbsp;</strong> – “I will launch my course soon.”</h4>
+<h4><strong>culture&nbsp;</strong> – “I hope they understand our culture better.”</h4>
+<h4><strong>billion&nbsp;</strong> – “My target is to have 1 billion dollars in my account by the end of the year.”</h4>
+<h4><strong>chance&nbsp;</strong>– “Is there any chance that you can do this for me?”</h4>
+<h4><strong>brother&nbsp;</strong>– “My brother always have my back.”</h4>
+<h4><strong>energy&nbsp;</strong> –&nbsp; “Now put that energy into walking.”</h4>
+<h4><strong>period&nbsp;</strong>– “They covered a period of twenty years.”</h4>
+<h4><strong>course&nbsp;</strong> – “Have seen my course already?”</h4>
+<h4><strong>summer </strong>– “I’ll go to the beach in summer.”</h4>
+<h4><strong>less&nbsp;</strong>– “Sometimes, less is more.”</h4>
+<h4><strong>realize&nbsp;</strong>– “I just realize that I have a meeting today.”</h4>
+<h4><strong>hundred&nbsp;</strong>– “I have a hundred dollars that I can lend you.”</h4>
+<h4><strong>available&nbsp;</strong>– “I am available to work on your project.”</h4>
+<h4><strong>plant&nbsp;</strong>– “Plant a seed.”</h4>
+<h4><strong>likely&nbsp;</strong>– “It was likely a deer trail.”</h4>
+<h4><strong>opportunity&nbsp;</strong>– “It was the perfect opportunity to test her theory.”</h4>
+<h4><strong>term&nbsp;</strong> – “I’m sure there’s a Latin <span class="emphasis">term</span> for it.”</h4>
+<h4><strong>short&nbsp;</strong> – “It was just a short stay at the hotel.”</h4>
+<h4><strong>letter&nbsp;</strong>– “I already passed my letter of intent.”</h4>
+<h4><strong>condition&nbsp;</strong>– “Do you know the condition I am in?”</h4>
+<h4><strong>choice&nbsp;</strong>– “I have no choice.”</h4>
+<h4><strong>place&nbsp;</strong>– “Let’s meet out at meeting place.”</h4>
+<h4><strong>single&nbsp;</strong>– “I am a single parent.”</h4>
+<h4><strong>rule&nbsp;</strong>– “It’s the rule of the law.”</h4>
+<h4><strong>daughter&nbsp;</strong>– “My daughter knows how to read now.”</h4>
+<h4><strong>administration&nbsp;</strong>– “I will take this up with the administration.”</h4>
+<h4><strong>south&nbsp;</strong>– “I am headed south.”</h4>
+<h4><strong>husband&nbsp;</strong>– “My husband just bought me a ring for my birthday.”</h4>
+<h4><strong>Congress&nbsp;</strong>– “It will be debated at the Congress.”</h4>
+<h4><strong>floor&nbsp;</strong>– “She is our floor manager.”</h4>
+<h4><strong>campaign&nbsp;</strong>– “I handled their election campaign.”</h4>
+<h4><strong>material&nbsp;</strong>– “She had nothing&nbsp;<span class="emphasis">material</span> to report.”</h4>
+<h4><strong>population&nbsp;</strong>– “The <span class="emphasis">population</span> of the nearest big city was growing.”</h4>
+<h4><strong>well&nbsp;</strong>– “I wish you well.”</h4>
+<h4><strong>call&nbsp;</strong>– ” I am going to call the bank.”</h4>
+<h4><strong>economy&nbsp;</strong>– “The economy is booming.”</h4>
+<h4><strong>medical&nbsp;</strong>-“She needs medical assistance.”</h4>
+<h4><strong>hospital&nbsp;</strong>– “I’ll take her to the nearest hospital.”</h4>
+<h4><strong>church&nbsp;&nbsp;</strong>– “I saw you in church last Sunday.”</h4>
+<h4><strong>close&nbsp;</strong>-“Please close the door.”</h4>
+<h4><strong>thousand</strong> – “There are a thousand reasons to learn English!”</h4>
+<h4><strong>risk – </strong>“Taking a risk can be rewarding.”</h4>
+<h4><strong>current – </strong>“What is your current address?”</h4>
+<h4><strong>fire – </strong>“Make sure your smoke alarm works in case of fire.”</h4>
+<h4><strong>future</strong>&nbsp; -“The future is full of hope.”</h4>
+<h4><strong>wrong&nbsp;</strong>– “That is the wrong answer.”</h4>
+<h4><strong>involve&nbsp;</strong>– “We need to involve the police.”</h4>
+<h4><strong>defense&nbsp;</strong>– “What is your defense or reason you did this?”</h4>
+<h4><strong>anyone&nbsp;</strong>– “Does anyone know the answer?”</h4>
+<h4><strong>increase&nbsp;</strong>– “Let’s increase your test score.”</h4>
+<h4><strong>security&nbsp;</strong>– “Some apartment buildings have security.”</h4>
+<h4><strong>bank&nbsp;</strong>– “I need to go to the bank to withdraw some money.”</h4>
+<h4><strong>myself&nbsp;</strong>– “I can clean up by myself.”</h4>
+<h4><strong>certainly&nbsp;</strong>– “I can certainly help clean up.”</h4>
+<h4><strong>west&nbsp;</strong>– “If you drive West, you will arrive in California.”</h4>
+<h4><strong>sport&nbsp;</strong>– “My favorite sport is soccer.”</h4>
+<h4><strong>board&nbsp;</strong>– “Can you see the board?”</h4>
+<h4><strong>seek&nbsp;</strong>– “Seek and you will find.”</h4>
+<h4><strong>per&nbsp;</strong>– “Lobster is $20 per pound.”</h4>
+<h4><strong>subject&nbsp;</strong>– “My favorite subject is English!”</h4>
+<h4><strong>officer&nbsp;</strong>– “Where can I find a police officer?”</h4>
+<h4><strong>private&nbsp;</strong>– “This is a private party.”</h4>
+<h4><strong>rest&nbsp;</strong>– “Let’s take a 15 minute rest.”</h4>
+<h4><strong>behavior&nbsp;</strong>– “This dog’s behavior is excellent.”</h4>
+<h4><strong>deal&nbsp;</strong>– “A used car can be a good deal.”</h4>
+<h4><strong>performance&nbsp;</strong>– “Your performance can be affected by your sleep.”</h4>
+<h4><strong>fight&nbsp;</strong>– “I don’t want to fight with you.”</h4>
+<h4><strong>throw&nbsp;</strong>– “Throw me the ball!”</h4>
+<h4><strong>top&nbsp;</strong>– “You are a top student.”</h4>
+<h4><strong>quickly </strong>– “Let’s finish reading this quickly.”</h4>
+<h4><strong>past </strong>– “In the past, my English was not as good as it is today.”</h4>
+<h4><strong>goal&nbsp;</strong>– “My goal is to speak English fluently.”</h4>
+<h4><strong>second&nbsp;</strong>– “My second goal is to increase my confidence.”</h4>
+<h4><strong>bed&nbsp;</strong>– “I go to bed around 10pm.”</h4>
+<h4><strong>order&nbsp;</strong>– “I would like to order a book.”</h4>
+<h4><strong>author&nbsp;</strong>– “The author of this series is world-famous.”</h4>
+<h4><strong>fill&nbsp;</strong>– “I need to fill (up) my gas tank.”</h4>
+<h4><strong>represent&nbsp;</strong>– “I represent my family.”</h4>
+<h4><strong>focus&nbsp;</strong>– “Turn off your phone and the TV and focus on your studies!”</h4>
+<h4><strong>foreign&nbsp;</strong>– “It’s great having foreign friends.”</h4>
+<h4><strong>drop&nbsp;</strong>– “Please don’t drop the eggs!”</h4>
+<h4><strong>plan&nbsp;</strong>– “Let’s make a plan.”</h4>
+<h4><strong>blood&nbsp;</strong>– “The hospital needs people to give blood.”</h4>
+<h4><strong>upon&nbsp;</strong>– “Once upon a time, a princess lived in a castle.”</h4>
+<h4><strong>agency&nbsp;</strong>– “Let’s contract an agency to help with marketing.”</h4>
+<h4><strong>push&nbsp;</strong>– “The door says ‘push,’ not ‘pull.'”</h4>
+<h4><strong>nature&nbsp;</strong>– “I love walking in nature!”</h4>
+<h4><strong>color –&nbsp;</strong>“My favorite color is blue.”</h4>
+<h4><strong>no&nbsp;</strong>– “‘No’ is one of the shortest complete sentences.”</h4>
+<h4><strong>recently&nbsp;</strong>– “I cleaned the bathroom most recently, so I think it’s your turn this time.”</h4>
+<h4><strong>store&nbsp;</strong>– “I’m going to the store to buy some bread.”</h4>
+<h4><strong>reduce&nbsp;</strong>– “Reduce, reuse, and recycle are the ways to help the environment.”</h4>
+<h4><strong>sound&nbsp;</strong>– “I like the sound of wind chimes.”</h4>
+<h4><strong>note&nbsp;</strong>– “Please take notes during the lesson.”</h4>
+<h4><strong>fine&nbsp;</strong>– “I feel fine.”</h4>
+<h4><strong>before&nbsp;</strong>– “Before the movie, let’s buy popcorn!”</h4>
+<h4><strong>near&nbsp;</strong>– “Near, far, wherever you are, I do believe that the heart goes on.”</h4>
+<h4><strong>movement&nbsp;</strong>– “The environmental movement is an international movement.”</h4>
+<h4><strong>page&nbsp;</strong>– “Please turn to page 62.”</h4>
+<h4><strong>enter&nbsp;</strong>– “You can enter the building on the left.”</h4>
+<h4><strong>share&nbsp;</strong>– “Let me share my idea.”</h4>
+<h4><strong>than&nbsp;</strong>– “Ice cream has more calories than water.”</h4>
+<h4><strong>common&nbsp;</strong>– “Most people can find something in common with each other.”</h4>
+<h4><strong>poor </strong>– “We had a poor harvest this year because it was so dry.”</h4>
+<h4><strong>other&nbsp; </strong>– “This pen doesn’t work, try the other one.”</h4>
+<h4><strong>natural </strong>– “This cleaner is natural, there aren’t any chemicals in it.”</h4>
+<h4><strong>race </strong>– “We watched the car race on TV.”</h4>
+<h4><strong>concern – </strong>“Thank you for your concern, but I’m fine.”</h4>
+<h4><strong>series </strong>– “What is your favorite TV series?”</h4>
+<h4><strong>significant </strong>– “His job earns a significant amount of money.”</h4>
+<h4><strong>similar </strong>– “These earrings don’t match, but they are similar.”</h4>
+<h4><strong>hot </strong>– “Don’t touch the stove, it’s still hot.”</h4>
+<h4><strong>language </strong>– “Learning a new language is fun.”</h4>
+<h4><strong>each </strong>– “Put a flower in each vase.”</h4>
+<h4><strong>usually </strong>– “I usually shop at the corner store.”</h4>
+<h4><strong>response </strong>– “I didn’t expect his response to come so soon.”</h4>
+<h4><strong>dead – </strong>“My phone is dead, let me charge it.”</h4>
+<h4><strong>rise </strong>– “The sun will rise at 7:00 a.m.”</h4>
+<h4><strong>animal </strong>– “What kind of animal is that?”</h4>
+<h4><strong>factor </strong>– “Heredity is a factor in your overall health.”</h4>
+<h4><strong>decade </strong>– “I’ve lived in this city for over a decade.”</h4>
+<h4><strong>article </strong>– “Did you read that newspaper article?”</h4>
+<h4><strong>shoot </strong>– “He wants to shoot arrows at the target.”</h4>
+<h4><strong>east </strong>– “Drive east for three miles.”</h4>
+<h4><strong>save </strong>– “I save all my cans for recycling.”</h4>
+<h4><strong>seven </strong>– “There are seven slices of pie left.”</h4>
+<h4><strong>artist </strong>– “Taylor Swift is a recording artist.”</h4>
+<h4><strong>away </strong>– “I wish that mosquito would go away.”<strong><br></strong></h4>
+<h4><strong>scene </strong>– “He painted a colorful street scene.”</h4>
+<h4><strong>stock </strong>– “That shop has a good stock of postcards.”</h4>
+<h4><strong>career </strong>– “Retail sales is a good career for some people.”</h4>
+<h4><strong>despite </strong>– “Despite the rain, we will still have the picnic.”</h4>
+<h4><strong>central </strong>– “There is good shopping in central London.”</h4>
+<h4><strong>eight </strong>– “That recipe takes eight cups of flour.”</h4>
+<h4><strong>thus </strong>– “We haven’t had any problems thus far.”</h4>
+<h4><strong>treatment </strong>– “I will propose a treatment plan for your injury.”</h4>
+<h4><strong>beyond </strong>– “The town is just beyond those mountains.”</h4>
+<h4><strong>happy </strong>– “Kittens make me happy.”</h4>
+<h4><strong>exactly </strong>– “Use exactly one teaspoon of salt in that recipe.”</h4>
+<h4><strong>protect </strong>– “A coat will protect you from the cold weather.”</h4>
+<h4><strong>approach </strong>– “The cat slowly approached the bird.”</h4>
+<h4><strong>lie </strong>– “Teach your children not to lie.”</h4>
+<h4><strong>size </strong>– “What size is that shirt?</h4>
+<h4><strong>dog&nbsp;</strong>– “Do you think a dog is a good pet?”</h4>
+<h4><strong>fund&nbsp;</strong>– “I have a savings fund for college.”</h4>
+<h4><strong>serious </strong>– “She is so serious, she never laughs.”</h4>
+<h4><strong>occur </strong>– “Strange things occur in that empty house.”</h4>
+<h4><strong>media </strong>– “That issue has been discussed in the media.”</h4>
+<h4><strong>ready </strong>– “Are you ready to leave for work?”</h4>
+<h4><strong>sign </strong>– “That store needs a bigger sign.”</h4>
+<h4><strong>thought </strong>– “I’ll have to give it some thought.”</h4>
+<h4><strong>list </strong>– “I made a list of things to do.”</h4>
+<h4><strong>individual </strong>– “You can buy an individual or group membership.”</h4>
+<h4><strong>simple </strong>– “The appliance comes with simple instructions.”</h4>
+<h4><strong>quality </strong>– “I paid a little more for quality shoes.”</h4>
+<h4><strong>pressure </strong>– “There is no pressure to finish right now.”</h4>
+<h4><strong>accept </strong>– “Will you accept my credit card?”</h4>
+<h4><strong>answer </strong>– “Give me your answer by noon tomorrow.”</h4>
+<h4><strong>hard </strong>– “That test was very hard.”</h4>
+<h4><strong>resource </strong>– “The library has many online resources.”</h4>
+<h4><strong>identify </strong>– “I can’t identify that plant.”</h4>
+<h4><strong>left </strong>– “The door is on your left as you approach.”</h4>
+<h4><strong>meeting </strong>– “We’ll have a staff meeting after lunch.”</h4>
+<h4><strong>determine </strong>– “Eye color is genetically determined.”</h4>
+<h4><strong>prepare </strong>– “I’ll prepare breakfast tomorrow.”</h4>
+<h4><strong>disease </strong>– “Face masks help prevent disease.”</h4>
+<h4><strong>whatever – </strong>“Choose whatever flavor you like the best.”</h4>
+<h4><strong>success </strong>– “Failure is the back door to success.”</h4>
+<h4><strong>argue </strong>– “It’s not a good idea to argue with your boss.”</h4>
+<h4><strong>cup </strong>– “Would you like a cup of coffee?”</h4>
+<h4><strong>particularly </strong>– “It’s not particularly hot outside, just warm.”</h4>
+<h4><strong>amount </strong>– “It take a large amount of food to feed an elephant.”</h4>
+<h4><strong>ability </strong>– “He has the ability to explain things well.”</h4>
+<h4><strong>staff </strong>– “There are five people on staff here.”</h4>
+<h4><strong>recognize </strong>– “Do you recognize the person in this photo?”</h4>
+<h4><strong>indicate </strong>– “Her reply indicated that she understood.”</h4>
+<h4><strong>character </strong>– “You can trust people of good character.”</h4>
+<h4><strong>growth </strong>– “The company has seen strong growth this quarter.”</h4>
+<h4><strong>loss </strong>– “The farmer suffered heavy losses after the storm.”</h4>
+<h4><strong>degree </strong>– “Set the oven to 300 degrees.”</h4>
+<h4><strong>wonder </strong>– “I wonder if the Bulls will win the game.”</h4>
+<h4><strong>attack </strong>– “The army will attack at dawn.”</h4>
+<h4><strong>herself </strong>– “She bought herself a new coat.”</h4>
+<h4><strong>region </strong>– “What internet services are in your region?”</h4>
+<h4><strong>television</strong> – “I don’t watch much television.”</h4>
+<h4><strong>box </strong>– “I packed my dishes in a strong box.”</h4>
+<h4><strong>TV </strong>– “There is a good movie on TV tonight.”</h4>
+<h4><strong>training </strong>– “The company will pay for your training.”</h4>
+<h4><strong>pretty </strong>– “That is a pretty dress.”</h4>
+<h4><strong>trade </strong>– “The stock market traded lower today.”</h4>
+<h4><strong>deal </strong>– “I got a good deal at the store.”</h4>
+<h4><strong>election </strong>– “Who do you think will win the election?”</h4>
+<h4><strong>everybody </strong>– “Everybody likes ice cream.”</h4>
+<h4><strong>physical </strong>– “Keep a physical distance of six feet.”</h4>
+<h4><strong>lay </strong>– “Lay the baby in her crib, please.”</h4>
+<h4><strong>general </strong>– “My general impression of the restaurant was good.”</h4>
+<h4><strong>feeling </strong>– “I have a good feeling about this.”</h4>
+<h4><strong>standard </strong>– “The standard fee is $10.00.”</h4>
+<h4><strong>bill </strong>– “The electrician will send me a bill.”</h4>
+<h4><strong>message </strong>– “You have a text message on your phone.”</h4>
+<h4><strong>fail </strong>– “I fail to see what is so funny about that.”</h4>
+<h4><strong>outside </strong>– “The cat goes outside sometimes.”</h4>
+<h4><strong>arrive </strong>– “When will your plane arrive?”</h4>
+<h4><strong>analysis </strong>– “I’ll give you my analysis when I’ve seen everything.”</h4>
+<h4><strong>benefit </strong>– “There are many health benefits to quinoa.”</h4>
+<h4><strong>name </strong>– “What’s your name?”<strong><br></strong></h4>
+<h4><strong>sex </strong>– “Do you know the sex of your baby yet?”</h4>
+<h4><strong>forward </strong>– “Move the car forward a few feet.”</h4>
+<h4><strong>lawyer </strong>– “My lawyer helped me write a will.”</h4>
+<h4><strong>present </strong>– “If everyone is present, the meeting can begin.”</h4>
+<h4><strong>section </strong>– “What section of the stadium are you sitting in?”</h4>
+<h4><strong>environmental </strong>– “Environmental issues are in the news.”</h4>
+<h4><strong>glass </strong>– “Glass is much heavier than plastic.”</h4>
+<h4><strong>answer </strong>– “Could you answer a question for me?”</h4>
+<h4><strong>skill </strong>– “His best skill is woodworking.”</h4>
+<h4><strong>sister </strong>– “My sister lives close to me.”</h4>
+<h4><strong>PM </strong>– “The movie starts at 7:30 PM.”</h4>
+<h4><strong>professor </strong>– “Dr. Smith is my favorite professor.”</h4>
+<h4><strong>operation </strong>– “The mining operation employs thousands of people.”</h4>
+<h4><strong>financial </strong>– “I keep my accounts at my financial institution.”</h4>
+<h4><strong>crime </strong>– “The police fight crime.”</h4>
+<h4><strong>stage </strong>– “A caterpillar is the larval stage of a butterfly.”</h4>
+<h4><strong>ok </strong>– “Would it be ok to eat out tonight?”</h4>
+<h4><strong>compare </strong>– “We should compare cars before we buy one.”</h4>
+<h4><strong>authority </strong>– “City authorities make the local laws.”</h4>
+<h4><strong>miss </strong>– “I miss you, when will I see you again?”</h4>
+<h4><strong>design </strong>– “We need to design a new logo.”</h4>
+<h4><strong>sort </strong>– “Let’s sort these beads according to color.”</h4>
+<h4><strong>one </strong>– “I only have one cat.”</h4>
+<h4><strong>act </strong>– “I’ll act on your information today.”</h4>
+<h4><strong>ten </strong>– “The baby counted her ten toes.”</h4>
+<h4><strong>knowledge </strong>– “Do you have the knowledge to fix that?”</h4>
+<h4><strong>gun </strong>– “Gun ownership is a controversial topic.”</h4>
+<h4><strong>station </strong>– “There is a train station close to my house.”</h4>
+<h4><strong>blue </strong>– “My favorite color is blue.”</h4>
+<h4><strong>state </strong>– “After the accident I was in a state of shock.”</h4>
+<h4><strong>strategy </strong>– “Our new corporate strategy is written here.”</h4>
+<h4><strong>little </strong>– “I prefer little cars.”</h4>
+<h4><strong>clearly </strong>– “The instructions were clearly written.”</h4>
+<h4><strong>discuss </strong>– “We’ll discuss that at the meeting.”</h4>
+<h4><strong>indeed </strong>– “Your mother does indeed have hearing loss.”</h4>
+<h4><strong>force </strong>– “It takes a lot of force to open that door.”</h4>
+<h4><strong>truth </strong>– “Please tell me the truth.”</h4>
+<h4><strong>song </strong>– “That’s a beautiful song.”</h4>
+<h4><strong>example </strong>– “I need an example of that grammar point, please.”</h4>
+<h4><strong>democratic </strong>– “Does Australia have a democratic government?”</h4>
+<h4><strong>check </strong>– “Please check my work to be sure it’s correct.”</h4>
+<h4><strong>environment </strong>– “We live in a healthy environment.”</h4>
+<h4><strong>leg </strong>– “The boy broke his leg.”</h4>
+<h4><strong>dark </strong>– “Turn on the light, it’s dark in here.”</h4>
+<h4><strong>public </strong>– “Masks must be worn in public places.”</h4>
+<h4><strong>various</strong> – “That rug comes in various shades of gray.”</h4>
+<h4><strong>rather </strong>– “Would you rather have a hamburger than a hot dog?”</h4>
+<h4><strong>laugh </strong>– “That movie always makes me laugh.”</h4>
+<h4><strong>guess </strong>– “If you don’t know, just guess.”</h4>
+<h4><strong>executive </strong>– “The company’s executives are paid well.”</h4>
+<h4><strong>set </strong>– “Set the glass on the table, please.”</h4>
+<h4><strong>study </strong>– “He needs to study for the test.”</h4>
+<h4><strong>prove </strong>– “The employee proved his worth.”</h4>
+<h4><strong>hang </strong>– “Please hang your coat on the hook.”</h4>
+<h4><strong>entire </strong>– “He ate the entire meal in 10 minutes.”</h4>
+<h4><strong>rock </strong>– “There are decorative rocks in the garden.”</h4>
+<h4><strong>design </strong>– “The windows don’t open by design.”</h4>
+<h4><strong>enough </strong>– “Have you had enough coffee?”</h4>
+<h4><strong>forget </strong>– “Don’t forget to stop at the store.”</h4>
+<h4><strong>since </strong>– “She hasn’t eaten since yesterday.”</h4>
+<h4><strong>claim </strong>– “I made an insurance claim for my car accident.”</h4>
+<h4><strong>note </strong>– “Leave me a note if you’re going to be late.”</h4>
+<h4><strong>remove </strong>– “Remove the cookies from the oven.”</h4>
+<h4><strong>manager </strong>– “The manager will look at your application.”</h4>
+<h4><strong>help </strong>– “Could you help me move this table?”</h4>
+<h4><strong>close </strong>– “Close the door, please.”</h4>
+<h4><strong>sound </strong>– “The dog did not make a sound.”</h4>
+<h4><strong>enjoy </strong>– “I enjoy soda.”</h4>
+<h4><strong>network </strong>– “Band is the name of our internet network.”</h4>
+<h4><strong>legal </strong>– “The legal documents need to be signed.”</h4>
+<h4><strong>religious </strong>– “She is very religious, she attends church weekly.”</h4>
+<h4><strong>cold </strong>– “My feet are cold.”</h4>
+<h4><strong>form </strong>– “Please fill out this application form.”</h4>
+<h4><strong>final </strong>– “The divorce was final last month.”</h4>
+<h4><strong>main </strong>– “The main problem is a lack of money.”</h4>
+<h4><strong>science </strong>– “He studies health science at the university.”</h4>
+<h4><strong>green </strong>– “The grass is green.”</h4>
+<h4><strong>memory </strong>– “He has a good memory.”</h4>
+<h4><strong>card </strong>– “They sent me a card for my birthday.”</h4>
+<h4><strong>above </strong>– “Look on the shelf above the sink.”</h4>
+<h4><strong>seat </strong>– “That’s a comfortable seat.”</h4>
+<h4><strong>cell </strong>– “Your body is made of millions of cells.”</h4>
+<h4><strong>establish </strong>– “They established their business in 1942.”</h4>
+<h4><strong>nice </strong>– “That’s a very nice car.”<strong><br></strong></h4>
+<h4><strong>trial </strong>– “They are employing her on a trial basis.”</h4>
+<h4><strong>expert </strong>– “Matt is an IT expert.”</h4>
+<h4><strong>that </strong>– “Did you see that movie?”</h4>
+<h4><strong>spring </strong>– “Spring is the most beautiful season.”</h4>
+<h4><strong>firm – </strong>“Her ‘no” was very firm, she won’t change her mind.”</h4>
+<h4><strong>Democrat </strong>– “The Democrats control the Senate.”</h4>
+<h4><strong>radio </strong>– “I listen to the radio in the car.”</h4>
+<h4><strong>visit </strong>– “We visited the museum today.”</h4>
+<h4><strong>management </strong>– “That store has good management.”</h4>
+<h4><strong>care </strong>– “She cares for her mother at home.”</h4>
+<h4><strong>avoid </strong>– “You should avoid poison ivy.”</h4>
+<h4><strong>imagine </strong>– “Can you imagine if pigs could fly?”</h4>
+<h4><strong>tonight </strong>– “Would you like to go out tonight?”</h4>
+<h4><strong>huge </strong>– “That truck is huge!”</h4>
+<h4><strong>ball </strong>– “He threw the ball to the dog.”</h4>
+<h4><strong>no </strong>– “I said ‘no,’ please don’t ask again.”</h4>
+<h4><strong>close </strong>– “Close the window, please.”</h4>
+<h4><strong>finish </strong>– “Did you finish your homework?”</h4>
+<h4><strong>yourself </strong>– “You gave yourself a haircut?”</h4>
+<h4><strong>talk </strong>– “He talks a lot.”</h4>
+<h4><strong>theory </strong>– “In theory, that’s a good plan.”</h4>
+<h4><strong>impact </strong>– “The drought had a big impact on the crops.”</h4>
+<h4><strong>respond </strong>– “He hasn’t responded to my text yet.”</h4>
+<h4><strong>statement </strong>– “The police chief gave a statement to the media.”</h4>
+<h4><strong>maintain </strong>– “Exercise helps you maintain a healthy weight.”</h4>
+<h4><strong>charge </strong>– “I need to charge my phone.”</h4>
+<h4><strong>popular </strong>– “That’s a popular restaurant.”</h4>
+<h4><strong>traditional</strong> – “They serve traditional Italian food there.”</h4>
+<h4><strong>onto </strong>– “Jump onto the boat and we’ll go fishing.”</h4>
+<h4><strong>reveal </strong>– “Washing off the dirt revealed the boy’s skinned knee.”</h4>
+<h4><strong>direction </strong>– “What direction is the city from here?”</h4>
+<h4><strong>weapon </strong>– “No weapons are allowed in government buildings.”</h4>
+<h4><strong>employee </strong>– “That store only has three employees.”</h4>
+<h4><strong>cultural </strong>– “There is cultural significance to those old ruins.”</h4>
+<h4><strong>contain </strong>– “The carton contains a dozen egges.”</h4>
+<h4><strong>peace</strong> – “World leaders gathered for peace talks.”</h4>
+<h4><strong>head </strong>– “My head hurts.”</h4>
+<h4><strong>control </strong>– “Keep control of the car.”</h4>
+<h4><strong>base </strong>– “The glass has a heavy base so it won’t fall over.”</h4>
+<h4><strong>pain </strong>– “I have chest pain.”</h4>
+<h4><strong>apply </strong>– “Maria applied for the job.”</h4>
+<h4><strong>play </strong>– “The children play at the park.”</h4>
+<h4><strong>measure </strong>– “Measure twice, cut once.”</h4>
+<h4><strong>wide </strong>– “The doorway was very wide.”<strong><br></strong></h4>
+<h4><strong>shake </strong>– “Don’t shake the can of soda.”</h4>
+<h4><strong>fly </strong>– “We can fly to France next year.”</h4>
+<h4><strong>interview </strong>– “My job interview went well.”</h4>
+<h4><strong>manage </strong>– “Did you manage to find the keys?”<strong><br></strong></h4>
+<h4><strong>chair </strong>– “The table has six matching chairs.”</h4>
+<h4><strong>fish </strong>– “I don’t enjoy eating fish.”</h4>
+<h4><strong>particular </strong>– “That particular style looks good on you.”</h4>
+<h4><strong>camera </strong>– “I use the camera on my phone.”</h4>
+<h4><strong>structure </strong>– “The building’s structure is solid.”</h4>
+<h4><strong>politics </strong>– “Mitch is very active in politics.”</h4>
+<h4><strong>perform </strong>– “The singer will perform tonight.”</h4>
+<h4><strong>bit </strong>– “It rained a little bit last night.”</h4>
+<h4><strong>weight</strong> – “Keep track of your pet’s weight.”</h4>
+<h4><strong>suddenly </strong>– “The storm came up suddenly.”</h4>
+<h4><strong>discover </strong>– “You’ll discover treasures at that thrift store.”</h4>
+<h4><strong>candidate </strong>– “There are ten candidates for the position.”</h4>
+<h4><strong>top </strong>– “The flag flies on the top of that building.”</h4>
+<h4><strong>production </strong>– “Factory production has improved over the summer.”</h4>
+<h4><strong>treat </strong>– “Give yourself a treat for a job well done.”</h4>
+<h4><strong>trip </strong>– “We are taking a trip to Florida in January.”</h4>
+<h4><strong>evening </strong>– “I’m staying home this evening.”</h4>
+<h4><strong>affect </strong>– “My bank account will affect how much I can buy.”</h4>
+<h4><strong>inside</strong> – “The cat stays inside.”</h4>
+<h4><strong>conference </strong>– “There will be expert presenters at the conference.”</h4>
+<h4><strong>unit </strong>– “A foot is a unit of measure.”</h4>
+<h4><strong>best </strong>– “Those are the best glasses to buy.”</h4>
+<h4><strong>style </strong>– “My dress is out of style.”</h4>
+<h4><strong>adult </strong>– “Adults pay full price, but children are free.”</h4>
+<h4><strong>worry </strong>– “Don’t worry about tomorrow.”</h4>
+<h4><strong>range&nbsp;</strong>– My doctor offered me a range of options.</h4>
+<h4><strong>mention&nbsp;</strong>– “Can you mention me in your story?”</h4>
+<h4><strong>rather&nbsp;</strong>– “Rather than focusing on the bad things, let’s be grateful for the good things.”</h4>
+<h4><strong>far&nbsp;</strong>– “I don’t want to move far from my family.”</h4>
+<h4><strong>deep&nbsp;</strong>– “That poem about life is deep.”</h4>
+<h4><b>front –&nbsp;</b>“Please face front.”</h4>
+<h4><strong>edge&nbsp;</strong>– “Please do not stand so close to the edge of the cliff.”</h4>
+<h4><strong>individual&nbsp;</strong>– “These potato chips are in an individual serving size package.”</h4>
+<h4><strong>specific&nbsp;</strong>– “Could you be more specific?”</h4>
+<h4><strong>writer&nbsp;</strong>– “You are a good writer.”</h4>
+<h4><strong>trouble&nbsp;</strong>– “Stay out of trouble.”</h4>
+<h4><strong>necessary&nbsp;</strong>– “It is necessary to sleep.”</h4>
+<h4><strong>throughout&nbsp;</strong>– “Throughout my life I have always enjoyed reading.”</h4>
+<h4><strong>challenge&nbsp;</strong>– “I challenge you to do better.”</h4>
+<h4><strong>fear&nbsp;</strong>– “Do you have any fears?”</h4>
+<h4><strong>shoulder&nbsp;</strong>– “You do not have to shoulder all the work on your own.”</h4>
+<h4><strong>institution&nbsp;</strong>– “Have you attended any institution of higher learning?”</h4>
+<h4><strong>middle&nbsp;</strong>– “I am a middle child with one older brother and one younger sister.”</h4>
+<h4><strong>sea&nbsp;</strong>– “I want to sail the seven seas.”</h4>
+<h4><strong>dream&nbsp;</strong>– “I have a dream.”</h4>
+<h4><strong>bar</strong> – “A bar is a place where alcohol is served.”</h4>
+<h4><strong>beautiful&nbsp;</strong>– “You are beautiful.”</h4>
+<h4><strong>property&nbsp;</strong>– “Do you own property, like a house?”</h4>
+<h4><strong>instead&nbsp;</strong>– “Instead of eating cake I will have fruit.”</h4>
+<h4><strong>improve&nbsp;</strong>– “I am always looking for ways to improve.”</h4>
+<h4><strong>stuff&nbsp;</strong>– “When I moved, I realized I have a lot of stuff!”</h4>
+<h4><strong>claim&nbsp;</strong>– “I claim to be a fast reader, but actually I am average.”</h4>
+  
+-->
+
 </body>
 
 </html>

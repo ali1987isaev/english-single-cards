@@ -1,0 +1,702 @@
+[
+  {
+    "id": "1",
+    "word": "only",
+    "expression": "You are my only friend here.",
+    "word_translation": "только",
+    "expression_translation": "Ты мой единственный друг здесь."
+  },
+  {
+    "id": "2",
+    "word": "those",
+    "expression": "Those boots belong to my friend.",
+    "word_translation": "те",
+    "expression_translation": "Эти сапоги принадлежат моему другу."
+  },
+  {
+    "id": "3",
+    "word": "tell",
+    "expression": "Can you tell me which way to go?",
+    "word_translation": "сказать",
+    "expression_translation": "Можете сказать мне, какой путь выбрать?"
+  },
+  {
+    "id": "4",
+    "word": "one",
+    "expression": "She’s the one he’s been waiting for.",
+    "word_translation": "один",
+    "expression_translation": "Она та, на которую он ждал."
+  },
+  {
+    "id": "5",
+    "word": "very",
+    "expression": "I’m very upset right now.",
+    "word_translation": "очень",
+    "expression_translation": "Я очень расстроен прямо сейчас."
+  },
+  {
+    "id": "6",
+    "word": "her",
+    "expression": "Her grandmother is sick.",
+    "word_translation": "ее",
+    "expression_translation": "Её бабушка болеет."
+  },
+  {
+    "id": "7",
+    "word": "even",
+    "expression": "She can’t even stand on her own.",
+    "word_translation": "даже",
+    "expression_translation": "Она даже не может стоять сама."
+  },
+  {
+    "id": "8",
+    "word": "back",
+    "expression": "I’ll be right back.",
+    "word_translation": "назад",
+    "expression_translation": "Я вернусь сразу."
+  },
+  {
+    "id": "9",
+    "word": "any",
+    "expression": "Have you had any luck on your research?",
+    "word_translation": "любой",
+    "expression_translation": "У тебя было какое-либо везение в исследованиях?"
+  },
+  {
+    "id": "10",
+    "word": "good",
+    "expression": "You’re a good person.",
+    "word_translation": "хороший",
+    "expression_translation": "Ты хороший человек."
+  },
+  {
+    "id": "11",
+    "word": "woman",
+    "expression": "That woman looks so polished.",
+    "word_translation": "женщина",
+    "expression_translation": "Эта женщина выглядит очень стильно."
+  },
+  {
+    "id": "12",
+    "word": "through",
+    "expression": "Your faith will see you through tough times.",
+    "word_translation": "через",
+    "expression_translation": "Ваша вера поможет вам пережить тяжелые времена."
+  },
+  {
+    "id": "13",
+    "word": "us",
+    "expression": "Do you want to go with us?",
+    "word_translation": "нам, нас",
+    "expression_translation": "Ты хочешь пойти с нами?"
+  },
+  {
+    "id": "14",
+    "word": "life",
+    "expression": "This is the best day of my life.",
+    "word_translation": "жизнь",
+    "expression_translation": "Это лучший день в моей жизни."
+  },
+  {
+    "id": "15",
+    "word": "child",
+    "expression": "I just saw a child cross the street by herself.",
+    "word_translation": "ребенок, дитя",
+    "expression_translation": "Я только что увидел, как ребенок переходила улицу сама."
+  },
+  {
+    "id": "16",
+    "word": "there",
+    "expression": "Did you go there?",
+    "word_translation": "там, туда",
+    "expression_translation": "Ты там был?"
+  },
+  {
+    "id": "17",
+    "word": "work",
+    "expression": "I have to go to work.",
+    "word_translation": "работа",
+    "expression_translation": "Мне нужно идти на работу."
+  },
+  {
+    "id": "18",
+    "word": "down",
+    "expression": "Let’s go down.",
+    "word_translation": "вниз",
+    "expression_translation": "Давай пойдем вниз."
+  },
+  {
+    "id": "19",
+    "word": "may",
+    "expression": "You may take your seats.",
+    "word_translation": "можно",
+    "expression_translation": "Вы можете занять свои места."
+  },
+  {
+    "id": "20",
+    "word": "after",
+    "expression": "Let’s have dinner after work.",
+    "word_translation": "после",
+    "expression_translation": "Давай поужинаем после работы."
+  },
+  {
+    "id": "21",
+    "word": "should",
+    "expression": "Should I buy this dress?",
+    "word_translation": "должен, следует",
+    "expression_translation": "Мне следует купить это платье?"
+  },
+  {
+    "id": "22",
+    "word": "call",
+    "expression": "Call me when you get home, okay?",
+    "word_translation": "звонить",
+    "expression_translation": "Позвони мне, когда дойдешь домой, хорошо?"
+  },
+  {
+    "id": "23",
+    "word": "world",
+    "expression": "I want to travel and see the world.",
+    "word_translation": "мир",
+    "expression_translation": "Я хочу путешествовать и видеть мир."
+  },
+  {
+    "id": "24",
+    "word": "over",
+    "expression": "I can’t wait for this day to be over.",
+    "word_translation": "закончиться",
+    "expression_translation": "Я не могу дождаться, когда этот день закончится."
+  },
+  {
+    "id": "25",
+    "word": "school",
+    "expression": "My cousin goes to school here.",
+    "word_translation": "школа",
+    "expression_translation": "Мой двоюродный брат ходит в эту школу."
+  },
+  {
+    "id": "26",
+    "word": "still",
+    "expression": "I still think you should go.",
+    "word_translation": "все еще",
+    "expression_translation": "Я все еще думаю, что тебе следует пойти."
+  },
+  {
+    "id": "27",
+    "word": "try",
+    "expression": "Can you try to be nicer to him?",
+    "word_translation": "попробовать",
+    "expression_translation": "Можешь попробовать быть к нему добрее?"
+  },
+  {
+    "id": "28",
+    "word": "in",
+    "expression": "What’s in that box?",
+    "word_translation": "в",
+    "expression_translation": "Что в этой коробке?"
+  },
+  {
+    "id": "29",
+    "word": "as",
+    "expression": "As soon as I get home, I’m going to start watching that series.",
+    "word_translation": "как",
+    "expression_translation": "Как только я приду домой, я начну смотреть этот сериал."
+  },
+  {
+    "id": "30",
+    "word": "last",
+    "expression": "This is my last slice of cake, I promise!",
+    "word_translation": "последний",
+    "expression_translation": "Это моя последняя кусочек торта, обещаю!"
+  },
+  {
+    "id": "31",
+    "word": "ask",
+    "expression": "Can you ask the waiter to bring us some wine?",
+    "word_translation": "спросить",
+    "expression_translation": "Ты можешь попросить официанта принести нам вино?"
+  },
+  {
+    "id": "32",
+    "word": "need",
+    "expression": "I need some wine tonight!",
+    "word_translation": "нуждаться",
+    "expression_translation": "Мне нужно немного вина сегодня вечером!"
+  },
+  {
+    "id": "33",
+    "word": "too",
+    "expression": "I need some wine, too!",
+    "word_translation": "тоже",
+    "expression_translation": "Мне тоже нужно немного вина!"
+  },
+  {
+    "id": "34",
+    "word": "feel",
+    "expression": "I feel so tired, I just need to relax and unwind.",
+    "word_translation": "чувствовать",
+    "expression_translation": "Я так устал, мне просто нужно расслабиться и расслабиться."
+  },
+  {
+    "id": "35",
+    "word": "three",
+    "expression": "I have three sisters.",
+    "word_translation": "три",
+    "expression_translation": "У меня три сестры."
+  },
+  {
+    "id": "36",
+    "word": "when",
+    "expression": "When was the last time you saw them?",
+    "word_translation": "когда",
+    "expression_translation": "Когда ты их видел в последний раз?"
+  },
+  {
+    "id": "37",
+    "word": "state",
+    "expression": "Check out the state of that shed, it’s falling apart.",
+    "word_translation": "состояние",
+    "expression_translation": "Посмотри на состояние этого сарая, он разваливается."
+  },
+  {
+    "id": "38",
+    "word": "never",
+    "expression": "I’m never going to drink wine again.",
+    "word_translation": "никогда",
+    "expression_translation": "Я больше никогда не буду пить вино."
+  },
+  {
+    "id": "39",
+    "word": "become",
+    "expression": "Over the years we’ve become really close.",
+    "word_translation": "становиться",
+    "expression_translation": "С годами мы стали очень близкими."
+  },
+  {
+    "id": "40",
+    "word": "between",
+    "expression": "This is just between you and me.",
+    "word_translation": "между",
+    "expression_translation": "Это только между тобой и мной."
+  },
+  {
+    "id": "41",
+    "word": "high",
+    "expression": "Give me a high five!",
+    "word_translation": "высокий",
+    "expression_translation": "Дай мне пять!"
+  },
+  {
+    "id": "42",
+    "word": "really",
+    "expression": "I really like your painting!",
+    "word_translation": "действительно",
+    "expression_translation": "Мне действительно нравится твоя картина!"
+  },
+  {
+    "id": "43",
+    "word": "something",
+    "expression": "I have something for you.",
+    "word_translation": "что-то",
+    "expression_translation": "У меня есть что-то для тебя."
+  },
+  {
+    "id": "44",
+    "word": "most",
+    "expression": "She’s the most beautiful girl I’ve ever seen.",
+    "word_translation": "самый",
+    "expression_translation": "Она самая красивая девушка, которую я когда-либо видел."
+  },
+  {
+    "id": "45",
+    "word": "another",
+    "expression": "I’ll have another glass of wine, please.",
+    "word_translation": "еще один",
+    "expression_translation": "Принесите мне еще одну чашку вина, пожалуйста."
+  },
+  {
+    "id": "46",
+    "word": "much",
+    "expression": "I love you guys so much.",
+    "word_translation": "много",
+    "expression_translation": "Я так вас люблю, ребята."
+  },
+  {
+    "id": "47",
+    "word": "family",
+    "expression": "You are like family to me.",
+    "word_translation": "семья",
+    "expression_translation": "Вы мне как семья."
+  },
+  {
+    "id": "48",
+    "word": "own",
+    "expression": "I want to get my own place.",
+    "word_translation": "свой",
+    "expression_translation": "Я хочу иметь свое место."
+  },
+  {
+    "id": "49",
+    "word": "out",
+    "expression": "Get out of my room.",
+    "word_translation": "вон, из",
+    "expression_translation": "Вон из моей комнаты."
+  },
+  {
+    "id": "50",
+    "word": "leave",
+    "expression": "I want you to leave.",
+    "word_translation": "уйти, оставить",
+    "expression_translation": "Я хочу, чтобы ты ушел."
+  },
+  {
+    "id": "51",
+    "word": "put",
+    "expression": "Please put down that book and listen to me.",
+    "word_translation": "положить",
+    "expression_translation": "Пожалуйста, положи эту книгу и выслушай меня."
+  },
+  {
+    "id": "52",
+    "word": "old",
+    "expression": "I feel so old!",
+    "word_translation": "старый",
+    "expression_translation": "Я чувствую себя таким старым!"
+  },
+  {
+    "id": "53",
+    "word": "while",
+    "expression": "I can wait for you here while you shop.",
+    "word_translation": "пока",
+    "expression_translation": "Я могу подождать вас здесь, пока вы покупаете."
+  },
+  {
+    "id": "54",
+    "word": "mean",
+    "expression": "I didn’t mean to sound so angry.",
+    "word_translation": "иметь в виду, значить",
+    "expression_translation": "Я не хотел звучать так злым."
+  },
+  {
+    "id": "55",
+    "word": "on",
+    "expression": "Can you turn on the lights?",
+    "word_translation": "на",
+    "expression_translation": "Можешь включить свет?"
+  },
+  {
+    "id": "56",
+    "word": "keep",
+    "expression": "Can we keep the lights on tonight?",
+    "word_translation": "держать",
+    "expression_translation": "Можем ли мы оставить свет включенным сегодня ночью?"
+  },
+  {
+    "id": "57",
+    "word": "student",
+    "expression": "I’ve always been a diligent student.",
+    "word_translation": "студент",
+    "expression_translation": "Я всегда был старательным студентом."
+  },
+  {
+    "id": "58",
+    "word": "why",
+    "expression": "This is why I don’t go out anymore.",
+    "word_translation": "почему",
+    "expression_translation": "Вот почему я больше не выхожу."
+  },
+  {
+    "id": "59",
+    "word": "let",
+    "expression": "Why won’t you let him know how you feel?",
+    "word_translation": "позволять",
+    "expression_translation": "Почему бы тебе не дать ему знать, как ты чувствуешь?"
+  },
+  {
+    "id": "60",
+    "word": "great",
+    "expression": "This ice cream place is great for families with kids!",
+    "word_translation": "великий, замечательный",
+    "expression_translation": "Это место с мороженным замечательно подходит для семей с детьми!"
+  },
+  {
+    "id": "61",
+    "word": "same",
+    "expression": "Hey, we’re wearing the same shirt!",
+    "word_translation": "тот же самый",
+    "expression_translation": "Эй, мы носим одну и ту же рубашку!"
+  },
+  {
+    "id": "62",
+    "word": "big",
+    "expression": "I have this big crush on you, my dear wife.",
+    "word_translation": "большой",
+    "expression_translation": "Я без ума от тебя, моя дорогая жена."
+  },
+  {
+    "id": "63",
+    "word": "group",
+    "expression": "The group sitting across our table is so noisy.",
+    "word_translation": "группа",
+    "expression_translation": "Группа, сидящая за нашим столом, так шумит."
+  },
+  {
+    "id": "64",
+    "word": "begin",
+    "expression": "Where do I begin with this huge project?",
+    "word_translation": "начинать",
+    "expression_translation": "С чего начать с этим огромным проектом?"
+  },
+  {
+    "id": "65",
+    "word": "seem",
+    "expression": "She may seem quiet, but she’s really outgoing once you get to know her.",
+    "word_translation": "казаться",
+    "expression_translation": "Она может казаться тихой, но она действительно общительная, как только вы узнаете ее."
+  },
+  {
+    "id": "66",
+    "word": "country",
+    "expression": "Japan is such a beautiful country!",
+    "word_translation": "страна",
+    "expression_translation": "Япония - такая красивая страна!"
+  },
+  {
+    "id": "67",
+    "word": "help",
+    "expression": "I need help with my Math homework.",
+    "word_translation": "помощь",
+    "expression_translation": "Мне нужна помощь с моими математическими домашними заданиями."
+  },
+  {
+    "id": "68",
+    "word": "talk",
+    "expression": "Can we talk in private?",
+    "word_translation": "говорить",
+    "expression_translation": "Можем ли мы поговорить наедине?"
+  },
+  {
+    "id": "69",
+    "word": "where",
+    "expression": "Where were you last night?",
+    "word_translation": "где",
+    "expression_translation": "Где ты был прошлой ночью?"
+  },
+  {
+    "id": "70",
+    "word": "turn",
+    "expression": "If only I could turn back time.",
+    "word_translation": "поворачивать",
+    "expression_translation": "Если бы только я мог вернуть время назад."
+  },
+  {
+    "id": "71",
+    "word": "problem",
+    "expression": "The problem is we think we have plenty of time.",
+    "word_translation": "проблема",
+    "expression_translation": "Проблема в том, что мы думаем, что у нас много времени."
+  },
+  {
+    "id": "72",
+    "word": "every",
+    "expression": "Every person has his own big goal to fulfill.",
+    "word_translation": "каждый",
+    "expression_translation": "У каждого человека есть своя большая цель, которую нужно достичь."
+  },
+  {
+    "id": "73",
+    "word": "start",
+    "expression": "This is a great start to learn the English language.",
+    "word_translation": "начинать",
+    "expression_translation": "Это отличное начало для изучения английского языка."
+  },
+  {
+    "id": "74",
+    "word": "hand",
+    "expression": "Don’t let go of my hand.",
+    "word_translation": "рука",
+    "expression_translation": "Не отпускай мою руку."
+  },
+  {
+    "id": "75",
+    "word": "might",
+    "expression": "This might actually work.",
+    "word_translation": "мочь, возможно",
+    "expression_translation": "Это может действительно сработать."
+  },
+  {
+    "id": "76",
+    "word": "American",
+    "expression": "The American culture is so dynamic.",
+    "word_translation": "американский",
+    "expression_translation": "Американская культура настолько динамична."
+  },
+  {
+    "id": "77",
+    "word": "show",
+    "expression": "Can you show me how to use this vacuum cleaner?",
+    "word_translation": "показать",
+    "expression_translation": "Можешь показать мне, как пользоваться этим пылесосом?"
+  },
+  {
+    "id": "78",
+    "word": "part",
+    "expression": "This is my favorite part of the movie!",
+    "word_translation": "часть",
+    "expression_translation": "Это моя любимая часть фильма!"
+  },
+  {
+    "id": "79",
+    "word": "about",
+    "expression": "What is the story about?",
+    "word_translation": "о, около",
+    "expression_translation": "О чем идет рассказ?"
+  },
+  {
+    "id": "80",
+    "word": "against",
+    "expression": "I am so against domestic abuse!",
+    "word_translation": "против",
+    "expression_translation": "Я так против домашнего насилия!"
+  },
+  {
+    "id": "81",
+    "word": "place",
+    "expression": "This place is wonderful!",
+    "word_translation": "место",
+    "expression_translation": "Это место замечательное!"
+  },
+  {
+    "id": "82",
+    "word": "over",
+    "expression": "She kept saying this over and over again.",
+    "word_translation": "поверх, через",
+    "expression_translation": "Она продолжала говорить это снова и снова."
+  },
+  {
+    "id": "83",
+    "word": "such",
+    "expression": "He is such an annoying person.",
+    "word_translation": "такой",
+    "expression_translation": "Он такой раздражающий человек."
+  },
+  {
+    "id": "84",
+    "word": "again",
+    "expression": "Can we play that game again?",
+    "word_translation": "снова",
+    "expression_translation": "Можем ли мы сыграть в эту игру еще раз?"
+  },
+  {
+    "id": "85",
+    "word": "few",
+    "expression": "Just a few more errands and I’m done!",
+    "word_translation": "несколько",
+    "expression_translation": "Осталось всего несколько дел и я закончу!"
+  },
+  {
+    "id": "86",
+    "word": "case",
+    "expression": "What an interesting case you are working on now!",
+    "word_translation": "случай, дело",
+    "expression_translation": "Какое интересное дело вы сейчас рассматриваете!"
+  },
+  {
+    "id": "87",
+    "word": "most",
+    "expression": "That’s the most interesting story I’ve ever heard.",
+    "word_translation": "самый",
+    "expression_translation": "Это самая интересная история, которую я когда-либо слышал."
+  },
+  {
+    "id": "88",
+    "word": "week",
+    "expression": "I had a rough week.",
+    "word_translation": "неделя",
+    "expression_translation": "У меня была тяжелая неделя."
+  },
+  {
+    "id": "89",
+    "word": "company",
+    "expression": "Will you keep me company?",
+    "word_translation": "компания",
+    "expression_translation": "Ты будешь меня развлекать?"
+  },
+  {
+    "id": "90",
+    "word": "where",
+    "expression": "Where are we going?",
+    "word_translation": "где",
+    "expression_translation": "Куда мы идем?"
+  },
+  {
+    "id": "91",
+    "word": "system",
+    "expression": "What’s wrong with the airport’s system?",
+    "word_translation": "система",
+    "expression_translation": "Что не так с системой аэропорта?"
+  },
+  {
+    "id": "92",
+    "word": "each",
+    "expression": "Can you give each of them an apple?",
+    "word_translation": "каждый",
+    "expression_translation": "Можете ли вы дать каждому из них яблоко?"
+  },
+  {
+    "id": "93",
+    "word": "right",
+    "expression": "I’m right this time.",
+    "word_translation": "правильный",
+    "expression_translation": "На этот раз я прав."
+  },
+  {
+    "id": "94",
+    "word": "program",
+    "expression": "This community program for teens is really helpful.",
+    "word_translation": "программа",
+    "expression_translation": "Эта общественная программа для подростков действительно полезна."
+  },
+  {
+    "id": "95",
+    "word": "hear",
+    "expression": "Did you hear that?",
+    "word_translation": "слышать",
+    "expression_translation": "Ты слышал это?"
+  },
+  {
+    "id": "96",
+    "word": "so",
+    "expression": "I’m so sleepy.",
+    "word_translation": "так, очень",
+    "expression_translation": "Мне так сонно."
+  },
+  {
+    "id": "97",
+    "word": "question",
+    "expression": "I have a question for you.",
+    "word_translation": "вопрос",
+    "expression_translation": "У меня есть к тебе вопрос."
+  },
+  {
+    "id": "98",
+    "word": "during",
+    "expression": "During the session, I saw him fall asleep.",
+    "word_translation": "в течение, во время",
+    "expression_translation": "Во время сессии я видел, как он заснул."
+  },
+  {
+    "id": "99",
+    "word": "work",
+    "expression": "I have to work this weekend.",
+    "word_translation": "работать",
+    "expression_translation": "Мне нужно работать в этот уикенд."
+  },
+  {
+    "id": "100",
+    "word": "play",
+    "expression": "We can play soccer next weekend instead.",
+    "word_translation": "играть",
+    "expression_translation": "Мы можем поиграть в футбол на следующий уикенд вместо этого."
+  }
+]

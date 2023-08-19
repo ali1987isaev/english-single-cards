@@ -787,5 +787,795 @@
         "expression_translation": "Их дом хорош"
       }
     ]
+  },
+  {
+    "audio_path": "./6.mp3",
+    "topic": "Questions About The Previous Week",
+    "list": [
+      {
+        "expression": "What did you do this week?",
+        "expression_translation": "Что вы делали на этой неделе?"
+      },
+      {
+        "expression": "What was something fun you did this week?",
+        "expression_translation": "Что было интересного, что вы делали на этой неделе?"
+      },
+      {
+        "expression": "What was something you had to do this week that you didn’t care for?",
+        "expression_translation": "Что-то, что вы должны были сделать на этой неделе, но вам не хотелось (не заботило)?"
+      },
+      {
+        "expression": "Did you see anyone this week that you haven’t seen for a while?",
+        "expression_translation": "Вы видели кого-то на этой неделе, кого вы давно не видели?"
+      },
+      {
+        "expression": "Did you go visit anyone this week?",
+        "expression_translation": "Вы навещали кого-то на этой неделе?"
+      },
+      {
+        "expression": "Did anyone come to visit your house this week?",
+        "expression_translation": "Кто-то приходил к вам в гости на этой неделе?"
+      },
+      {
+        "expression": "Do you have any exciting stories to tell from the past week?",
+        "expression_translation": "У вас есть какие-нибудь интересные истории, которые вы можете рассказать за прошедшую неделю?"
+      }
+    ]
+  },
+  {
+    "audio_path": "./7.mp3",
+    "topic": "Questions About Family",
+    "list": [
+      {
+        "expression": "How many brothers and sisters do you have?",
+        "expression_translation": "Сколько у вас братьев и сестер?"
+      },
+      {
+        "expression": "Are your brothers and sisters older or younger?",
+        "expression_translation": "Ваши братья и сестры старше или младше вас?"
+      },
+      {
+        "expression": "What are their names?",
+        "expression_translation": "Как их зовут?"
+      },
+      {
+        "expression": "How do you like being a big/litter sister/brother?",
+        "expression_translation": "Как вам нравится быть старшим/младшим братом/сестрой?"
+      },
+      {
+        "expression": "What are your parents’ names?",
+        "expression_translation": "Как зовут ваших родителей?"
+      },
+      {
+        "expression": "Where does your Dad work / what does your Dad do for a job?",
+        "expression_translation": "Где работает ваш папа / чем он занимается?"
+      },
+      {
+        "expression": "Where does your Mom work / what does your Mom do for a job?",
+        "expression_translation": "Где работает ваша мама / чем она занимается?"
+      },
+      {
+        "expression": "What is your favorite thing to do as a family?",
+        "expression_translation": "Что вам больше всего нравится делать всей семьей?"
+      },
+      {
+        "expression": "Do you have any pets?",
+        "expression_translation": "У вас есть домашние животные?"
+      },
+      {
+        "expression": "What kind of pets do you have?",
+        "expression_translation": "Какие у вас есть домашние животные?"
+      },
+      {
+        "expression": "What are the names of your pets?",
+        "expression_translation": "Как зовут ваших домашних животных?"
+      }
+    ]
+  },
+  {
+    "audio_path": "./8.mp3",
+    "topic": "Kids’ Conversation Questions About Them",
+    "list": [
+      {
+        "expression": "How old are you?",
+        "expression_translation": "Сколько вам лет?"
+      },
+      {
+        "expression": "When is/was your birthday?",
+        "expression_translation": "Когда у вас день рождения?"
+      },
+      {
+        "expression": "What did you do for last birthday?",
+        "expression_translation": "Что вы делали на прошлом дне рождения?"
+      },
+      {
+        "expression": "If you could have the perfect birthday party, what would it be?",
+        "expression_translation": "Если бы вы могли устроить идеальное день рождения, какое оно было бы?"
+      },
+      {
+        "expression": "What is your favorite food?",
+        "expression_translation": "Какая ваша любимая еда?"
+      },
+      {
+        "expression": "What is one thing that your Mom/Dad makes for dinner that you just can’t stand?",
+        "expression_translation": "Что ваша мама / папа готовят на ужин, что вы не переносите?"
+      },
+      {
+        "expression": "What is your favorite kind of ice cream?",
+        "expression_translation": "Какой ваш любимый вид мороженого?"
+      },
+      {
+        "expression": "What is your favorite kind of candy?",
+        "expression_translation": "Какая ваша любимая конфета?"
+      },
+      {
+        "expression": "What is your favorite color?",
+        "expression_translation": "Какой ваш любимый цвет?"
+      },
+      {
+        "expression": "What is your favorite zoo animal?",
+        "expression_translation": "Какое ваше любимое животное в зоопарке?"
+      },
+      {
+        "expression": "What is your favorite time of the year?",
+        "expression_translation": "Какое ваше любимое время года?"
+      },
+      {
+        "expression": "Is your bedroom decorated?  How is it decorated?",
+        "expression_translation": "Ваша спальня украшена? Как она украшена?"
+      },
+      {
+        "expression": "Do you have to share your bedroom with anyone?",
+        "expression_translation": "Вы должны делить спальню с кем-то?"
+      },
+      {
+        "expression": "If you could receive one thing in the whole world as a present right now, what would it be?",
+        "expression_translation": "Если бы вы могли получить что-то в мире в подарок прямо сейчас, что бы это было?"
+      },
+      {
+        "expression": "What do you want to be when you get older?  Why?",
+        "expression_translation": "Кем бы вы хотели стать, когда вы подрастете? Почему?"
+      },
+      {
+        "expression": "What is the silliest thing you have ever said or done?",
+        "expression_translation": "Какая самая глупая вещь, которую вы когда-либо говорили или делали?"
+      },
+      {
+        "expression": "What do you like to spend your allowance on?",
+        "expression_translation": "На что вы любите тратить свои деньги?"
+      },
+      {
+        "expression": "What is one thing you don’t know how to do, that you wish you did?",
+        "expression_translation": "Какую вещь вы не знаете как сделать, но хотели бы сделать?"
+      }
+    ]
+  },
+  {
+    "audio_path": "./9.mp3",
+    "topic": "School Questions for Kids",
+    "list": [
+      {
+        "expression": "Where do you go to school?",
+        "expression_translation": "Куда ты ходишь в школу?"
+      },
+      {
+        "expression": "What grade are you in?",
+        "expression_translation": "В каком классе ты учишься?"
+      },
+      {
+        "expression": "Do you like the grade you are in more or less than last year?",
+        "expression_translation": "Тебе нравится тот класс, в котором ты учишься, больше или меньше, чем в прошлом году?"
+      },
+      {
+        "expression": "Do you ride the bus to school?",
+        "expression_translation": "Ты ездишь на автобусе в школу?"
+      },
+      {
+        "expression": "What is your teacher’s name?",
+        "expression_translation": "Как зовут твоего учителя?"
+      },
+      {
+        "expression": "What is your favorite thing to study at school?",
+        "expression_translation": "Что тебе больше всего нравится изучать в школе?"
+      },
+      {
+        "expression": "What are you studying in school right now in math? …language arts? ..science? ..etc?",
+        "expression_translation": "Что ты изучаешь сейчас в школе: математику, языковое искусство, науку и т.д.?"
+      },
+      {
+        "expression": "What is your least favorite thing to study?",
+        "expression_translation": "Что из учебного материала тебе нравится меньше всего?"
+      },
+      {
+        "expression": "Do you have lots of homework to do each night?",
+        "expression_translation": "У тебя много домашней работы каждую ночь?"
+      },
+      {
+        "expression": "Who is your best friend?",
+        "expression_translation": "Кто твой лучший друг?"
+      },
+      {
+        "expression": "What do you like to play at recess?",
+        "expression_translation": "Что ты любишь играть на переменах?"
+      },
+      {
+        "expression": "Do you ever stay home from school sick?",
+        "expression_translation": "Ты когда-нибудь остаешься дома из-за болезни?"
+      },
+      {
+        "expression": "When was the last time you stayed home?",
+        "expression_translation": "Когда ты в последний раз оставался дома?"
+      }
+    ]
+  },
+  {
+    "audio_path": "./10.mp3",
+    "topic": "Questions About Their Activities",
+    "list": [
+      {
+        "expression": "What do you like to do for fun?",
+        "expression_translation": "Что ты любишь делать для развлечения?"
+      },
+      {
+        "expression": "Do you play sports? Which ones?",
+        "expression_translation": "Ты занимаешься спортом? Какими видами спорта?"
+      },
+      {
+        "expression": "What is your favorite position to play?",
+        "expression_translation": "Какая твоя любимая позиция в игре?"
+      },
+      {
+        "expression": "Does your team have a name?",
+        "expression_translation": "У вашей команды есть название?"
+      },
+      {
+        "expression": "What is your favorite thing to do on the weekend?",
+        "expression_translation": "Что ты любишь делать на выходных?"
+      },
+      {
+        "expression": "Do you prefer to spend your time inside or outside?",
+        "expression_translation": "Ты предпочитаешь проводить время в помещении или на улице?"
+      },
+      {
+        "expression": "Do you like to draw? What kinds of things do you draw?",
+        "expression_translation": "Ты любишь рисовать? Какие объекты ты рисуешь?"
+      },
+      {
+        "expression": "What do you do when you get home from school?",
+        "expression_translation": "Что ты делаешь, когда возвращаешься домой из школы?"
+      },
+      {
+        "expression": "Do you like to do puzzles? What about word puzzles? …number puzzles?",
+        "expression_translation": "Ты любишь собирать головоломки? А что насчет словесных головоломок? ...цифровых головоломок?"
+      },
+      {
+        "expression": "Does your family go on a vacation each year?",
+        "expression_translation": "Ваша семья отправляется на отпуск каждый год?"
+      },
+      {
+        "expression": "Where does your family go on vacation?",
+        "expression_translation": "Куда ваша семья отправляется в отпуск?"
+      },
+      {
+        "expression": "Where is the most exciting place you have been in the past year?",
+        "expression_translation": "Где самое захватывающее место, где ты побывал в прошлом году?"
+      },
+      {
+        "expression": "Do you have a bike? What does it look like?",
+        "expression_translation": "У тебя есть велосипед? Как он выглядит?"
+      }
+    ]
+  },
+  {
+    "audio_path": "./11.mp3",
+    "topic": "Questions About Cultural Things",
+    "list": [
+      {
+        "expression": "What is your favorite TV show?",
+        "expression_translation": "Какое твое любимое телешоу?"
+      },
+      {
+        "expression": "Why do you like it?",
+        "expression_translation": "Почему тебе это нравится?"
+      },
+      {
+        "expression": "What is your favorite movie ever?",
+        "expression_translation": "Какой твой самый любимый фильм?"
+      },
+      {
+        "expression": "What was the last movie you saw?",
+        "expression_translation": "Какой фильм ты последний раз смотрел?"
+      },
+      {
+        "expression": "Did you like it or not, and why?",
+        "expression_translation": "Тебе понравился или нет, и почему?"
+      },
+      {
+        "expression": "What is the best toy that you have?",
+        "expression_translation": "Какая у тебя самая лучшая игрушка?"
+      },
+      {
+        "expression": "Do you like to read?",
+        "expression_translation": "Ты любишь читать?"
+      },
+      {
+        "expression": "What is your favorite book?",
+        "expression_translation": "Какая твоя любимая книга?"
+      },
+      {
+        "expression": "What is your favorite computer game?",
+        "expression_translation": "Какая твоя любимая компьютерная игра?"
+      },
+      {
+        "expression": "Do you like to play video games?",
+        "expression_translation": "Ты любишь играть в видеоигры?"
+      },
+      {
+        "expression": "What kind of video game system do you have?",
+        "expression_translation": "Какая у вас игровая система?"
+      },
+      {
+        "expression": "What is your favorite game to play on the Wii, Xbox, etc?",
+        "expression_translation": "Какая твоя любимая игра на Wii, Xbox и т. д.?"
+      },
+      {
+        "expression": "Do you have a portable game system like a PSP or DS? Which one?",
+        "expression_translation": "У тебя есть портативная игровая система, такая как PSP или DS? Какая?"
+      },
+      {
+        "expression": "Do you like to go out to eat?",
+        "expression_translation": "Вы любите ходить куда-нибудь поесть?"
+      },
+      {
+        "expression": "What is your favorite place to eat?",
+        "expression_translation": "Какое твое любимое место, где можно поесть?"
+      },
+      {
+        "expression": "Who has the best kids’ meal toys right now?",
+        "expression_translation": "У кого сейчас лучшие детские игрушки для еды?"
+      },
+      {
+        "expression": "What kind of music do you like?",
+        "expression_translation": "Какая музыка тебе нравится?"
+      },
+      {
+        "expression": "What is your favorite song?",
+        "expression_translation": "Какая твоя любимая песня?"
+      },
+      {
+        "expression": "Do you like to dance?",
+        "expression_translation": "Ты любишь танцевать?"
+      },
+      {
+        "expression": "Do you know how to play any instruments? Which one(s)?",
+        "expression_translation": "Ты умеешь играть на каких-либо инструментах? На каких?"
+      }
+    ]
+  },
+  {
+    "audio_path": "./12.mp3",
+    "topic": "I am = I’m (Contractions) Basic English Speaking",
+    "list": [
+      {
+        "icon": "😊",
+        "word": "I am happy",
+        "expression": "I’m happy",
+        "expression_translation": "Я счастлив"
+      },
+      {
+        "icon": "😥",
+        "word": "I am sad",
+        "expression": "I’m sad",
+        "expression_translation": "Я грущу"
+      },
+      {
+        "icon": "😠",
+        "word": "I am angry",
+        "expression": "I’m angry",
+        "expression_translation": "Я злой"
+      },
+      {
+        "icon": "😠",
+        "word": "I am mad",
+        "expression": "I’m mad",
+        "expression_translation": "Я разозлился"
+      },
+      {
+        "icon": "😱",
+        "word": "I am afraid",
+        "expression": "I’m afraid",
+        "expression_translation": "Мне страшно"
+      },
+      {
+        "icon": "😱",
+        "word": "I am scared",
+        "expression": "I’m scared",
+        "expression_translation": "Мне страшно"
+      },
+      {
+        "icon": "😬",
+        "word": "I am nervous",
+        "expression": "I’m nervous",
+        "expression_translation": "Я нервничаю"
+      },
+      {
+        "icon": "😬",
+        "word": "I am anxious",
+        "expression": "I’m anxious",
+        "expression_translation": "Я тревожусь"
+      },
+      {
+        "icon": "😷",
+        "word": "I am sick",
+        "expression": "I’m sick",
+        "expression_translation": "Я болен"
+      },
+      {
+        "icon": "😴",
+        "word": "I am sleepy",
+        "expression": "I’m sleepy",
+        "expression_translation": "Я хочу спать"
+      },
+      {
+        "icon": "😴",
+        "word": "I am tired",
+        "expression": "I’m tired",
+        "expression_translation": "Я устал"
+      },
+      {
+        "icon": "🥶❄️",
+        "word": "I am cold",
+        "expression": "I’m cold",
+        "expression_translation": "Мне холодно"
+      },
+      {
+        "icon": "🔥🥵",
+        "word": "I am hot",
+        "expression": "I’m hot",
+        "expression_translation": "Мне жарко"
+      },
+      {
+        "icon": "😣🍗",
+        "word": "I am hungry",
+        "expression": "I’m hungry",
+        "expression_translation": "Я голоден"
+      },
+      {
+        "icon": "😣🥤",
+        "word": "I am thirsty",
+        "expression": "I’m thirsty",
+        "expression_translation": "Я хочу пить"
+      },
+      {
+        "icon": "👨‍🎓📚",
+        "word": "I am smart",
+        "expression": "I’m smart",
+        "expression_translation": "Я умный"
+      },
+      {
+        "icon": "🙄👂",
+        "word": "I am listening",
+        "expression": "I’m listening",
+        "expression_translation": "Я слушаю"
+      },
+      {
+        "icon": "🗣️",
+        "word": "I am speaking",
+        "expression": "I’m speaking",
+        "expression_translation": "Я говорю"
+      },
+      {
+        "icon": "🗣️",
+        "word": "I am talking",
+        "expression": "I’m talking",
+        "expression_translation": "Я разговариваю"
+      },
+      {
+        "icon": "🤔",
+        "word": "I am thinking",
+        "expression": "I’m thinking",
+        "expression_translation": "Я думаю"
+      },
+      {
+        "icon": "😎",
+        "word": "I am cool",
+        "expression": "I’m cool",
+        "expression_translation": "Я крут"
+      },
+      {
+        "icon": "🤔🙄",
+        "word": "I am confused",
+        "expression": "I’m confused",
+        "expression_translation": "Я смущен"
+      },
+      {
+        "icon": "🤕",
+        "word": "I am hurt",
+        "expression": "I’m hurt",
+        "expression_translation": "Мне больно"
+      },
+      {
+        "icon": "👴",
+        "word": "I am old",
+        "expression": "I’m old",
+        "expression_translation": "Я стар"
+      },
+      {
+        "icon": "6️⃣0️⃣",
+        "word": "I am 60 years old",
+        "expression": "I’m 60 years old",
+        "expression_translation": "Мне 60 лет"
+      },
+      {
+        "icon": "👶",
+        "word": "I am young",
+        "expression": "I’m young",
+        "expression_translation": "Я молод"
+      },
+      {
+        "icon": "2️⃣3️⃣",
+        "word": "I am 23 years old",
+        "expression": "I’m 23 years old",
+        "expression_translation": "Мне 23 года"
+      },
+      {
+        "icon": "🤰",
+        "word": "I am pregnant",
+        "expression": "I’m pregnant",
+        "expression_translation": "Я беременна"
+      },
+      {
+        "icon": "👰🤵",
+        "word": "I am married",
+        "expression": "I’m married",
+        "expression_translation": "Я замужем/женат"
+      },
+      {
+        "icon": "👩‍🔧👷",
+        "word": "I am working",
+        "expression": "I’m working",
+        "expression_translation": "Я работаю"
+      },
+      {
+        "icon": "🇲🇽",
+        "word": "I am from Mexico",
+        "expression": "I’m from Mexico",
+        "expression_translation": "Я из Мексики"
+      },
+      {
+        "icon": "🗽",
+        "word": "I am from New York",
+        "expression": "I’m from New York",
+        "expression_translation": "Я из Нью-Йорка"
+      },
+      {
+        "icon": "🇮🇳",
+        "word": "I am from India",
+        "expression": "I’m from India",
+        "expression_translation": "Я из Индии"
+      },
+      {
+        "icon": "🇩🇿",
+        "word": "I am from Algerian",
+        "expression": "I’m from Algerian",
+        "expression_translation": "Я из Алжира"
+      },
+      {
+        "icon": "🇫🇷",
+        "word": "I am French",
+        "expression": "I’m French",
+        "expression_translation": "Я француз"
+      },
+      {
+        "icon": "☪️",
+        "word": "I am Muslim",
+        "expression": "I’m Muslim",
+        "expression_translation": "Я мусульманин"
+      },
+      {
+        "icon": "⛪",
+        "word": "I am Catholic",
+        "expression": "I’m Catholic",
+        "expression_translation": "Я католик"
+      },
+      {
+        "icon": "✝️",
+        "word": "I am Christian",
+        "expression": "I’m Christian",
+        "expression_translation": "Я христианин"
+      },
+      {
+        "icon": "🕉️",
+        "word": "I am Hindu",
+        "expression": "I’m Hindu",
+        "expression_translation": "Я индуист"
+      },
+      {
+        "icon": "🔯",
+        "word": "I am Jewish",
+        "expression": "I’m Jewish",
+        "expression_translation": "Я еврей"
+      },
+      {
+        "icon": "☸️",
+        "word": "I am Buddhist",
+        "expression": "I’m Buddhist",
+        "expression_translation": "Я буддист"
+      }
+    ]
+  },
+  {
+    "audio_path": "./13.mp3",
+    "topic": "He is (He’s) She is (She’s) They are (They’re) Contractions",
+    "list": [
+      {
+        "icon": "👶",
+        "word": "He is a baby",
+        "expression": "He’s a baby",
+        "expression_translation": "Он младенец"
+      },
+      {
+        "icon": "👶",
+        "word": "She is a baby",
+        "expression": "She’s a baby",
+        "expression_translation": "Она младенец"
+      },
+      {
+        "icon": "🧒",
+        "word": "He is young",
+        "expression": "He’s young",
+        "expression_translation": "Он молод"
+      },
+      {
+        "icon": "👧",
+        "word": "She is young",
+        "expression": "She’s young",
+        "expression_translation": "Она молодая"
+      },
+      {
+        "icon": "👦👧",
+        "word": "They are young",
+        "expression": "They’re young",
+        "expression_translation": "Они молодые"
+      },
+      {
+        "icon": "🏃",
+        "word": "He is running",
+        "expression": "He’s running",
+        "expression_translation": "Он бежит"
+      },
+      {
+        "icon": "🏃🏾‍♀️",
+        "word": "She is running",
+        "expression": "She’s running",
+        "expression_translation": "Она бежит"
+      },
+      {
+        "icon": "🏃🏃🏾‍♀️",
+        "word": "They are running",
+        "expression": "They’re running",
+        "expression_translation": "Они бегут"
+      },
+      {
+        "icon": "🛌",
+        "word": "He is sleeping",
+        "expression": "He’s sleeping",
+        "expression_translation": "Он спит"
+      },
+      {
+        "icon": "🏊",
+        "word": "She is swimming",
+        "expression": "She’s swimming",
+        "expression_translation": "Она плавает"
+      },
+      {
+        "icon": "🚶",
+        "word": "He is walking",
+        "expression": "He’s walking",
+        "expression_translation": "Он идет"
+      },
+      {
+        "icon": "🚶🏾‍♀️",
+        "word": "She is walking",
+        "expression": "She’s walking",
+        "expression_translation": "Она идет"
+      },
+      {
+        "icon": "🚶🚶🏾‍♀️",
+        "word": "They are walking",
+        "expression": "They’re walking",
+        "expression_translation": "Они идут"
+      },
+      {
+        "icon": "👨🏻‍🍳",
+        "word": "He is a cook",
+        "expression": "He’s a cook",
+        "expression_translation": "Он повар"
+      },
+      {
+        "icon": "👩🏽‍⚕️",
+        "word": "She is a doctor",
+        "expression": "She’s a doctor",
+        "expression_translation": "Она врач"
+      },
+      {
+        "icon": "👮",
+        "word": "He is a police officer",
+        "expression": "He’s a police officer",
+        "expression_translation": "Он полицейский"
+      },
+      {
+        "icon": "👩🏻‍🏫",
+        "word": "She is a teacher",
+        "expression": "She’s a teacher",
+        "expression_translation": "Она учительница"
+      },
+      {
+        "icon": "💃",
+        "word": "She is dancing",
+        "expression": "She’s dancing",
+        "expression_translation": "Она танцует"
+      },
+      {
+        "icon": "🕺",
+        "word": "He is dancing",
+        "expression": "He’s dancing",
+        "expression_translation": "Он танцует"
+      },
+      {
+        "icon": "💃🕺",
+        "word": "They are dancing",
+        "expression": "They’re dancing",
+        "expression_translation": "Они танцуют"
+      },
+      {
+        "icon": "🤰",
+        "word": "She is pregnant",
+        "expression": "She’s pregnant",
+        "expression_translation": "Она беременна"
+      },
+      {
+        "icon": "🤴🏽",
+        "word": "He is a king",
+        "expression": "He’s a king",
+        "expression_translation": "Он король"
+      },
+      {
+        "icon": "👸🏼",
+        "word": "She is a queen",
+        "expression": "She’s a queen",
+        "expression_translation": "Она королева"
+      },
+      {
+        "icon": "👩‍🌾",
+        "word": "She is a farmer",
+        "expression": "She’s a farmer",
+        "expression_translation": "Она фермер"
+      },
+      {
+        "icon": "👷🏽‍♂️",
+        "word": "He is a carpenter",
+        "expression": "He’s a carpenter",
+        "expression_translation": "Он плотник"
+      },
+      {
+        "icon": "👰",
+        "word": "She is married",
+        "expression": "She’s married",
+        "expression_translation": "Она замужем"
+      },
+      {
+        "icon": "🤵🏽",
+        "word": "He is married",
+        "expression": "He’s married",
+        "expression_translation": "Он женат"
+      },
+      {
+        "icon": "🤵🏽👰",
+        "word": "They are married",
+        "expression": "They’re married",
+        "expression_translation": "Они в браке"
+      }    
+    ]
   }
 ]

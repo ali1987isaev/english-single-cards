@@ -100,13 +100,13 @@ const renderMenuList = (container, list) => {
     list.forEach(item => html += `
       <li class="">
         <span>
-          <span>${item.word}</span>
-          <span>${item.expression}</span>
+          ${item?.word ? `<span>${item.word}</span>` : ""}
+          ${item?.expression ? `<span>${item.expression}</span>` : ""}
         </span>
-        <span>${item.icon ? item.icon : ""}</span>
+        ${item?.icon ? `<span>${item.icon}</span>` : ""}
         <span>
-          <span>${item.word_translation}</span>
-          <span>${item.expression_translation}</span>
+          ${item?.word_translation ? `<span>${item.word_translation}</span>` : ""}
+          ${item?.expression_translation ? `<span>${item.expression_translation}</span>` : ""}
         </span>
       </li>
     `)
@@ -184,16 +184,22 @@ async function generateWordCards(type = 'data') {
   }
 
   data.forEach(card => {
+    const say = card.word && card.expression ? card.expression : card.english;
+
     const singleCard = `
     <li class="card" data-single-card>
       <div class="card__inner">
         <div class="card__front">
-          <h4>${card.english}</h4>
-          <button class="button button--voice-output" type="button" data-generate-en-voice-output="${card.english}">say</button>
+          ${card.english ? `<h4>${card.english}</h4>` : ""}
+          ${card.word ? `<h4>${card.word}</h4>` : ""}
+          ${card.expression ? `<h4>${card.expression}</h4>` : ""}
+          <button class="button button--voice-output" type="button" data-generate-en-voice-output="${say}">say</button>
           ${deleteButton(card)}
         </div>
         <div class="card__back">
-          <h4>${card.russian}</h4>
+          ${card.russian ? `<h4>${card.russian}</h4>` : ""}
+          ${card.word_translation ? `<h4>${card.word_translation}</h4>` : ""}
+          ${card.expression_translation ? `<h4>${card.expression_translation}</h4>` : ""}
         </div>
       </div>
     </li>

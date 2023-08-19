@@ -234,12 +234,18 @@ li {
     backface-visibility: hidden;
     border-radius: 15px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 50px;
     padding: 20px;
     font-size: 30px;
     border: 1px solid $color-primary;
+
+    h4 {
+      margin: 0;
+    }
   }
 
   &__front {
@@ -250,7 +256,6 @@ li {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 50px;
 
     .button--icon {
       min-width: 40px;
@@ -395,9 +400,9 @@ li {
       font-weight: bold;
       padding: 20px;
       border-radius: 8px;
-      background: transparent;
       border: 1px solid $color-primary;
-      color: $color-primary;
+      color: $color-secondary;   
+      background: $color-primary;
     }
 
     &-content {
@@ -419,26 +424,31 @@ li {
       ul li {
         display: flex;
         align-items: center;
-        gap: 20px;
+        justify-content: space-between;
+        gap: 5px;
 
-        span:not(:nth-child(2)) {
+        & > span {
           display: flex;
           flex-direction: column;
           gap: 10px;
-          flex: 1;
         }
 
         & > span:nth-child(2) {
          font-size: 50px;
+         width: max-content;
         }
+        & > span:nth-child(3) {
+          width: max-content;
+          text-align: right;
+         }
       }
     }
 
     &.items-list__item--active {
       .items-list__item-topic {
+        background: transparent;
         border: 1px solid $color-primary;
-        color: $color-secondary;   
-        background: $color-primary;
+        color: $color-primary;
       }
 
       .items-list__item-content {
