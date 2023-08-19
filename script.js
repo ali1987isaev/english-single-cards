@@ -190,16 +190,16 @@ async function generateWordCards(type = 'data') {
     <li class="card" data-single-card>
       <div class="card__inner">
         <div class="card__front">
-          ${card.english ? `<h4>${card.english}</h4>` : ""}
-          ${card.word ? `<h4>${card.word}</h4>` : ""}
-          ${card.expression ? `<h4>${card.expression}</h4>` : ""}
+          ${card?.english ? `<h4>${card.english}</h4>` : ''}
+          ${card?.word ? `<h4>${card.word}</h4>` : ''}
+          ${card?.expression ? `<h4>${card.expression}</h4>` : ''}
           <button class="button button--voice-output" type="button" data-generate-en-voice-output="${say}">say</button>
           ${deleteButton(card)}
         </div>
         <div class="card__back">
-          ${card.russian ? `<h4>${card.russian}</h4>` : ""}
-          ${card.word_translation ? `<h4>${card.word_translation}</h4>` : ""}
-          ${card.expression_translation ? `<h4>${card.expression_translation}</h4>` : ""}
+          ${card?.russian ? `<h4>${card.russian}</h4>` : ''}
+          ${card?.word_translation ? `<h4>${card.word_translation}</h4>` : ''}
+          ${card?.expression_translation ? `<h4>${card.expression_translation}</h4>` : ''}
         </div>
       </div>
     </li>
