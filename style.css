@@ -251,7 +251,7 @@ li {
 }
 .menu__content .qr-code {
   width: 100%;
-  margin: 150px 0 20px;
+  margin: 100px 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,7 +259,7 @@ li {
 }
 .menu__content .qr-code__img {
   width: 70%;
-  border: 5px solid #1D5D9B;
+  border: 1px solid #1D5D9B;
   border-radius: 8px;
   box-shadow: rgb(0, 0, 0) 0px 5px 15px;
 }
