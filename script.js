@@ -192,7 +192,7 @@ async function generateWordCards(type = 'data') {
         <div class="card__front">
           ${card?.english ? `<h4>${card.english}</h4>` : ''}
           ${card?.word ? `<h4>${card.word}</h4>` : ''}
-          ${card?.expression ? `<h4>${card.expression}</h4>` : ''}
+          ${card?.expression ? `<h6>${card.expression}</h6>` : ''}
           <button class="button button--voice-output" type="button" data-generate-en-voice-output="${say}">say</button>
           ${deleteButton(card)}
         </div>
