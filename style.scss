@@ -176,7 +176,7 @@ li {
     border-color: transparent;
     background-color: $color-primary;
     color: $color-secondary;
-
+    
     &--active {
       border-color: $color-primary;
       background-color: $color-secondary;
@@ -301,9 +301,19 @@ li {
     }
 
     .qr-code {
-      margin: 150px 0 50px;
-      border: 1px solid $color-primary;
-      border-radius: 8px;
+      width: 100%;
+      margin: 150px 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+      &__img {
+        width: 70%;
+        border: 5px solid $color-primary;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+      }
     }
   }
 }
