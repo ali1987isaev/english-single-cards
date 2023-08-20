@@ -371,6 +371,9 @@ li {
   width: max-content;
 }
 .items-list__item-content ul li .items-list__item-translation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   width: -moz-max-content;
   width: max-content;
   text-align: right;

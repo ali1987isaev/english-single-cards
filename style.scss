@@ -438,6 +438,9 @@ li {
           width: max-content;
         }
         .items-list__item-translation {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
           width: max-content;
           text-align: right;
         }
