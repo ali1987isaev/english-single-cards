@@ -99,12 +99,12 @@ const renderMenuList = (container, list) => {
 
     list.forEach(item => html += `
       <li class="">
-        <span>
+        <span class="items-list__item-english">
           ${item?.word ? `<span>${item.word}</span>` : ""}
           ${item?.expression ? `<span>${item.expression}</span>` : ""}
         </span>
-        ${item?.icon ? `<span>${item.icon}</span>` : ""}
-        <span>
+        ${item?.icon ? `<span  class="items-list__item-icon">${item.icon}</span>` : ""}
+        <span class="items-list__item-translation">
           ${item?.word_translation ? `<span>${item.word_translation}</span>` : ""}
           ${item?.expression_translation ? `<span>${item.expression_translation}</span>` : ""}
         </span>

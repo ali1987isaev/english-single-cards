@@ -4,21 +4,21 @@
     "word": "government",
     "expression": "I hope the government does something about the poverty in this country.",
     "word_translation": "правительство",
-    "expression_translation": "Надеюсь, правительство предпримет меры по борьбе с бедностью в этой стране."
+    "expression_translation": "Я надеюсь, что правительство примет меры по борьбе с бедностью в этой стране."
   },
   {
     "id": "102",
     "word": "run",
     "expression": "If you see a bear here, run for your life.",
     "word_translation": "бежать",
-    "expression_translation": "Если ты увидишь медведя здесь, беги на своей жизни."
+    "expression_translation": "Если вы увидите здесь медведя, бегите, спасая свою жизнь."
   },
   {
     "id": "103",
     "word": "small",
     "expression": "I have a small favor to ask you.",
     "word_translation": "маленький",
-    "expression_translation": "У меня есть маленькая просьба к тебе."
+    "expression_translation": "У меня есть небольшая просьба к вам."
   },
   {
     "id": "104",
@@ -39,7 +39,7 @@
     "word": "always",
     "expression": "I always bring pepper spray with me.",
     "word_translation": "всегда",
-    "expression_translation": "Я всегда ношу с собой перцовый спрей."
+    "expression_translation": "Я всегда ношу с собой перцовый баллончик."
   },
   {
     "id": "107",
@@ -53,21 +53,21 @@
     "word": "like",
     "expression": "I really like you.",
     "word_translation": "нравиться",
-    "expression_translation": "Я действительно тебя люблю."
+    "expression_translation": "Ты мне очень нравишься."
   },
   {
     "id": "109",
     "word": "night",
     "expression": "The night is young.",
     "word_translation": "ночь",
-    "expression_translation": "Ночь еще молода."
+    "expression_translation": "Ночь только началась (молода)."
   },
   {
     "id": "110",
     "word": "live",
     "expression": "I’m going to live like there’s no tomorrow.",
     "word_translation": "жить",
-    "expression_translation": "Я буду жить, как если бы завтра не было."
+    "expression_translation": "Я буду жить так, как будто завтра не наступит."
   },
   {
     "id": "111",
@@ -102,7 +102,7 @@
     "word": "today",
     "expression": "I’m going to see you today.",
     "word_translation": "сегодня",
-    "expression_translation": "Сегодня я увижу тебя."
+    "expression_translation": "Я собираюсь увидеть тебя сегодня."
   },
   {
     "id": "116",
@@ -123,7 +123,7 @@
     "word": "next",
     "expression": "This is the next best thing.",
     "word_translation": "следующий",
-    "expression_translation": "Это следующее лучшее."
+    "expression_translation": "Это следующая лучшая вещь."
   },
   {
     "id": "119",
@@ -235,7 +235,7 @@
     "word": "story",
     "expression": "She shared her story to the media.",
     "word_translation": "история",
-    "expression_translation": "Она поделилась своей историей с медиа."
+    "expression_translation": "Она поделилась своей историей со СМИ."
   },
   {
     "id": "135",
@@ -249,56 +249,56 @@
     "word": "fact",
     "expression": "It’s a fact: shopping can improve your mood.",
     "word_translation": "факт",
-    "expression_translation": "Факт: шопинг может улучшить ваше настроение."
+    "expression_translation": "Это факт: шоппинг может улучшить ваше настроение."
   },
   {
     "id": "137",
     "word": "month",
     "expression": "It’s that time of the month!",
     "word_translation": "месяц",
-    "expression_translation": "Это тот период месяца!"
+    "expression_translation": "Это то самое время месяца!"
   },
   {
     "id": "138",
     "word": "different",
     "expression": "Just because she’s different, it doesn’t mean she’s bad.",
     "word_translation": "разный",
-    "expression_translation": "Просто потому, что она разная, это не значит, что она плохая."
+    "expression_translation": "То, что она другая, не значит, что она плохая."
   },
   {
     "id": "139",
     "word": "lot",
     "expression": "You have a lot of explaining to do.",
     "word_translation": "много",
-    "expression_translation": "У тебя много объяснений."
+    "expression_translation": "Вам нужно многое объяснить."
   },
   {
     "id": "140",
     "word": "right",
     "expression": "Turn right when you reach the corner.",
     "word_translation": "право",
-    "expression_translation": "Поворачивай направо, когда дойдешь до угла."
+    "expression_translation": "Поверните направо, когда дойдете до угла."
   },
   {
     "id": "141",
     "word": "study",
     "expression": "Let’s study our English lessons together.",
     "word_translation": "учиться",
-    "expression_translation": "Давайте учиться вместе по нашим урокам английского."
+    "expression_translation": "Давайте изучать наши уроки английского языка вместе."
   },
   {
     "id": "142",
     "word": "book",
     "expression": "Can I borrow your English book?",
     "word_translation": "книга",
-    "expression_translation": "Могу ли я одолжить твою английскую книгу?"
+    "expression_translation": "Могу я одолжить вашу книгу по английскому языку?"
   },
   {
     "id": "143",
     "word": "eye",
     "expression": "She has the pink eye.",
     "word_translation": "глаз",
-    "expression_translation": "У нее розовое заболевание глаза."
+    "expression_translation": "У нее розовый глаз."
   },
   {
     "id": "144",
@@ -319,7 +319,7 @@
     "word": "though",
     "expression": "Though you are angry now, I’m sure you will forget about this later.",
     "word_translation": "хотя",
-    "expression_translation": "Хотя ты сейчас злой, я уверен, что ты забудешь об этом позже."
+    "expression_translation": "Хотя сейчас ты злишься, я уверен, ты забудешь об этом позже."
   },
   {
     "id": "147",
@@ -340,7 +340,7 @@
     "word": "side",
     "expression": "Whose side are you on, anyway?",
     "word_translation": "сторона",
-    "expression_translation": "В какой стороне ты в конечном итоге?"
+    "expression_translation": "На чьей ты стороне, в конце концов?"
   },
   {
     "id": "150",
@@ -361,7 +361,7 @@
     "word": "head",
     "expression": "Let’s head back, it’s freezing out here.",
     "word_translation": "голова",
-    "expression_translation": "Пойдем назад, здесь морозно."
+    "expression_translation": "Пойдем обратно, здесь мороз."
   },
   {
     "id": "153",
@@ -396,7 +396,7 @@
     "word": "little",
     "expression": "I have two little boys with me now.",
     "word_translation": "маленький",
-    "expression_translation": "У меня сейчас два маленьких мальчика."
+    "expression_translation": "Со мной сейчас два маленьких мальчика."
   },
   {
     "id": "158",
@@ -423,7 +423,7 @@
     "id": "161",
     "word": "since",
     "expression": "Ever since his mom died, he has been cranky and angry at the world.",
-    "word_translation": "с тех пор как",
+    "word_translation": "поскольку, с тех пор как",
     "expression_translation": "С тех пор как его мама умерла, он был раздражительным и злым на весь мир."
   },
   {
@@ -480,7 +480,7 @@
     "word": "sit",
     "expression": "Let’s sit outside together.",
     "word_translation": "сидеть",
-    "expression_translation": "Давайте сядем на улице вместе."
+    "expression_translation": "Давайте посидим на улице вместе."
   },
   {
     "id": "170",
@@ -494,14 +494,14 @@
     "word": "until",
     "expression": "Until when will you be away?",
     "word_translation": "до",
-    "expression_translation": "До когда ты будешь далеко?"
+    "expression_translation": "До каких пор ты будешь отсутствовать?"
   },
   {
     "id": "172",
     "word": "power",
     "expression": "With great power comes great responsibility.",
     "word_translation": "сила",
-    "expression_translation": "С великой силой приходит большая ответственность."
+    "expression_translation": "С большой властью приходит большая ответственность."
   },
   {
     "id": "173",
@@ -522,7 +522,7 @@
     "word": "often",
     "expression": "I buy from his bakery as often as I can.",
     "word_translation": "часто",
-    "expression_translation": "Я покупаю в его булочной так часто, как только могу."
+    "expression_translation": "Я покупаю в его пекарне так часто, как могу."
   },
   {
     "id": "176",
@@ -557,7 +557,7 @@
     "word": "among",
     "expression": "Among all my pets, he’s my most favorite.",
     "word_translation": "среди",
-    "expression_translation": "Среди всех моих домашних животных, он мой самый любимый."
+    "expression_translation": "Среди всех моих питомцев он мой самый любимый."
   },
   {
     "id": "181",
@@ -571,7 +571,7 @@
     "word": "stand",
     "expression": "Can you stand still for a minute?",
     "word_translation": "стоять",
-    "expression_translation": "Ты можешь стоять неподвижно минуту?"
+    "expression_translation": "Можете ли вы постоять минуту?"
   },
   {
     "id": "183",
@@ -592,7 +592,7 @@
     "word": "however",
     "expression": "I want to buy this bag, however, I need to save up for it first.",
     "word_translation": "однако",
-    "expression_translation": "Я хочу купить эту сумку, однако мне нужно сначала сэкономить на неё."
+    "expression_translation": "Я хочу купить эту сумку, но сначала мне нужно накопить на нее."
   },
   {
     "id": "186",
@@ -648,7 +648,7 @@
     "word": "include",
     "expression": "Did you remember to include the summary in your report?",
     "word_translation": "включать",
-    "expression_translation": "Ты помнишь включить резюме в свой отчёт?"
+    "expression_translation": "Вы не забыли включить резюме в свой отчет?"
   },
   {
     "id": "194",
@@ -683,7 +683,7 @@
     "word": "much",
     "expression": "There’s so much to learn in the English language.",
     "word_translation": "много",
-    "expression_translation": "В английском языке есть так много, что нужно изучить."
+    "expression_translation": "В английском языке так много всего нужно выучить."
   },
   {
     "id": "199",
@@ -697,6 +697,6 @@
     "word": "five",
     "expression": "I can give you five reasons why you need to watch that video.",
     "word_translation": "пять",
-    "expression_translation": "Я могу дать тебе пять причин, почему тебе стоит посмотреть это видео."
+    "expression_translation": "Я могу назвать вам пять причин, почему вам нужно посмотреть это видео."
   }
 ]
