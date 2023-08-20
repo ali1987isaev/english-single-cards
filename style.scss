@@ -336,13 +336,9 @@ li {
   display: none !important;
 }
 
-.menu--open .menu[data-menu] {
+.menu--open .menu[data-menu],
+.menu-list--open .menu[data-menu-list] {
   transform: translateX(0%);
-}
-
-.menu-list--open .menu[data-menu-list]  {
-  transform: translateX(0%);
-  z-index: 2000;
 }
 
 .form-add-word {
