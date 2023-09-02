@@ -422,6 +422,9 @@ li {
   height: 20px;
   margin-top: 20px;
 }
+[data-menu-collect-expression] .collect-expression-content {
+  font-size: 22px;
+}
 [data-menu-collect-expression] .right-answer {
   width: 100vw;
   font-size: 130px;

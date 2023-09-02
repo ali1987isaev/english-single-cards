@@ -394,7 +394,7 @@ const renderCollectExpressionData = (data) => {
     expressionObject = data;
 
     const html = `
-      <div>
+      <div class="collect-expression-content">
         <div>${data.translation}</div>
         <div data-expression-result-container></div>
         <div data-expression-right-result-container></div>
