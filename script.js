@@ -9,9 +9,12 @@ const container = document.querySelector('[data-main-container]'),
   buttonMenuClose = document.querySelector('[data-menu-close]'),
   buttonMenuListOpen = document.querySelector('[data-menu-list-open]'),
   buttonMenuListClose = document.querySelector('[data-menu-list-close]'),
+  buttonMenuCollectExpressionOpen = document.querySelector('[data-menu-collect-expression-open]'),
+  buttonMenuCollectExpressionClose = document.querySelector('[data-menu-collect-expression-close]'),
   formAddWord = document.querySelector('[data-add-new-word]'),
   menu = document.querySelector('[data-menu]'),
   menuList = document.querySelector('[data-menu-list]'),
+  menuCollectExpression = document.querySelector('[data-menu-collect-expression]'),
   tagList = document.querySelector('[data-teg-list]');
 
 const getData = async() => {
@@ -248,6 +251,7 @@ const clearMenu = () => {
   setTimeout(() => {
     menu.classList.contains('hidden') && menu.classList.remove('hidden');
     menuList.classList.contains('hidden') && menuList.classList.remove('hidden');
+    menuCollectExpression.classList.contains('hidden') && menuCollectExpression.classList.remove('hidden');
   }, 500);
 };
 
@@ -271,6 +275,158 @@ const initTagList = () => {
   }))
 }
 
+// Collect Expression
+let expressionsIndex = 0
+let allExpressions = [];
+let expressionObject = {};
+const expressioncContainer = document.querySelector('[data-menu-collect-expression-container]') || null;
+
+const openCollectExpression = () => !document.body.classList.contains('collect-expression--open') && document.body.classList.add('collect-expression--open');
+const closeCollectExpression = () => {
+  if (document.body.classList.contains('collect-expression--open')) {
+    document.body.classList.remove('collect-expression--open');
+    setTimeout(() => getCollectExpressionData(), 500);
+  };
+};
+
+const clearWrongResult = () => {
+  const checkResultButton = document.querySelector('[data-collect-expression-check-result]');
+  const resultExpression = document.querySelector('[data-expression-result-container]');
+  const rightResultContainer = document.querySelector('[data-expression-right-result-container]');
+  
+  if (!checkResultButton) return;
+  checkResultButton.remove();
+  resultExpression.classList.contains('expression-wrong') && resultExpression.classList.remove('expression-wrong');
+  rightResultContainer.innerHTML = '';
+};
+
+const successResultHandler = () => {
+  const checkResultButton = document.querySelector('[data-collect-expression-check-result]');
+  checkResultButton.remove();
+
+  document.querySelector('.expression-words-container').innerHTML = '<div class="right-answer">🎉</div>';
+
+  setTimeout(() => {
+    expressionsIndex++
+    renderCollectExpressionData(allExpressions[expressionsIndex])
+  }, 2000);
+};
+
+const checkResultHandler = () => {
+  const checkResultButton = document.querySelector('[data-collect-expression-check-result]');
+  const resultExpression = document.querySelector('[data-expression-result-container]');
+  const rightResultContainer = document.querySelector('[data-expression-right-result-container]');
+
+  checkResultButton.addEventListener('click', () => {
+    if (expressionObject.expression === resultExpression.innerText) {
+      // success expresstion
+      resultExpression.classList.add('expression-success');
+      rightResultContainer.innerHTML = expressionObject.expression;
+      successResultHandler();
+    } else {
+      // wrong expresstion
+      resultExpression.classList.add('expression-wrong');
+      rightResultContainer.innerHTML = expressionObject.expression;
+    }
+  });
+};
+
+const checkProgress = (words) => {
+  const readyWords = []
+  words.forEach(word => {
+    word.classList.contains('button--selected') ? readyWords.push(true) : readyWords.push(false);
+  });
+
+  if (!readyWords.includes(false)) {
+    const button = document.createElement("button");
+    button.classList.add("button", "button--secondary");
+    button.textContent = "Check Result";
+    button.setAttribute("data-collect-expression-check-result", "");
+    expressioncContainer.appendChild(button);
+    checkResultHandler();
+  } else clearWrongResult();
+};
+
+const addExpressionWordHandler = () => {
+  const expressionResultCotainer = document.querySelector('[data-expression-result-container]');
+  const words = document.querySelectorAll('[data-expression-word]');
+
+  let html = '';
+
+  words.forEach(word => word.addEventListener('click', (e) => {
+    const currentWord = e.target.dataset.expressionWord;
+
+    if (!e.target.classList.contains('button--selected')) {
+      e.target.classList.add('button--selected');
+      html += html === '' ? currentWord : ` ${currentWord}`;
+    } else if (e.target.classList.contains('button--selected')) {
+      e.target.classList.remove('button--selected');
+      html = html.split(' ').filter(word => word != currentWord).join(' ');
+    };
+
+    expressionResultCotainer.innerHTML = html;
+    checkProgress(words);
+  }));
+};
+
+const getSplitedExpression = (expression) => {
+  const wordsArr =  expression.split(' ').reverse();
+  let indicesArr = [];
+  let html = '';
+
+  for (let index = 0; index < wordsArr.length; index++) {
+    index % 2 ? indicesArr.push(index) : indicesArr.unshift(index);
+  };
+
+  indicesArr.forEach(index => {
+    html += `
+      <button class="button button--secondary" type="button" data-expression-word=${wordsArr[index]}>
+        ${wordsArr[index]}
+      </button>
+    `
+  });
+
+  return html;
+};
+
+const renderCollectExpressionData = (data) => {
+  if (!!data) {
+    expressionObject = data;
+
+    const html = `
+      <div>
+        <div>${data.translation}</div>
+        <div data-expression-result-container></div>
+        <div data-expression-right-result-container></div>
+      </div>
+      <div class="expression-words-container">${getSplitedExpression(data.expression)}</div>
+    `;
+  
+    expressioncContainer.innerHTML = html;
+    addExpressionWordHandler();
+  } else {
+    expressioncContainer.innerHTML = '<div class="winner-end"><h1>You won!</h1><div class="right-answer">🎉</div></div>'
+  }
+};
+
+async function getCollectExpressionData() {
+  await fetch("./collect-expression.json")
+  .then(res => res.json())
+  .then(data => {
+    allExpressions = data;
+    expressionsIndex = 0;
+    renderCollectExpressionData(data[0])
+  })
+  .catch(err => console.error(err));
+};
+
+const initMenuCollectExpression = () => {
+  buttonMenuCollectExpressionOpen.addEventListener('click', openCollectExpression);
+  buttonMenuCollectExpressionClose.addEventListener('click', closeCollectExpression);
+
+  getCollectExpressionData();
+};
+
 const init = () => {
   clearMenu();
   generateWordCards();
@@ -278,6 +434,7 @@ const init = () => {
   initMenuList();
   initFormAddWord();
   initTagList();
+  initMenuCollectExpression();
 };
 
 document.addEventListener("DOMContentLoaded", init);

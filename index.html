@@ -14,13 +14,7 @@
     <div class="header-top">
       <h4>Mastering English opens a world of possibilities!</h4>
       <div class="header-top__buttons">
-        <button class="button button--icon" type="button" data-menu-list-open>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
-          </svg>
-        </button>
+
         <button class="button button--icon" type="button" data-menu-open>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-6 h-6">
@@ -29,6 +23,18 @@
           </svg>
         </button>
       </div>
+    </div>
+    <div class="topics-list">
+      <button class="button button--secondary" type="button" data-menu-list-open>
+        <span>
+          conversations
+        </span>
+      </button>
+      <button class="button button--secondary" type="button" data-menu-collect-expression-open>
+        <span>
+          collect expression
+        </span>
+      </button>
     </div>
     <div class="tag-list" data-teg-list>
       <button class="button button--secondary" type="button" data-type="data">
@@ -112,6 +118,18 @@
     </div>
   </div>
 
+  <div class="menu hidden" data-menu-collect-expression>
+    <div class="menu__content">
+      <button type="button" class="button button--icon" data-menu-collect-expression-close>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="collect-expression-container" data-menu-collect-expression-container></div>
+    </div>
+  </div>
 <!-- 
     
 get the value of the:
