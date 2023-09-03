@@ -344,7 +344,7 @@ const checkProgress = (words) => {
 
   if (!readyWords.includes(false)) {
     const button = document.createElement("button");
-    button.classList.add("button", "button--secondary");
+    button.classList.add("button", "button--primary");
     button.textContent = "Check Result";
     button.setAttribute("data-collect-expression-check-result", "");
     expressioncContainer.appendChild(button);
@@ -385,7 +385,7 @@ const getSplitedExpression = (expression) => {
 
   indicesArr.forEach(index => {
     html += `
-      <button class="button button--secondary" type="button" data-expression-word=${wordsArr[index]}>
+      <button class="button button--primary" type="button" data-expression-word=${wordsArr[index]}>
         ${wordsArr[index]}
       </button>
     `

@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$color-primary: #1D3E53;
-$color-secondary: #476D7C;
-$color-tertiary: #254B62;
+$color-primary: #2F86A6;
+$color-secondary: #34BE82;
+$color-tertiary: #2FDD92;
+$color-main-lite: #F2F013;
 $color-white: #ffffff;
 $color-black: #1d1b1b;
 $color-red: #9c431e;
-$color-success: #60be96;
-$bg-main: #77ABB7;
+$color-success: #2FDD92;
+// $bg-main: #77ABB7;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
@@ -35,11 +36,16 @@ body, ul, ol, p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   overflow-y: scroll;
-  background-image: linear-gradient($color-secondary, $bg-main);
+  // background-image: linear-gradient($color-secondary, $bg-main);
+  background-image: url(./bg-tertiary.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 210%;
   color: $color-white;
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -62,6 +68,7 @@ html {
 .header {
   width: 100%;
   padding: 10px 20px 0;
+  background-image: linear-gradient($color-primary, $color-white);
 
   &-top {
     width: 100%;
@@ -165,17 +172,34 @@ li {
   &--full {
     height: 100%;
     width: 100%;
-    border: 1px solid $color-white;
+    color: $color-main-lite;
+    font-weight: bold;
+    border-top: 1px solid $color-main-lite;
   }
 
   &--voice-output {
     text-transform: uppercase;
     letter-spacing: 2px;
-    background-color: $color-secondary;
-    border: 2px solid $color-white;
+    background-color: $color-main-lite;
+    color: $color-primary;
+    // border: 2px solid $color-tertiary;
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    font-weight: bold;
+    // position: relative;
+    // background-image: url(./bg-main.png);
+    // background-repeat: no-repeat;
+    // background-size: 250%;
+    // background-position: center center;
+
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   inset: 0;
+    //   z-index: -1;
+    //   background-color: rgba($color-main-lite, $alpha: .8);
+    // }
   }
 
   &--icon {
@@ -199,12 +223,12 @@ li {
     white-space: nowrap;
     padding: 5px 10px;
     border-color: $color-white;
-    background-color: $color-secondary;
+    background-color: $color-primary;
     color: $color-white;
 
     &--active {
       border-color: $color-white;
-      background-color: $color-primary;
+      background-color: $color-tertiary;
       // color: $color-primary;
     }
   }
@@ -264,7 +288,7 @@ li {
   }
 
   &__front {
-    background-color: $color-tertiary;
+    background-color: $color-primary;
     color: $color-white;
     display: flex;
     flex-direction: column;
@@ -278,7 +302,7 @@ li {
       position: absolute;
       top: 20px;
       right: 20px;
-      color: $color-red;
+      color: $color-main-lite;
   
       svg {
         min-width: 40px;
@@ -288,8 +312,8 @@ li {
   }
 
   &__back {
-    background-color: $color-secondary;
-    color: $color-primary;
+    background-color: $color-tertiary;
+    color: $color-white;
     transform: rotateY(180deg);
   }
 }
@@ -306,7 +330,7 @@ li {
   overflow-y: scroll;
 
   &__content {
-    background-image: linear-gradient($color-secondary, $bg-main);
+    background-image: linear-gradient($color-secondary, $color-primary);
     border-right: 1px solid $color-black;
     width: 100%;
     min-height: 100vh;
@@ -497,7 +521,7 @@ li {
     gap: 20px;
 
   }
-  
+
   .button {
     padding: 20px 30px;
   }
