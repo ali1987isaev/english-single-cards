@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
-$color-primary: #1D5D9B;
-$color-secondary: #F4D160;
-$color-tertiary: #75C2F6;
+$color-primary: #1D3E53;
+$color-secondary: #476D7C;
+$color-tertiary: #254B62;
 $color-white: #ffffff;
 $color-black: #1d1b1b;
-$color-red: #cd5521;
-$color-success: #2a855d;
-$bg-main: #FBEEAC;
+$color-red: #9c431e;
+$color-success: #60be96;
+$bg-main: #77ABB7;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
@@ -38,8 +38,9 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Rubik', sans-serif;
+  overflow-y: scroll;
   background-image: linear-gradient($color-secondary, $bg-main);
-  color: $color-primary;
+  color: $color-white;
   min-height: 100vh;
   min-height: -webkit-fill-available;
 }
@@ -137,6 +138,7 @@ li {
   cursor: pointer;
   padding: 0;
   font-size: 18px;
+  font-weight: 500;
 
   &:active,
   &:disabled {
@@ -145,41 +147,39 @@ li {
 
   &--primary {
     background-color: $color-primary;
-    color: $color-secondary;
+    color: $color-white;
     text-transform: uppercase;
-    font-weight: bold;
     letter-spacing: 3px;
   }
 
   &--secondary {
     background-color: $color-tertiary;
-    color: $color-black;
+    color: $color-white;
     text-transform: uppercase;
-    font-weight: bold;
     font-size: 14px;
     padding: 10px 10px;
     border-radius: 4px;
-    border: 1px solid $color-black;
+    border: 1px solid $color-white;
   }
 
   &--full {
     height: 100%;
     width: 100%;
+    border: 1px solid $color-white;
   }
 
   &--voice-output {
     text-transform: uppercase;
-    font-weight: bold;
     letter-spacing: 2px;
     background-color: $color-secondary;
-    border: 2px solid $color-primary;
+    border: 2px solid $color-white;
     width: 80px;
     height: 80px;
     border-radius: 50%;
   }
 
   &--icon {
-    color: $color-primary;
+    color: $color-white;
     height: auto;
   }
 
@@ -198,14 +198,14 @@ li {
   .button {
     white-space: nowrap;
     padding: 5px 10px;
-    border-color: transparent;
-    background-color: $color-primary;
-    color: $color-secondary;
+    border-color: $color-white;
+    background-color: $color-secondary;
+    color: $color-white;
 
     &--active {
-      border-color: $color-primary;
-      background-color: $color-secondary;
-      color: $color-primary;
+      border-color: $color-white;
+      background-color: $color-primary;
+      // color: $color-primary;
     }
   }
 }
@@ -265,7 +265,7 @@ li {
 
   &__front {
     background-color: $color-tertiary;
-    color: $color-black;
+    color: $color-white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -413,8 +413,8 @@ li {
       font-weight: bold;
       padding: 20px;
       border-radius: 8px;
-      border: 1px solid $color-primary;
-      color: $color-secondary;   
+      border: 1px solid $color-white;
+      color: $color-white;   
       background: $color-primary;
     }
 
@@ -462,8 +462,8 @@ li {
     &.items-list__item--active {
       .items-list__item-topic {
         background: transparent;
-        border: 1px solid $color-primary;
-        color: $color-primary;
+        border: 1px solid $color-white;
+        color: $color-white;
       }
 
       .items-list__item-content {
@@ -495,12 +495,26 @@ li {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-  }
 
+  }
+  
+  .button {
+    padding: 20px 30px;
+  }
+  
   [data-expression-result-container],
   [data-expression-right-result-container] {
     height: 20px;
     margin-top: 20px;
+  }
+
+  [data-expression-right-result-container] {
+    color: $color-success;
+
+    & > p {
+      display: inline-block;
+      color: $color-white;
+    }
   }
 
   .collect-expression-content {
@@ -509,11 +523,20 @@ li {
 
   .right-answer {
     width: 100vw;
-    font-size: 130px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    div {
+      font-size: 130px;
+    }
   }
 
   .winner-end {
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;

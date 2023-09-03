@@ -304,7 +304,12 @@ const successResultHandler = () => {
   const checkResultButton = document.querySelector('[data-collect-expression-check-result]');
   checkResultButton.remove();
 
-  document.querySelector('.expression-words-container').innerHTML = '<div class="right-answer">🎉</div>';
+  document.querySelector('.expression-words-container').innerHTML = `
+    <div class="right-answer">
+      <h1>That's correct!</h1>
+      <div>🎉</div>
+    </div>
+  `;
 
   setTimeout(() => {
     expressionsIndex++
@@ -321,12 +326,12 @@ const checkResultHandler = () => {
     if (expressionObject.expression === resultExpression.innerText) {
       // success expresstion
       resultExpression.classList.add('expression-success');
-      rightResultContainer.innerHTML = expressionObject.expression;
+      // rightResultContainer.innerHTML = expressionObject.expression;
       successResultHandler();
     } else {
       // wrong expresstion
       resultExpression.classList.add('expression-wrong');
-      rightResultContainer.innerHTML = expressionObject.expression;
+      rightResultContainer.innerHTML = `<p>Correct result:</p> ${expressionObject.expression}`;
     }
   });
 };
@@ -405,7 +410,7 @@ const renderCollectExpressionData = (data) => {
     expressioncContainer.innerHTML = html;
     addExpressionWordHandler();
   } else {
-    expressioncContainer.innerHTML = '<div class="winner-end"><h1>You won!</h1><div class="right-answer">🎉</div></div>'
+    expressioncContainer.innerHTML = '<div class="winner-end"><h1>You won!</h1><div class="right-answer"><div>🎉</div></div></div>'
   }
 };
 
