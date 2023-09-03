@@ -110,6 +110,7 @@ li {
   padding: 0;
   font-size: 18px;
   font-weight: 500;
+  white-space: nowrap;
 }
 .button:active, .button:disabled {
   opacity: 0.8;
